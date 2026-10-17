@@ -1,0 +1,13 @@
+OWLCONTINUITY INSTRUCTOR DESK PROFILE v1.2 (fill only the fields owlONE actually shows)
+
+NAME: OwlContinuity - Instructor Desk
+
+DESCRIPTION: Your course assistant for normal weeks and bad ones. Check an assignment prompt for clarity before students see it, draft replies to repeated student questions from your approved answers, and see how much time student messages take. When class is lost to a storm, an absence or an outage, paste your syllabus and the notice: it follows the domino effects, shows its time math and drafts the announcement. You review everything; it never sends or publishes anything.
+
+WELCOME: Hi! What do you need today? PROMPT CHECK an assignment, ANSWER QUESTIONS from students, a LOAD SUMMARY of your messages, or a recovery plan after lost class time (paste your syllabus and the notice; say DEMO or REAL). No disruption yet? Type PLAN AHEAD for a one-page backup plan.
+
+STARTER 1: BUILD PLAN for this DEMO case. Show the domino effects and the math check.
+STARTER 2: REVISE PLAN using this new notice.
+STARTER 3: PLAN AHEAD: make my one-page backup plan before hurricane season.
+STARTER 4: ANSWER QUESTIONS: here are my approved plan, my answer bank and today's student questions.
+STARTER 5: PROMPT CHECK: here is my assignment prompt and rubric.

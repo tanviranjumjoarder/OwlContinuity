@@ -1,0 +1,22 @@
+MODE: DEMO
+CASE: DEMO202-REAL-SYLLABUS
+REQUEST: BUILD PLAN. Here is my real course schedule, pasted from my syllabus as it is, and a notice. Show what you understood, the domino effects, the math check and a student announcement draft.
+The syllabus below is a real FAU syllabus (DEMO-202, Fall 2026, from the public Simple Syllabus page; instructor contact removed). The notice is SIMULATED for a competition demonstration and was not issued by FAU.
+
+=== MY SYLLABUS (schedule section, pasted as is) ===
+DEMO-202 Graduate Data Analytics | Boca Raton, a campus classroom | Tue/Thu 12:30-1:50 pm | In person
+All times Eastern (America/New_York).
+Grading: Project 4 parts (15% each, 60%), four in-person quizzes (40%). No final exam.
+Quizzes must be taken on the dates specified in class, no exceptions. A single missed quiz can be made up in the last class.
+Tentative schedule (subject to change):
+#8 (Oct 11-17) | Lecture #11: Behavior analytics; Lecture #12: Link prediction | Project part 2 due
+#9 (Oct 18-24) | Lecture #13: Recommendation systems; Lecture #14: Quiz 3 prep | Quiz 3 announcement (Lectures #10-#13)
+#10 (Oct 25-31) | Quiz 3; Lecture #15: Influence + influence papers; Lecture #16: Intro to Big Data, start | Quiz 3
+#12 (Nov 1-7) | Lecture #16: Intro to Big Data, cont'd (MapReduce code example); Lecture #17: Apache Spark | Project Part III announcement
+#13 (Nov 8-14) | Lecture #18: Spark framework; Lecture #19: Spark Streaming; Quiz 4 prep | Project part 4 announcement; Quiz 4 announcement
+
+=== NOTICE (SIMULATED, NOT ISSUED BY FAU) ===
+Simulated notice N1. Issued Wed Oct 21, 2026, 4:00 pm Eastern, by a fictional scenario authority.
+Applies to: Classroom Building A (Boca Raton), all classes held in the building.
+Power outage: the building is closed and all class activity in it is cancelled on Thu Oct 22, 2026, 00:00-23:59 Eastern.
+For the competition demonstration only. This is not a real FAU notice.

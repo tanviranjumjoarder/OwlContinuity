@@ -1,0 +1,14 @@
+MODE: DEMO
+REQUEST: PROMPT CHECK. Please check this assignment prompt before my students see it, especially the readings and data: can students find everything they need?
+The course is real (DEMO-202, Fall 2026). This prompt is a test draft written for a competition demonstration, not the real assignment.
+
+=== ASSIGNMENT PROMPT: PROJECT PART 2 ===
+Project Part 2 - Ranking and communities. Use NetworkX to compute PageRank and detect communities on a social network dataset of your choice. Compare the top 10 nodes by PageRank with the communities you find and explain what you see. Use the methods from the textbook chapters we covered. Submit your work in Canvas by the deadline. Late work follows the syllabus penalty.
+
+=== WHAT I POSTED IN CANVAS ===
+Textbook: Social Media Mining: An Introduction (Zafarani, Abbasi, Liu). PDF: https://dmml.asu.edu/smm/
+Dataset: nothing posted.
+Rubric: not posted yet.
+
+=== COURSE AI POLICY (from my syllabus) ===
+AI Prohibited: The use of AI to assist in any work assigned in this specific course is prohibited.

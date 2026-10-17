@@ -1,0 +1,28 @@
+DEMO-202 TEST D1 STEP 2 - Instructor Desk, same chat as step 1, owlONE gpt-6-luna, Sat Oct 17, 2026 ~11:15 am. Input: file 32.
+RESULT: PASS (domino and math). Lecture 14 -> Mon Oct 26 (direct hit, supplied make-up). Quiz 3 Tue Oct 27 = 22h 40m after L14 -> FAIL; Thu Oct 29 = 70h 40m -> PASS (calculated with code). Quiz 3 -> Thu Oct 29. Lecture order kept; nothing dropped.
+DIFFERENCE FROM EXPECTED: we expected Lecture 16 (start) to move into the freed Tue Oct 27 time after Lecture 15. The agent kept Lecture 16 on Thu Oct 29 and marked NEEDS DECISION: it asks the instructor to confirm Quiz 3 and Lecture 16 can share the Thu Oct 29 period, because no durations were given. It invented nothing. Holding announcement without dates. Again flagged the "no exceptions" vs make-up wording.
+
+--- RESPONSE (key parts, word for word) ---
+DEMO | DEMO202-REAL-SYLLABUS | v2 | NEEDS DECISION
+Summary: Simulated N1 cancels the Thu Oct 22 class in Classroom Building A.
+Domino: Lecture 14 moves to Mon Oct 26; Quiz 3 cannot remain Tue Oct 27 under the 48-hour rule, so Thu Oct 29 is the only listed option.
+Instructor decision: Confirm whether Quiz 3 and Lecture 16 can both fit, in sequence, in the Thu Oct 29 class period.
+
+Recovery table
+E01–E04 As listed / Unchanged / Unaffected / Syllabus
+E05 Thu Oct 22 -> Mon Oct 26, 12:30–1:50 pm / Direct hit; supplied make-up / N1; R4
+E06 Week of Oct 18–24 / Unchanged; exact date unknown / No change required / Syllabus
+E07 Quiz 3 Tue Oct 27 -> Thu Oct 29, 12:30–1:50 pm, conditional / Tue option fails 48-hour rule / R1, R5
+E08 Lecture 15 Tue Oct 27 / Unchanged / Keeps Lecture 15 before Lecture 16 / R3
+E09 Lecture 16 Thu Oct 29 / Unchanged, conditional on fitting with Quiz 3 / Quiz now shares this class period / R3, R5
+E10–E16 As listed / Unchanged / No further domino required by the stated order rule
+
+Math check
+R1: Mon Oct 26, 1:50 pm EDT -> Tue Oct 27, 12:30 pm EDT: 22h 40m — FAIL (calculated with code)
+R1: Mon Oct 26, 1:50 pm EDT -> Thu Oct 29, 12:30 pm EDT: 70h 40m — PASS (calculated with code)
+
+Domino chain: Thu Oct 22 closure -> Lecture 14 moves to Mon Oct 26 -> Tue Oct 27 Quiz 3 would be only 22h 40m later, below the 48-hour minimum -> Quiz 3 moves to Thu Oct 29 -> it now shares that 80-minute class period with Lecture 16's start. Lecture order itself remains intact. But the prompt gives no durations or approved split for Quiz 3 and Lecture 16, so I cannot verify that both fit without overlap.
+Other checks: weekdays and elapsed times calculated with code (America/New_York -> UTC). No DST transition affects these calculations. Room availability for Mon Oct 26 has not been independently confirmed.
+
+DRAFT — holding announcement; DEMO ONLY: "The simulated notice for this demonstration cancels the Thursday, October 22 class in Classroom Building A. I'm reviewing the replacement arrangement and how it affects Quiz 3 and Lecture 16. I'll share confirmed course details after the schedule is settled."
+Draft for instructor review. No systems have been updated.

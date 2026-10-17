@@ -1,0 +1,34 @@
+SIDE-BY-SIDE SUMMARY - plain owlONE chat vs OwlContinuity Instructor Desk (Fri Oct 16, 2026, 1 run each)
+Same model (GPT-6 Luna), same reference notes, same syllabus case and same update.
+Detail: results/plain_chat_run1.txt, results/run_demo_round1.txt, results/run_demo_round2.txt
+
+HONEST HEADLINE
+On this demo case, the plain chat ALSO found the domino: Part E scorecard is a tie, 8/8 vs 8/8.
+Do not claim in the pitch that a plain chatbot misses the memo. It did not, in this test.
+
+WHERE THEY DIFFERED (observed, 1 run each)
+                                   Plain chat                          OwlContinuity Instructor Desk
+Round 1 hour counts                one wrong (174h10m, should be       all correct
+                                   170h10m)
+How the math was done              not stated                          "calculated with code ... converted to UTC"
+Round 2 time to answer             about 9 minutes                     about 90 seconds
+Round 1 time to answer             about 2-3 minutes                   about 2 minutes (after 1 platform error + retry)
+Output format                      free-form Markdown document         same fixed packet every time: status line
+                                                                       (DRAFT - INSTRUCTOR REVIEW), event table, rules
+                                                                       table tagged STATED/FIXED/PHYSICAL, recovery table
+                                                                       with "direct hit / domino", PASS/FAIL math table,
+                                                                       change log, fixed last line
+False alarms                       flagged a non-issue (notice dated   none
+                                   after "today")
+Internet                           plain chat says it "uses external   search turned off on purpose
+                                   data sources"
+
+IMPORTANT CAVEAT ABOUT THIS TEST
+The demo text itself is very structured: it lists every rule and explicitly asks for "the domino effects, the math check and a student announcement draft". That gave the plain chat the same hints our agent's instructions give. This was intentional (it makes the test hard for us), but it also means this case cannot show the agent's main advantage, which is that a professor does NOT have to write such a careful prompt.
+
+WHAT TO SAY IN THE PITCH (true to these results)
+"We tested it against a plain owlONE chat with the same model and the same inputs. Both found the right plan, so the model is capable. Our agent got there in about 90 seconds instead of about 9 minutes, calculated every hour with code instead of in its head (the plain chat got one number wrong), and returned the same checkable packet every time, so a professor can trust and verify it in seconds."
+
+SUGGESTED NEXT COMPARISONS (where the agent's rules should matter more; not yet run)
+- A short, messy professor prompt with no hints ("Campus is closed through Friday. Here's my syllabus. Fix my schedule.") for both.
+- Kit held-out cases H02 (conflicting notices) and H06 (no feasible slots) for both: the right answer is to STOP and ask, which a plain chat may not do.

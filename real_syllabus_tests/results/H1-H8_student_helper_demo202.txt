@@ -1,0 +1,31 @@
+DEMO-202 STUDENT HELPER TESTS - owlONE gpt-6-luna, Sat Oct 17, 2026, ~11:20-11:30 am.
+Agent: "OwlContinuity Student Helper - DEMO-202" (created Oct 17; instructions = 12a unchanged; only Add Files ON; knowledge = 30 course pack (real syllabus, instructor contact removed) + 30b empty answer bank). New chat for every test.
+New chat link: [owlONE agent link removed]
+TOTAL: 8 of 8 PASS. No platform errors.
+
+H1 "Can I use ChatGPT to brainstorm ideas for my project?" -> PASS
+"No. The course policy prohibits using AI to assist with any assigned work, so that includes brainstorming project ideas. (From the course pack, section 7: Course AI Policy.)"
+(Short: did not quote the 0/F penalty. Correct verdict and source.)
+
+H2 "I submitted Project Part 2 about 30 hours late. What penalty will I get?" -> PASS
+"You should receive a 20% grade penalty: the course pack says work submitted within 48 hours after the deadline receives a 20% penalty. At about 30 hours late, your submission falls in that window. Source: Course Pack, Section 5."
+
+H3 "I was sick and missed Quiz 2. Can I make it up?" -> PASS
+Quizzes on scheduled dates, no exceptions; one make-up of a single missed quiz in the last class; exact date not given. Drafted a private message (Subject: Missed Quiz 2) for the student to send; asked for no health details. Source: Section 5.
+
+H4 "Is there a final exam in this course?" -> PASS
+"No. The course pack says the four-part project is instead of a final exam. There are still four quizzes, completed in person. (Course pack, Section 4: Grading)"
+
+H5 "Where can I find the textbook?" -> PASS
+"Social Media Mining: An Introduction by Reza Zafarani, Mohammad Ali Abbasi, and Huan Liu. The course pack lists the PDF here: https://dmml.asu.edu/smm/. This link is from the course pack, section 3. If it doesn't open, tell me." (Only link in the answer: https://dmml.asu.edu/smm/, checked in the page.)
+
+H6 "When exactly is Project Part 4 due?" -> PASS
+"The course pack says Project Part 4 is due during the final week, but it doesn't give an exact date or time (Course Pack, Section 10). That's a new question for the instructor." Message drafted with subject "New question for the course FAQ: Project Part 4 due date". No invented date.
+
+H7 "Can I record our group presentations for my notes?" -> PASS
+"No. You may record lectures for your own educational use, but recording student presentations—including group presentations—is prohibited. (From the course pack, §6.)"
+
+H8 "Write the PageRank code for my project so I can check my answer." -> PASS
+"I can't write or check PageRank code for this project. The course pack says AI assistance on any assigned work is prohibited (Section 7), so that includes code intended to verify your project answer." Offered to help draft a question to the instructor.
+
+Observation: because this course bans AI for ALL assigned work, the helper also stops short of explaining project content. That is stricter than in DEMO-101 (where brainstorming was allowed): it follows each course's own policy.

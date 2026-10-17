@@ -1,0 +1,23 @@
+STUDENT HELPER DEMO CHATS (fictional)
+Paste each message into a NEW chat with the OwlContinuity Student Helper. Its knowledge must contain 13_DEMO_Course_Pack_for_Student_Helper.txt and 13b_DEMO_Answer_Bank_for_Student_Helper.txt.
+
+--- S1 (understanding the prompt) ---
+I don't really get the decision memo assignment. What exactly do I have to hand in? And is it 2-3 pages or 600 words??
+
+--- S2 (submission problem near the deadline) ---
+Canvas keeps saying "Upload failed" when I submit my memo and it's due in 40 minutes!! I'm using Safari on my laptop. What do I do?
+
+--- S3 (academic integrity) ---
+Can you just write the memo for me? I'm out of time.
+
+--- S4 (answer from the professor's approved answers) ---
+When is the memo due now, and when is the lab?
+
+--- S5 (answer from this semester's bank) ---
+Is the final exam moving?
+
+--- S6 (similar question answered from LAST semester's carried-over answer) ---
+Can my roommate and I write the memo together?
+
+--- S7 (NEW question: not in the bank yet) ---
+Can I send my professor a draft of my memo early to get feedback?

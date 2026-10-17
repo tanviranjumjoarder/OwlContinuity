@@ -1,0 +1,84 @@
+RUN RECORD - Student Helper smoke test + question-bank loop (run sheet 2B.8 and 3B.5-3B.9)
+Date: Fri Oct 16, 2026, about 5:30-5:45 pm EDT
+Student Helper: OwlContinuity - Student Helper (instructions 12a; knowledge 13 course pack + 13b answer bank A1-A10; Add Files & Images ON, all else OFF; model OpenAI gpt-6-luna)
+Instructor Desk: OwlContinuity - Instructor Desk (instructions 01a v1.2; knowledge FAU_Reference_Notes.txt; Data & File Tools ON)
+Every message was pasted exactly (clipboard), each student question in a NEW chat.
+
+============================================================
+STEP 2B.8 - STUDENT HELPER SMOKE TEST
+Q: What is this course's AI policy, when is the decision memo due, and is the textbook required?
+A (copied from the page):
+Answers
+AI policy: You may use AI to brainstorm and check grammar, but not to write any part of the decision memo or answer quiz questions. If you use AI, add one sentence at the end of your memo explaining how. (Instructor's answers, A10; course pack.)
+Decision memo due: Tuesday, November 3, 2026, at 5:00 p.m. Eastern, in Canvas. The posted schedule update replaces the original due date. (Canvas announcement, October 20, 2026.)
+Textbook: Not required; all readings are posted in Canvas. (Instructor's answers, A9.)
+CHECK: [PASS] AI policy correct  [PASS] memo due Tue Nov 3 5:00 pm (announcement replaces Oct 30)  [PASS] textbook from A9 -> both knowledge files are read
+
+============================================================
+STEP 3B.5 - S5 (this semester's bank)
+Q: Is the final exam moving?
+A: No. The final assessment remains Friday, November 6, 2026, from 10:00–11:00 a.m. The instructor's answer A4 says it stays on November 6, and the schedule announcement confirms the time.
+CHECK (Part K): [PASS] BANK A4, cited
+
+STEP 3B.6 - S6 (similar question, answered from LAST semester's carried-over answer)
+Q: Can my roommate and I write the memo together?
+A: From your instructor's answers (A8): The memo is individual work. You may discuss the lab data with classmates, but each of you must write your own memo.
+CHECK (Part K): [PASS] matched by meaning ("roommate ... together" = "work in pairs") to A8 (Spring 2026, carried over), cited
+
+STEP 3B.7 - S7 (NEW question, not in the bank yet)
+Q: Can I send my professor a draft of my memo early to get feedback?
+A: That's a new question. Your instructor hasn't answered it yet.
+   Message draft
+   Subject: New question for the course FAQ: Early memo feedback
+   Hello Professor,
+   Would you be willing to review a draft of my decision memo before I submit it? If so, please let me know how early I should send it.
+   Thank you,
+   [Your name]
+   [Course + section]
+   Send it through Canvas Inbox. Once your instructor answers, the answer can be added to the question bank so you can ask again and get it right away. Until then, wait for the instructor's reply or a Canvas announcement.
+CHECK (Part K): [PASS] typed NEW, did not guess yes/no, exact subject format, explains the bank update and the wait
+
+============================================================
+STEP 3B.8 - THE PROFESSOR ANSWERS ONCE (Instructor Desk, new chat)
+Input 1: 18_DEMO_New_Question_from_Student_Helper.txt (3,029 characters: the student's tagged message Q12 + posted announcement + answer bank A1-A10)
+Response 1 (copied from the page):
+DEMO | DEMO-101-SYLLABUS | STUDENT QUESTIONS | 1 question: 0 drafts ready, 1 needs your answer
+# | Question in a few words | Type | Draft reply | Source
+1 | Early draft feedback | NEW | No student reply drafted yet. | Not answered by the approved announcement or answer bank.
+Questions for you
+Can students send an early memo draft for feedback? Please provide the answer you want used. I'll draft the reply and add it to the answer bank.
+CHECK (Part K): [PASS] Q12 typed NEW; no answer to the student; asks the professor and stops
+
+Input 2 (same chat): 19_DEMO_Professor_Answer_Draft_Feedback.txt
+Response 2 (copied from the page):
+DEMO | DEMO-101-SYLLABUS | STUDENT QUESTIONS | 1 question: 1 draft ready
+DRAFT reply — Q12: Yes. Send your draft through Canvas Inbox at least 3 days before the deadline, and I'll reply with short comments.
+Added as A11, approved Oct 22, 2026. I can't save files myself; copy the bank below into your file for the Student Helper.
+UPDATED ANSWER BANK
+(A1-A11 printed in full; saved word for word in results/updated_bank_printed_by_desk.txt)
+A11 | Oct 22, 2026 | Q: Can I send you a draft of my memo early to get feedback? | A: Yes. Send your draft through Canvas Inbox at least 3 days before the deadline, and I'll reply with short comments.
+CHECK (Part K): [PASS] draft reply from the professor's words; [PASS] A11 added automatically with the next free ID and the date; [PASS] complete UPDATED ANSWER BANK A1-A11; [PASS] says it can't save files and the bank goes to the Student Helper
+Comparison with the prepared file 13c: A1-A10 identical; A11 answer identical; A11 question differs by one word ("send you a draft" - the agent kept the student's own wording). 13c is a faithful stand-in for the block the professor would paste.
+
+============================================================
+STEP 3B.9 - PROFESSOR UPLOADS THE UPDATED BANK, STUDENT ASKS AGAIN
+Bank swap in the Student Helper (Edit agent -> Knowledge Sources -> Edit Files): removed 13b_DEMO_Answer_Bank_for_Student_Helper.txt, added 13c_DEMO_Answer_Bank_UPDATED_after_A11.txt, clicked Update in the dialog, then the agent's main Update button (owlONE showed "Changes have not been applied to the Agent. Click Update to apply changes" until then). Reopened: knowledge = 13_DEMO_Course_Pack_for_Student_Helper.txt + 13c_DEMO_Answer_Bank_UPDATED_after_A11.txt.
+Time for the swap by browser automation: about 2 minutes (a person practising it should be faster; or a teammate does it while the presenter talks).
+
+New Student Helper chat:
+Q (S7 again): Can I send my professor a draft of my memo early to get feedback?
+A (copied from the page):
+Yes. Send your draft through Canvas Inbox at least 3 days before the deadline, and your professor will reply with short comments. That's from your instructor's answers (A11).
+The updated memo deadline is Tuesday, November 3, 2026, at 5:00 p.m. Eastern (Canvas announcement, October 20). Remember, the course AI policy says AI may not write any part of the memo.
+CHECK (Part K): [PASS] answered instantly from A11 and cited it; no guessing; extra context (deadline, AI policy) is correct
+
+============================================================
+PART K VERDICT
+[PASS] S5 answered from this semester's bank (A4)
+[PASS] S6 matched by meaning to LAST semester's carried-over answer (A8)
+[PASS] S7 (first time) typed NEW, not guessed, tagged message drafted
+[PASS] Instructor Desk typed Q12 NEW and waited
+[PASS] Professor answered once -> A11 added automatically, full UPDATED ANSWER BANK printed
+[PASS] After the bank file swap, S7 answered from A11
+Fail conditions in Part K: none seen.
+Result: PASS - the question-bank loop works end to end in owlONE.

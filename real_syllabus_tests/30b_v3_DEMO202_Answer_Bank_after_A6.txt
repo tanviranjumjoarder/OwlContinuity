@@ -1,0 +1,15 @@
+ANSWER BANK - DEMO-202 (FALL 2026)
+The instructor's approved questions and answers. Upload this file to the "OwlContinuity Student Helper - DEMO-202" agent next to the course pack (30_v2), and replace it whenever the Instructor Desk prints an UPDATED ANSWER BANK.
+Format: ID | semester or date approved | question | approved answer.
+These entries are TEST VALUES set by the team for a competition demonstration. They are not the real instructor's answers.
+
+=== THIS SEMESTER (A) ===
+A1 | Oct 15, 2026 | Q: When is Quiz 3? | A: Quiz 3 is on Tuesday, October 27, 12:30 pm, in person in a campus classroom. It covers Lectures #10-#13.
+A2 | Oct 15, 2026 | Q: When is Project Part 3 due? | A: Thursday, November 19, 11:59 pm, in Canvas.
+A3 | Aug 2026 | Q: How do I submit project parts? | A: Submit one Jupyter notebook (.ipynb) and one PDF report in Canvas, named Lastname_ProjectPartN (for example Lee_ProjectPart3.ipynb and Lee_ProjectPart3.pdf).
+A4 | Aug 2026 | Q: Is the project individual or group work? | A: Individual. You may discuss ideas with classmates, but write your own code and your own report.
+A5 | Aug 2026 | Q: When is the make-up quiz? | A: Thursday, December 3, in the last class. You may make up one missed quiz only.
+A6 | Oct 24, 2026 | Q: When is Project Part 4 due? | A: Project Part 4 is due Friday, December 4, 2026, at 11:59 pm in Canvas.
+
+=== GENERAL RULES (G) ===
+(None yet.)

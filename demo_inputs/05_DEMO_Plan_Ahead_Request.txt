@@ -1,0 +1,45 @@
+MODE: DEMO
+CASE: DEMO-101-SYLLABUS
+REQUEST: PLAN AHEAD. No disruption has happened yet. Using my syllabus and rules below, make my one-page backup plan before hurricane season: fragile items, domino map, backups I should arrange now, alternatives to discuss with my chair, a holding announcement template and an on-the-day checklist.
+Everything below is fictional and invented for a competition demonstration. DEMO-101 is not a real FAU course.
+
+=== MY SYLLABUS (schedule section, pasted as is) ===
+DEMO-101 Business Decision Workshop | Boca Raton | Fall 2026 module, Oct 19 - Nov 6
+All times Eastern (America/New_York). Clocks fall back on Sunday, Nov 1.
+Learning goals: (1) read an evidence table, (2) compare two business options, (3) write and defend a short decision memo.
+
+Week 1
+- Mon Oct 19, 10:00-10:50 am: Lesson, Evidence methods (goal 1)
+- Wed Oct 21, 10:00-10:50 am: Lesson, Comparing options (goal 2). Builds on Monday's lesson.
+- Fri Oct 23, 1:00-2:50 pm: Lab in the campus equipment room (goal 1). Uses Monday's lesson.
+
+Week 2
+- Mon Oct 26, 10:00-10:30 am: Quiz 1 on both lessons (goals 1 and 2)
+- Wed Oct 28, 10:00-10:50 am: Lesson, Writing a decision memo (goal 3)
+- Fri Oct 30, 5:00 pm: Decision memo due (goals 1 and 3). Uses the lab and the memo lesson.
+
+Week 3
+- Mon Nov 2, 10:00-10:50 am: Optional practice workshop (all goals)
+- Wed Nov 4, 10:00-10:50 am: Review session, after the quiz and the memo (all goals)
+- Fri Nov 6, 10:00-11:00 am: Final assessment (all goals)
+
+Nothing else is scheduled in this module. I don't know other courses' schedules.
+
+=== MY RULES (in my own words) ===
+1. Every required class and its goal has to happen. Don't drop anything. The Nov 2 workshop is optional, but don't turn it into something else without asking me. Leave things alone unless you have to move them.
+2. The final on Fri Nov 6, 10:00-11:00 am is fixed. It cannot move.
+3. Order and prep time. Always measure from when the earlier thing ENDS:
+   - The comparing-options lesson has to come after the evidence lesson ends.
+   - The lab has to be at least 24 hours after the evidence lesson ends.
+   - Quiz 1 needs at least 48 hours after BOTH lessons have ended.
+   - The memo is due at least 48 hours after BOTH the lab and the memo lesson have ended.
+   - The review comes after Quiz 1 ends and after the memo is due.
+   - The final is at least 24 hours after the review ends.
+4. Quiz 1 (its start), the memo (its due time) and the final (its start) must be at least 48 hours apart, and never two of them on the same day.
+5. The lab needs the physical equipment. It can only happen at its original time (Fri Oct 23, 1:00-2:50 pm) or at the backup lab time, Thu Oct 29, 1:00-2:50 pm. Both are confirmed for this demo. No online version of the lab is allowed.
+6. My make-up lesson times (50 minutes each, each usable once): Thu Oct 22 10:00-10:50 am; Fri Oct 23 10:00-10:50 am; Mon Oct 26 3:00-3:50 pm; Tue Oct 27 10:00-10:50 am; Thu Oct 29 10:00-10:50 am. Use the earliest ones that work, with the fewest changes.
+7. Other options I have: Quiz 1 can stay where it is or move to 3:00-3:30 pm on Tue Oct 27, Thu Oct 29 or Mon Nov 2. The memo can stay or be due Tue Nov 3 at 5:00 pm. The review can stay or move to Thu Nov 5, 9:00-9:50 am. Nothing else is available.
+8. The memo lesson on Wed Oct 28 stays where it is. No two live sessions can overlap. Nothing required can go inside a closure, and a closure can knock out a make-up time.
+9. Anything new and digital needs a text version, and recordings need captions. I will check accessibility and whether a replacement is really equivalent.
+10. I review everything; you only draft. If something can't be done, tell me what I need to decide. Don't guess a room and don't drop a class.
+

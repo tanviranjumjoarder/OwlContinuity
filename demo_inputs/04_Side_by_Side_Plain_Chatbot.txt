@@ -1,0 +1,32 @@
+SIDE-BY-SIDE TEST: PLAIN owlONE CHAT vs OWLCONTINUITY
+Purpose: show judges what our agent adds over "just asking the AI". This is our innovation proof and our measured result.
+The plain-chat prompt is the kit's own baseline (05_evidence/Basic_Baseline_Prompt.txt), unchanged.
+
+FAIR-TEST RULES (do not skip; judges may ask)
+- Same model in both (write down the exact model name owlONE shows).
+- Same inputs in both: 02_knowledge/FAU_Reference_Notes.txt (from the kit), then 02_DEMO_Syllabus_Case.txt, then 03_DEMO_Live_Update.txt.
+- The plain chat gets NO agent instructions, only the kit's baseline prompt below.
+- A fresh conversation for each tool.
+- Score both with Part E of 06_Answer_Check_DO_NOT_UPLOAD.txt, and fill in one copy of the kit's 05_evidence/Run_Log_Template.txt per run.
+- We do NOT know the result in advance. If the plain chat does just as well, say so honestly in the pitch. Our value then rests on the math table, the consistent packet and the safety rules, not on accuracy.
+
+------------------------------------------------------------
+STEP 1. Open a NEW plain owlONE chat (not an OwlContinuity agent). Attach the kit's FAU_Reference_Notes.txt (or paste it). Then paste this prompt, with the whole of 02_DEMO_Syllabus_Case.txt under it:
+
+Using the same attached course, disruption notice, instructor constraints and FAU reference notes, help the instructor revise the course schedule and draft a student announcement. Identify conflicts and explain your recommendations. Treat this as a fictional demonstration and do not publish anything.
+
+------------------------------------------------------------
+STEP 2. In the same plain chat, after it answers, paste this line, with the whole of 03_DEMO_Live_Update.txt under it:
+
+Update: the closure was extended. Here is the new notice. Please update the schedule and the announcement.
+
+------------------------------------------------------------
+STEP 3. Do steps 1 and 2 again in a NEW conversation with the OwlContinuity Instructor Desk. Its reference notes are already in its knowledge, so paste only the two demo files; their request lines are already inside them.
+
+------------------------------------------------------------
+STEP 4. Save both final answers as text files:
+  plain_chat_run1.txt
+  owlcontinuity_run1.txt
+Fill in the scorecard. Take one screenshot of each tool's answer about the memo due date. Those two screenshots are slide 4 of the pitch.
+
+If time allows, repeat once more (run 2) to see whether the results are stable. Report the number of runs honestly, for example "2 runs each".

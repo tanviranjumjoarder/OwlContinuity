@@ -1,0 +1,61 @@
+RUN RECORD - Side-by-side baseline: plain owlONE chat (run sheet 4.1-4.2)
+Date/time: Fri Oct 16, 2026, about 4:58-5:12 pm EDT
+Tool: plain owlONE chat ("ONEchat"), NOT an agent; model selector showed "GPT-6 Luna" (same model as the Instructor Desk's "OpenAI (gpt-6-luna)")
+Attached: FAU_Reference_Notes.txt (same knowledge file as the agent)
+Prompt: the kit's 05_evidence/Basic_Baseline_Prompt.txt, followed by the whole of 02_DEMO_Syllabus_Case.txt (4,631 characters total, pasted exactly)
+Then, same chat: "Update: the closure was extended. Here is the new notice. Please update the schedule and the announcement." + the whole of 03_DEMO_Live_Update.txt (915 characters)
+Plain-chat settings we could see: it generated its answers as a Markdown document ("artifact") and the page says "This agent uses external data sources" (web access appears to be on by default in plain chat). We did not change any plain-chat setting.
+Timing (from send to finished answer): round 1 about 2-3 minutes; round 2 about 9 minutes (it showed "Thinking..." for about 7 minutes before writing). No platform errors.
+
+============================================================
+ROUND 1 - chat reply
+Recommended plan: move the two disrupted lessons to Thu Oct 22 and Fri Oct 23, then keep the lab and all later items unchanged. The timing checks pass, including the minimum gaps and the Nov 1 daylight-saving change. One scenario inconsistency to resolve before any real use: the fictional notice is dated Oct 18, while the supplied session date is Oct 16.
+
+ROUND 1 - generated document "DEMO-101 Schedule Revision Plan" (v1), key parts copied from the page
+- Plan: Evidence methods -> Thu Oct 22 10:00-10:50; Comparing options -> Fri Oct 23 10:00-10:50; lab, quiz, memo lesson, memo deadline, optional workshop, review and final unchanged. (CORRECT)
+- Flags a "scenario-timeline mismatch": the notice's Oct 18 issue date is later than the session's Oct 16 date. (Not a real problem: the scenario is set in the future on purpose.)
+- Math check (as written by the plain chat):
+  E01 end Thu Oct 22 10:50 -> E02 Fri Oct 23 10:00: 23 hours 10 minutes (correct)
+  E01 end -> Lab Fri Oct 23 1:00 pm: 26 hours 10 minutes (correct)
+  E02 end Fri Oct 23 10:50 -> Quiz Mon Oct 26 10:00: 71 hours 10 minutes (correct)
+  Lab end Fri Oct 23 2:50 pm -> Memo due Fri Oct 30 5:00 pm: 174 hours 10 minutes  <-- WRONG: correct is 170h 10m (no clock change in this span). Still passes the 48h rule.
+  Memo lesson end -> Memo due: 54 hours 10 minutes (correct)
+  Quiz end -> Review: 216 hours 30 minutes (correct)
+  Memo due -> Review: 114 hours (correct)
+  Review end -> Final: 47 hours 10 minutes (correct)
+  Quiz start -> Memo due: 103 hours (correct); Memo due -> Final: 162 hours (correct); Quiz start -> Final: 265 hours (correct)
+  It does not say how it calculated (no "calculated with code").
+- Student announcement draft: full revised schedule, "I will review this draft ... before sending"; leaves the room to "the course's normal location information".
+- Instructor review notes; reference-note boundary paragraph; S1-S3 links.
+
+============================================================
+ROUND 2 - chat reply
+Updated the plan and announcement for simulated notice D1. The revised schedule moves the two lessons, lab, quiz, and memo deadline; the plan includes the domino effects, timing checks, and change log. It remains a fictional draft for instructor review and is not published.
+
+ROUND 2 - generated document "DEMO-101 Schedule Revision Plan — v2", key parts copied from the page
+Recommended revised schedule:
+  Mon Oct 26, 3:00-3:50 pm   Evidence methods (moved; earliest usable make-up slot after the closure and weekend)
+  Tue Oct 27, 10:00-10:50 am Comparing options (moved; next earliest usable slot)
+  Thu Oct 29, 1:00-2:50 pm   In-person lab (moved to the confirmed backup time)
+  Thu Oct 29, 3:00-3:30 pm   Quiz 1 (moved; earliest listed option satisfying the 48-hour rule)
+  Wed Oct 28, 10:00-10:50 am Memo lesson (unchanged)
+  Tue Nov 3, 5:00 pm         Memo due (moved; "the lab's new date makes the original deadline too early for the 48-hour rule")
+  Mon Nov 2                  Optional workshop (unchanged, still optional)
+  Wed Nov 4                  Review (unchanged)
+  Fri Nov 6, 10:00-11:00 am  Final (unchanged, fixed)
+Domino effects (its words): "Quiz must move. ... Tue Oct 27 at 3:00 p.m. is less than 48 hours after Comparing options ends ... Memo deadline must move. Fri Oct 30 at 5:00 p.m. is only 26 hours 10 minutes after the moved lab ends Thu Oct 29 at 2:50 p.m., short of the required 48 hours."
+Math check (all correct): 18h10m; 69h10m; 52h10m; 123h10m (including the clock fallback); 151h10m; 139h30m; 17h; 47h10m; 123h; 65h; 188h.
+"No live sessions overlap ... 10-minute transition." Change log present. Announcement draft lists the full revised schedule and says it is a draft for instructor review.
+
+============================================================
+SCORECARD - 06_Answer_Check PART E (after the extended closure)
+                                               Plain chat   OwlContinuity
+1 Memo moved to Nov 3 because of the lab           yes          yes
+2 Quiz moved to Oct 29 3:00 pm                     yes          yes
+3 Final kept fixed                                 yes          yes
+4 Lab kept physical (Oct 29 backup)                yes          yes
+5 Nothing in the closure or the weekend            yes          yes
+6 Every event accounted for                        yes          yes
+7 Shows time math a human can check                yes          yes
+8 Announcement matches the plan                    yes          yes
+TOTAL                                              8/8          8/8      (1 run each, same model, same inputs)

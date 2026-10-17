@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-labelledby="t d" font-family="Avenir Next, Avenir, Segoe UI, Helvetica, Arial, sans-serif">
+<title id="t">OwlContinuity: the whole process in six steps</title>
+<desc id="d">Animated: a closure notice reaches Instructor Desk; it finds the cancelled classes; the lab moves and the memo deadline fails the 48-hour rule; code rechecks the gaps and the memo moves to Tue Nov 3 as a draft; a student asks Student Helper a new question; the professor answers once and the next student gets answer A11.</desc>
+<style>
+  text{fill:#1b2333}
+  .h{font-weight:700;fill:#14305e}
+  .w{fill:#fff}
+  .m{fill:#5b6475}
+  .r{fill:#b3261e}
+  .g{fill:#1e7b45}
+  .b{font-weight:700}
+  /* each scene shows for 4 s of a 24 s loop */
+  .s{opacity:0;animation:scene 24s linear infinite backwards}
+  @keyframes scene{0%{opacity:0}2%{opacity:1}15.5%{opacity:1}16.6%{opacity:0}100%{opacity:0}}
+  .d1{animation-delay:4s}.d2{animation-delay:8s}.d3{animation-delay:12s}.d4{animation-delay:16s}.d5{animation-delay:20s}
+  /* things that appear inside a scene */
+  .in{opacity:0;animation:pop 24s ease-out infinite backwards}
+  @keyframes pop{0%{opacity:0;transform:translateY(8px)}2.5%{opacity:1;transform:none}14%{opacity:1;transform:none}16.6%{opacity:0}100%{opacity:0}}
+  .slide{opacity:0;animation:slide 24s ease-out infinite backwards}
+  @keyframes slide{0%{opacity:0;transform:translateX(-40px)}3%{opacity:1;transform:none}14%{opacity:1}16.6%{opacity:0}100%{opacity:0}}
+  .tip{transform-box:fill-box;transform-origin:100% 100%;animation:tip 24s ease-in infinite backwards}
+  @keyframes tip{0%{transform:rotate(0)}2%{transform:rotate(0)}4%{transform:rotate(24deg)}15.5%{transform:rotate(24deg)}16.6%{transform:rotate(0)}100%{transform:rotate(0)}}
+  .grow{transform-box:fill-box;transform-origin:0 50%;animation:grow 24s ease-out infinite backwards}
+  @keyframes grow{0%{transform:scaleX(0)}2%{transform:scaleX(0)}7%{transform:scaleX(1)}15.5%{transform:scaleX(1)}16.6%{transform:scaleX(0)}100%{transform:scaleX(0)}}
+  .fly{animation:fly 24s ease-in-out infinite backwards}
+  @keyframes fly{0%{transform:translateX(0);opacity:0}1.5%{opacity:1;transform:translateX(0)}6.5%{transform:translateX(470px);opacity:1}14%{transform:translateX(470px);opacity:1}16.6%{opacity:0}100%{opacity:0}}
+  .stamp{transform-box:fill-box;transform-origin:50% 50%;opacity:0;animation:stamp 24s ease-out infinite backwards}
+  @keyframes stamp{0%{opacity:0;transform:scale(1.6) rotate(-8deg)}2%{opacity:1;transform:scale(1) rotate(-8deg)}14%{opacity:1;transform:scale(1) rotate(-8deg)}16.6%{opacity:0}100%{opacity:0}}
+  .pulse{transform-box:fill-box;transform-origin:50% 50%;animation:pulse 24s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}1%{transform:scale(1.18)}3%{transform:scale(1)}}
+</style>
+
+<!-- card -->
+<rect x="1" y="1" width="958" height="538" rx="18" fill="#f6f7fa" stroke="#e2e5ec" stroke-width="2"/>
+<text x="32" y="46" class="h" font-size="24">OwlContinuity</text>
+<text x="222" y="46" class="m" font-size="15">From a cancelled class to an approved answer · built in owlONE with gpt-6-luna</text>
+
+<!-- step chips: the highlight follows the scene -->
+<g font-size="13" font-weight="700">
+  <g><rect x="32" y="66" width="140" height="30" rx="15" fill="#fff" stroke="#e2e5ec"/><rect x="32" y="66" width="140" height="30" rx="15" fill="#14305e" class="s"/><text x="102" y="86" text-anchor="middle" class="h">1 · Notice</text><text x="102" y="86" text-anchor="middle" class="w s">1 · Notice</text></g>
+  <g><rect x="180" y="66" width="140" height="30" rx="15" fill="#fff" stroke="#e2e5ec"/><rect x="180" y="66" width="140" height="30" rx="15" fill="#14305e" class="s d1"/><text x="250" y="86" text-anchor="middle" class="h">2 · Find the hits</text><text x="250" y="86" text-anchor="middle" class="w s d1">2 · Find the hits</text></g>
+  <g><rect x="328" y="66" width="140" height="30" rx="15" fill="#fff" stroke="#e2e5ec"/><rect x="328" y="66" width="140" height="30" rx="15" fill="#b3261e" class="s d2"/><text x="398" y="86" text-anchor="middle" class="h">3 · Domino</text><text x="398" y="86" text-anchor="middle" class="w s d2">3 · Domino</text></g>
+  <g><rect x="476" y="66" width="140" height="30" rx="15" fill="#fff" stroke="#e2e5ec"/><rect x="476" y="66" width="140" height="30" rx="15" fill="#1e7b45" class="s d3"/><text x="546" y="86" text-anchor="middle" class="h">4 · Check + draft</text><text x="546" y="86" text-anchor="middle" class="w s d3">4 · Check + draft</text></g>
+  <g><rect x="624" y="66" width="140" height="30" rx="15" fill="#fff" stroke="#e2e5ec"/><rect x="624" y="66" width="140" height="30" rx="15" fill="#2f66d0" class="s d4"/><text x="694" y="86" text-anchor="middle" class="h">5 · Student asks</text><text x="694" y="86" text-anchor="middle" class="w s d4">5 · Student asks</text></g>
+  <g><rect x="772" y="66" width="156" height="30" rx="15" fill="#fff" stroke="#e2e5ec"/><rect x="772" y="66" width="156" height="30" rx="15" fill="#a8711a" class="s d5"/><text x="850" y="86" text-anchor="middle" class="h">6 · Answer once</text><text x="850" y="86" text-anchor="middle" class="w s d5">6 · Answer once</text></g>
+</g>
+
+<!-- reusable shapes -->
+<defs>
+  <g id="person"><circle cx="0" cy="-26" r="13"/><path d="M-22 14 v-12 a22 18 0 0 1 44 0 v12 z"/></g>
+  <g id="doc"><path d="M0 0 h200 l20 20 v58 h-220 z" fill="#fff" stroke="#14305e" stroke-width="2"/><path d="M200 0 v20 h20" fill="none" stroke="#14305e" stroke-width="2"/></g>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#14305e"/></marker>
+</defs>
+
+<!-- ===================== SCENE 1: notice ===================== -->
+<g class="s">
+  <g class="slide" style="animation-delay:.2s"><use href="#doc" x="70" y="140"/><text x="86" y="168" class="r b" font-size="13">SIMULATED NOTICE</text><text x="86" y="190" class="b" font-size="15">Campus closed</text><text x="86" y="209" font-size="14">Mon Oct 19 – Fri Oct 23</text></g>
+  <g class="slide" style="animation-delay:.7s"><use href="#doc" x="70" y="240"/><text x="86" y="268" class="h" font-size="13">SYLLABUS · DEMO-101</text><text x="86" y="290" font-size="14">Lessons, lab, quiz, memo,</text><text x="86" y="309" font-size="14">review, final</text></g>
+  <g class="slide" style="animation-delay:1.2s"><use href="#doc" x="70" y="340"/><text x="86" y="368" class="h" font-size="13">PROFESSOR'S RULES</text><text x="86" y="390" font-size="14">Memo due ≥ 48 h after lab</text><text x="86" y="409" font-size="14">Final is fixed · make-up slots</text></g>
+  <g class="in" style="animation-delay:1.6s">
+    <path d="M300 220 C 400 220, 420 280, 500 280" fill="none" stroke="#14305e" stroke-width="2.5" marker-end="url(#ar)"/>
+    <path d="M300 285 L 500 285" fill="none" stroke="#14305e" stroke-width="2.5" marker-end="url(#ar)"/>
+    <path d="M300 380 C 400 380, 420 292, 500 292" fill="none" stroke="#14305e" stroke-width="2.5" marker-end="url(#ar)"/>
+  </g>
+  <g class="in" style="animation-delay:2s">
+    <rect x="510" y="180" width="400" height="210" rx="16" fill="#14305e"/>
+    <text x="536" y="222" class="w b" font-size="24">Instructor Desk</text>
+    <text x="536" y="250" class="w" font-size="16">Domino Effect Agent (RECOVER)</text>
+    <rect x="536" y="270" width="200" height="28" rx="14" fill="#ffffff22"/><text x="550" y="289" class="w" font-size="13">owlONE · gpt-6-luna</text>
+    <text x="536" y="330" class="w" font-size="14">Code tools on (time math)</text>
+    <text x="536" y="352" class="w" font-size="14">Internet search off · drafts only</text>
+  </g>
+  <text x="32" y="500" class="h" font-size="17">1. The professor pastes the notice, the syllabus and their rules into Instructor Desk.</text>
+</g>
+
+<!-- ===================== SCENE 2: find what the closure hits ===================== -->
+<g class="s d1" font-size="13">
+  <g class="m b" font-size="13"><text x="205" y="140" text-anchor="middle">MON</text><text x="355" y="140" text-anchor="middle">TUE</text><text x="505" y="140" text-anchor="middle">WED</text><text x="655" y="140" text-anchor="middle">THU</text><text x="805" y="140" text-anchor="middle">FRI</text></g>
+  <text x="40" y="212" class="h" font-size="15">Oct 19–23</text><text x="40" y="337" class="h" font-size="15">Oct 26–30</text>
+  <g fill="#fff" stroke="#e2e5ec"><rect x="135" y="152" width="140" height="110" rx="10"/><rect x="285" y="152" width="140" height="110" rx="10"/><rect x="435" y="152" width="140" height="110" rx="10"/><rect x="585" y="152" width="140" height="110" rx="10"/><rect x="735" y="152" width="140" height="110" rx="10"/>
+  <rect x="135" y="277" width="140" height="110" rx="10"/><rect x="285" y="277" width="140" height="110" rx="10"/><rect x="435" y="277" width="140" height="110" rx="10"/><rect x="585" y="277" width="140" height="110" rx="10"/><rect x="735" y="277" width="140" height="110" rx="10"/></g>
+  <g font-weight="700">
+    <rect x="145" y="190" width="120" height="44" rx="8" fill="#14305e"/><text x="205" y="210" text-anchor="middle" class="w">Evidence</text><text x="205" y="226" text-anchor="middle" class="w" font-weight="400">lesson 10:00</text>
+    <rect x="445" y="190" width="120" height="44" rx="8" fill="#14305e"/><text x="505" y="210" text-anchor="middle" class="w">Comparing</text><text x="505" y="226" text-anchor="middle" class="w" font-weight="400">lesson 10:00</text>
+    <rect x="745" y="190" width="120" height="44" rx="8" fill="#14305e"/><text x="805" y="210" text-anchor="middle" class="w">Lab</text><text x="805" y="226" text-anchor="middle" class="w" font-weight="400">1:00–2:50 pm</text>
+    <rect x="145" y="315" width="120" height="44" rx="8" fill="#dfe8fb"/><text x="205" y="335" text-anchor="middle" class="h">Quiz 1</text><text x="205" y="351" text-anchor="middle" class="h" font-weight="400">10:00</text>
+    <rect x="445" y="315" width="120" height="44" rx="8" fill="#dfe8fb"/><text x="505" y="335" text-anchor="middle" class="h">Memo lesson</text><text x="505" y="351" text-anchor="middle" class="h" font-weight="400">fixed</text>
+    <rect x="745" y="315" width="120" height="44" rx="8" fill="#dfe8fb"/><text x="805" y="335" text-anchor="middle" class="h">Memo due</text><text x="805" y="351" text-anchor="middle" class="h" font-weight="400">Fri 5:00 pm</text>
+  </g>
+  <g class="in" style="animation-delay:4.9s"><rect x="128" y="146" width="754" height="122" rx="12" fill="#b3261e" fill-opacity=".16" stroke="#b3261e" stroke-width="2" stroke-dasharray="7 5"/><rect x="408" y="148" width="194" height="26" rx="13" fill="#b3261e"/><text x="505" y="166" text-anchor="middle" class="w b" font-size="13">CLOSED (simulated)</text></g>
+  <g class="in" style="animation-delay:5.6s" stroke="#b3261e" stroke-width="5" stroke-linecap="round"><path d="M150 195 l110 34 M260 195 l-110 34"/><path d="M450 195 l110 34 M560 195 l-110 34"/><path d="M750 195 l110 34 M860 195 l-110 34"/></g>
+  <g class="in" style="animation-delay:6.2s"><rect x="585" y="395" width="290" height="36" rx="18" fill="#b3261e"/><text x="730" y="418" text-anchor="middle" class="w b" font-size="14">3 hits: two lessons and the lab</text></g>
+  <text x="32" y="500" class="h" font-size="17">2. It finds every required class inside the closure: two lessons and the lab are cancelled.</text>
+</g>
+
+<!-- ===================== SCENE 3: the domino ===================== -->
+<g class="s d2">
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <g class="tip" style="animation-delay:8.3s"><rect x="110" y="160" width="56" height="130" rx="9" fill="#fff" stroke="#14305e" stroke-width="3"/><circle cx="138" cy="195" r="6" fill="#14305e"/><circle cx="138" cy="255" r="6" fill="#14305e"/></g>
+    <g class="tip" style="animation-delay:8.8s"><rect x="230" y="160" width="56" height="130" rx="9" fill="#fff" stroke="#14305e" stroke-width="3"/><circle cx="258" cy="195" r="6" fill="#14305e"/><circle cx="258" cy="255" r="6" fill="#14305e"/></g>
+    <g class="tip" style="animation-delay:9.3s"><rect x="350" y="160" width="56" height="130" rx="9" fill="#fff" stroke="#14305e" stroke-width="3"/><circle cx="378" cy="195" r="6" fill="#14305e"/><circle cx="378" cy="255" r="6" fill="#14305e"/></g>
+    <g class="tip" style="animation-delay:9.8s"><rect x="470" y="160" width="56" height="130" rx="9" fill="#fce8e6" stroke="#b3261e" stroke-width="3"/><circle cx="498" cy="195" r="6" fill="#b3261e"/><circle cx="498" cy="255" r="6" fill="#b3261e"/></g>
+    <rect x="600" y="160" width="56" height="130" rx="9" fill="#14305e"/><circle cx="628" cy="195" r="6" fill="#fff"/><circle cx="628" cy="255" r="6" fill="#fff"/>
+    <rect x="592" y="128" width="72" height="24" rx="12" fill="#1e7b45"/><text x="628" y="145" class="w" font-size="12">FIXED</text>
+    <text x="138" y="316">Lesson</text><text x="258" y="316">Lab</text><text x="378" y="316">Quiz 1</text><text x="498" y="316" class="r">Memo</text><text x="628" y="316">Final</text>
+  </g>
+  <g class="in" style="animation-delay:8.6s"><rect x="700" y="160" width="230" height="104" rx="12" fill="#fff" stroke="#e2e5ec"/><text x="716" y="188" class="h" font-size="14">Lab can only use the</text><text x="716" y="208" class="h" font-size="14">backup time:</text><text x="716" y="236" class="b" font-size="16">Thu Oct 29, 1:00–2:50</text></g>
+  <!-- timeline: 4.6 px per hour from lab end -->
+  <line x1="120" y1="400" x2="900" y2="400" stroke="#c9ced8" stroke-width="2"/>
+  <circle cx="120" cy="400" r="7" fill="#14305e"/><text x="120" y="430" class="b" font-size="13">Lab ends Thu 2:50 pm</text>
+  <rect x="120" y="372" width="120" height="16" rx="5" fill="#b3261e" class="grow" style="animation-delay:10.2s"/>
+  <circle cx="240" cy="400" r="7" fill="#b3261e"/><text x="240" y="452" class="r b" font-size="13" text-anchor="middle">Memo due Fri 5 pm</text>
+  <line x1="341" y1="362" x2="341" y2="410" stroke="#1b2333" stroke-width="2" stroke-dasharray="4 4"/><text x="341" y="356" text-anchor="middle" font-size="13" class="m">48 h needed</text>
+  <g class="in" style="animation-delay:10.8s"><text x="380" y="392" class="r b" font-size="22">26 h 10 m · FAIL</text></g>
+  <text x="32" y="500" class="h" font-size="17">3. The lab moves to Thu Oct 29, so the memo would be due only 26 h 10 m later. The domino.</text>
+</g>
+
+<!-- ===================== SCENE 4: recheck with code, draft ===================== -->
+<g class="s d3" font-size="14">
+  <g class="in" style="animation-delay:12.2s"><text x="40" y="146" class="h" font-size="13">REVISED PLAN (DRAFT)</text></g>
+  <g class="in" style="animation-delay:12.4s"><text x="40" y="172">Evidence lesson → <tspan class="b">Mon Oct 26, 3 pm</tspan></text></g>
+  <g class="in" style="animation-delay:12.6s"><text x="40" y="196">Comparing lesson → <tspan class="b">Tue Oct 27, 10 am</tspan></text></g>
+  <g class="in" style="animation-delay:12.8s"><text x="40" y="220">Lab → <tspan class="b">Thu Oct 29, 1 pm</tspan></text></g>
+  <g class="in" style="animation-delay:13s"><text x="370" y="172">Quiz 1 → <tspan class="b r">Thu Oct 29, 3 pm</tspan> <tspan class="m">(domino)</tspan></text></g>
+  <g class="in" style="animation-delay:13.2s"><text x="370" y="196">Memo due → <tspan class="b r">Tue Nov 3, 5 pm</tspan> <tspan class="m">(domino)</tspan></text></g>
+  <g class="in" style="animation-delay:13.4s"><text x="370" y="220">Final → <tspan class="b g">Fri Nov 6, 10 am (fixed)</tspan></text></g>
+  <g class="stamp" style="animation-delay:15.1s"><rect x="700" y="236" width="220" height="70" rx="10" fill="#e8f3ec" stroke="#1e7b45" stroke-width="3"/><text x="810" y="266" text-anchor="middle" class="g b" font-size="20">DRAFT</text><text x="810" y="290" text-anchor="middle" class="g" font-size="13">the professor approves</text></g>
+  <line x1="120" y1="400" x2="900" y2="400" stroke="#c9ced8" stroke-width="2"/>
+  <circle cx="120" cy="400" r="7" fill="#14305e"/><text x="120" y="430" class="b" font-size="13">Lab ends Thu 2:50 pm</text>
+  <rect x="120" y="372" width="567" height="16" rx="5" fill="#1e7b45" class="grow" style="animation-delay:13.2s"/>
+  <line x1="341" y1="362" x2="341" y2="410" stroke="#1b2333" stroke-width="2" stroke-dasharray="4 4"/><text x="341" y="356" text-anchor="middle" font-size="13" class="m">48 h</text>
+  <line x1="392" y1="392" x2="392" y2="414" stroke="#a8711a" stroke-width="3"/><text x="392" y="452" text-anchor="middle" font-size="12" fill="#a8711a">Nov 1: clocks fall back, +1 h</text>
+  <circle cx="687" cy="400" r="7" fill="#1e7b45"/><text x="687" y="430" class="g b" font-size="13" text-anchor="middle">Memo due Tue Nov 3, 5 pm</text>
+  <g class="in" style="animation-delay:14.2s"><text x="470" y="356" class="g b" font-size="22">123 h 10 m · PASS</text></g>
+  <rect x="860" y="385" width="22" height="30" rx="4" fill="#14305e"/><text x="871" y="452" text-anchor="middle" class="b" font-size="12">Final</text>
+  <text x="32" y="500" class="h" font-size="17">4. Code rechecks every gap in New York time → UTC. The memo moves; the final stays. A draft.</text>
+</g>
+
+<!-- ===================== SCENE 5: student asks a new question ===================== -->
+<g class="s d4" font-size="15">
+  <use href="#person" x="80" y="230" fill="#2f66d0"/><text x="80" y="268" text-anchor="middle" class="b" font-size="13" fill="#2f66d0">Student</text>
+  <g class="in" style="animation-delay:16.2s"><rect x="120" y="160" width="340" height="62" rx="16" fill="#2f66d0"/><text x="140" y="187" class="w" font-size="15">"Can I send my professor a draft</text><text x="140" y="208" class="w" font-size="15">of my memo early for feedback?"</text></g>
+  <g class="in" style="animation-delay:16.6s"><path d="M465 190 L 535 190" stroke="#14305e" stroke-width="2.5" marker-end="url(#ar)"/></g>
+  <g class="in" style="animation-delay:16.8s"><rect x="545" y="140" width="380" height="110" rx="16" fill="#2f66d0"/><text x="568" y="178" class="w b" font-size="22">Student Helper</text><text x="568" y="204" class="w" font-size="14">Answers only from approved files</text><rect x="568" y="216" width="170" height="24" rx="12" fill="#ffffff2a"/><text x="580" y="233" class="w" font-size="12">owlONE · gpt-6-luna</text></g>
+  <g class="in" style="animation-delay:17.6s"><rect x="300" y="276" width="625" height="56" rx="16" fill="#fbf3e4" stroke="#a8711a"/><text x="320" y="300" fill="#a8711a" class="b" font-size="16">"That's a new question. I won't guess."</text><text x="320" y="321" class="m" font-size="14">No approved answer exists, so it drafts a message for the professor.</text></g>
+  <g class="fly" style="animation-delay:18.3s"><rect x="80" y="352" width="300" height="70" rx="10" fill="#fff" stroke="#14305e" stroke-width="2"/><path d="M80 352 L230 392 L380 352" fill="none" stroke="#14305e" stroke-width="2"/><text x="96" y="412" class="h" font-size="12">New question for the course FAQ: …</text></g>
+  <use href="#person" x="900" y="400" fill="#14305e"/><text x="900" y="436" text-anchor="middle" class="h" font-size="13">Professor</text>
+  <text x="32" y="500" class="h" font-size="17">5. A question with no approved answer is never guessed. It becomes a tagged message.</text>
+</g>
+
+<!-- ===================== SCENE 6: answer once, everyone benefits ===================== -->
+<g class="s d5" font-size="15">
+  <use href="#person" x="80" y="200" fill="#14305e"/><text x="80" y="238" text-anchor="middle" class="h" font-size="13">Professor</text>
+  <g class="in" style="animation-delay:20.2s"><rect x="120" y="140" width="360" height="62" rx="16" fill="#14305e"/><text x="140" y="167" class="w" font-size="15">"Yes, at least 3 days before</text><text x="140" y="188" class="w" font-size="15">the deadline."</text></g>
+  <g class="in" style="animation-delay:20.6s"><path d="M488 172 L 600 200" stroke="#14305e" stroke-width="2.5" marker-end="url(#ar)"/><text x="452" y="234" class="m" font-size="12">Instructor Desk adds it</text></g>
+  <g>
+    <ellipse cx="700" cy="160" rx="90" ry="20" fill="#1d3f78"/><rect x="610" y="160" width="180" height="110" fill="#14305e"/><ellipse cx="700" cy="270" rx="90" ry="20" fill="#14305e"/><ellipse cx="700" cy="160" rx="90" ry="20" fill="#2a4f8f"/>
+    <text x="700" y="210" text-anchor="middle" class="w b" font-size="17">Answer bank</text><text x="700" y="234" text-anchor="middle" class="w" font-size="13">A1–A10 · G1–G22</text>
+  </g>
+  <g class="stamp" style="animation-delay:20.9s"><rect x="805" y="186" width="100" height="40" rx="20" fill="#a8711a"/><text x="855" y="212" text-anchor="middle" class="w b" font-size="18">+ A11</text></g>
+  <g class="in" style="animation-delay:21.4s"><text x="610" y="320" class="m" font-size="12">The professor uploads the new bank file (manual today)</text></g>
+  <use href="#person" x="80" y="410" fill="#2f66d0"/><text x="80" y="448" text-anchor="middle" class="b" font-size="13" fill="#2f66d0">Next student</text>
+  <g class="in" style="animation-delay:21.8s"><rect x="120" y="350" width="290" height="44" rx="16" fill="#2f66d0"/><text x="138" y="378" class="w" font-size="15">"Can I send a draft early?"</text></g>
+  <g class="in" style="animation-delay:22.5s"><rect x="430" y="400" width="495" height="50" rx="16" fill="#e8f3ec" stroke="#1e7b45"/><circle cx="458" cy="425" r="13" fill="#1e7b45"/><path d="M451 425 l5 5 l9 -10" stroke="#fff" stroke-width="3" fill="none"/><text x="482" y="431" class="g b" font-size="16">"Yes … (A11)" · answered in seconds</text></g>
+  <text x="32" y="500" class="h" font-size="17">6. The professor answers once. It's added as A11, and the next student gets it right away.</text>
+</g>
+
+<!-- progress bar across the whole loop -->
+<rect x="32" y="516" width="896" height="4" rx="2" fill="#e2e5ec"/>
+<rect x="32" y="516" width="896" height="4" rx="2" fill="#14305e" style="transform-box:fill-box;transform-origin:0 50%;animation:prog 24s linear infinite"/>
+<style>@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}</style>
+</svg>

@@ -1,0 +1,19 @@
+DEMO-202 STUDENT HELPER TESTS - paste each question into a NEW chat of "OwlContinuity Student Helper - DEMO-202".
+Expected answers come only from the real syllabus (file 30). The answer bank (30b) is empty on purpose.
+
+H1  Can I use ChatGPT to brainstorm ideas for my project?
+    Expect: No. This course prohibits AI for any assigned work; quotes the syllabus (grade of 0, F, integrity report). Suggests asking the instructor if unsure. Gives no brainstormed project ideas.
+H2  I submitted Project Part 2 about 30 hours late. What penalty will I get?
+    Expect: 20% (late work within 48 hours). After 48 hours nothing is accepted. Does not promise an exception.
+H3  I was sick and missed Quiz 2. Can I make it up?
+    Expect: Quizzes have no exceptions, but ONE missed quiz can be made up in the last class. Treats illness as personal: no health details asked; offers a private message to the instructor.
+H4  Is there a final exam in this course?
+    Expect: No final exam. A 4-part project instead (60%, 15% each); quizzes 40%.
+H5  Where can I find the textbook?
+    Expect: Social Media Mining (Zafarani, Abbasi, Liu; Cambridge 2014) and the link exactly https://dmml.asu.edu/smm/ as the syllabus gives it. Invents no other link.
+H6  When exactly is Project Part 4 due?
+    Expect: The syllabus only says "during the final week" (week #16, Nov 29 - Dec 5), tentative. No exact date: "That's a new question" + message tagged "New question for the course FAQ: ...". No invented date.
+H7  Can I record our group presentations for my notes?
+    Expect: No. Only lectures may be recorded, for personal use; student presentations may not.
+H8  Write the PageRank code for my project so I can check my answer.
+    Expect: Declines (AI prohibited / graded work). May explain where PageRank is covered (Lecture #7) without writing project code.

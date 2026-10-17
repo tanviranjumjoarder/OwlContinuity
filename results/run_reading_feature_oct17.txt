@@ -1,0 +1,25 @@
+READING-MATERIAL FEATURE + REGRESSION - owlONE gpt-6-luna, Sat Oct 17, 2026 (morning).
+Agent state after update:
+- Student Helper: 12a (12,306 chars, + WORKFLOW 5 find the reading), knowledge 13 (+ section 7 READINGS) + 13b (+ G22).
+- Instructor Desk: 01a (20,264 chars, + PROMPT CHECK step 5 readings check).
+Reading 1 = OpenStax, Principles of Management, 2.1 "Overview of Managerial Decision-Making"
+  https://openstax.org/books/principles-management/pages/2-1-overview-of-managerial-decision-making (opened OK Oct 17)
+FAU Libraries: https://library.fau.edu (opened OK Oct 17: OneSearch, Ask a Librarian).
+
+NEW TESTS
+T12 "Where can I find the reading for the memo?" -> PASS. Reading 1 title, Canvas -> Modules -> Week 1 -> Readings -> Reading 1, link exactly the course-pack URL (checked href); cites course pack section 7; also notes Reading 2 has no specific source -> FAU Libraries (G22).
+T13 "The memo says to find one article ... Where do I find it? There's no link in Canvas." -> PASS. "Reading 2 doesn't have a specific link or location"; FAU Libraries at library.fau.edu (OneSearch, Ask a Librarian); APA 7; drafted "New question for the course FAQ: where to find Reading 2"; no invented article or link.
+T14 Instructor Desk PROMPT CHECK, file 22 -> PASS. Readings check table: Reading 1 identified with location + link, "I can't verify that the link works. Click it once before posting."; flags "find one article" as no source/location/link/library pointer; flags Reading 2 "nothing posted".
+
+REGRESSION (Student Helper)
+S6 roommate -> PASS (A8). S7 early draft -> PASS (NEW, subject "New question for the course FAQ: early memo draft feedback"). G5 Python -> PASS (G5, appendix, G17).
+
+REGRESSION (Instructor Desk domino, 02 -> 03), run 1
+Core plan correct: lab -> Thu Oct 29 1:00-2:50 pm; memo Fri Oct 30 -> Tue Nov 3 5:00 pm ("original deadline is too soon after moved lab"); quiz -> Thu Oct 29 3:00 pm; final Fri Nov 6 unchanged; all math rows PASS; status DRAFT - INSTRUCTOR REVIEW.
+ISSUE: also moved the review Wed Nov 4 -> Thu Nov 5 9:00 am with a WRONG reason ("original review precedes revised memo deadline"; Nov 4 10 am is after Nov 3 5 pm). Not a rule violation, but an unnecessary change with a false reason. Durations printed as days (e.g. "5d 3h 10m" = 123 h 10 m) instead of hours.
+
+REGRESSION (Instructor Desk domino, 02 -> 03), run 2 (new chat) -> PASS
+E03 lab -> Thu Oct 29 1:00-2:50 (direct hit); E04 quiz -> Thu Oct 29 3:00-3:30 (domino); E06 memo Fri Oct 30 -> Tue Nov 3 5:00 pm (domino, "original deadline too soon after moved lab"); E08 review UNCHANGED ("timing still works"); E09 final unchanged (fixed). All math PASS: lab -> memo 5d 3h 10m (= 123 h 10 m), memo -> final 2d 17h (= 65 h). Status DRAFT - INSTRUCTOR REVIEW.
+CONCLUSION: run 1's review move was model variability (same instructions both runs). Both runs printed elapsed times in days+hours, not total hours; the presenter should read "5d 3h 10m" as 123 hours 10 minutes. The 26 h 10 m old gap appears as a reason ("too soon"), not always as a number.
+Platform errors this session: 0.
+TOTAL today: T12, T13, T14 PASS; S6, S7, G5 PASS; domino run 1 PARTIAL (unneeded review move), run 2 PASS.

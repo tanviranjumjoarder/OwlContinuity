@@ -1,0 +1,12 @@
+MODE: DEMO
+REQUEST: PROMPT CHECK. Please check this assignment prompt before my students see it, especially the readings: can students find every reading?
+Everything below is fictional and invented for a competition demonstration. DEMO-101 is not a real FAU course.
+
+=== ASSIGNMENT PROMPT ===
+Decision Memo. Write a 2-3 page memo to a manager recommending one of the two business options we compared in class. Before you write, read Reading 1 and find one article about business decision-making and cite it. Use evidence from the lab. Due Tuesday, November 3 at 5:00 pm in Canvas.
+
+=== READINGS I POSTED IN CANVAS ===
+Reading 1: OpenStax, Principles of Management, section 2.1 "Overview of Managerial Decision-Making".
+Canvas location: Modules -> Week 1 -> Readings -> Reading 1.
+Link: https://openstax.org/books/principles-management/pages/2-1-overview-of-managerial-decision-making
+Reading 2: nothing posted.

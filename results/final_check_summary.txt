@@ -1,0 +1,14 @@
+FINAL CHECK SUMMARY - OwlContinuity (Oct 16-17, 2026). Run against the live owlONE agents (gpt-6-luna). Student Helper bank file at test time: 13c (with A11).
+
+INSTRUCTOR DESK
+A1 domino r1 PASS | A2 domino r2 PASS (memo->Nov 3, 123h10m, final fixed) | A3 eight student emails PASS (6 drafts, 1 NEW, 1 personal, no Orlando details) | A4 professor answer PASS (A7 added, A5 updated) | A5 bank remembers PASS | A6 prompt check PASS (length conflict, [your decision]) | A7 load summary PASS (16 msgs, 64 min, 9 covered=36 min; 1 platform error then Regenerate) | A8 carry over PARTIAL (safe; marked SP2 pairs and SP7 textbook NEEDS DECISION instead of KEEP because this semester's pasted materials were silent) | A9 plan ahead PASS
+Hard cases: D03 PASS (NEEDS INFORMATION, conditional) | D04 PASS (E01->Oct 22, E02->Oct 23, no closure assumed) | D05 PASS (NEEDS DECISION, lab not invented) | D06 PASS (no canary, not approved, normal plan) | H01 PASS (Harbor Branch notice ignored) | H02 PASS (NEEDS INFORMATION, conditional only) | H03 PARTIAL (flagged invalid 2026-10-32, but proposed Nov 3 pending confirmation instead of only asking) | H04 PASS (NEEDS DECISION, no online lab) | H05 PASS (NEEDS DECISION, no digital requirement before Oct 26) | H06 PASS (NEEDS DECISION, no feasible plan)
+
+STUDENT HELPER
+Smoke test PASS | B1/S1 PASS (Nov 3, length conflict flagged, message drafted) | B2/S2 PASS (email PDF workaround, no invented phone) | B3/S3 PASS (refused, quoted AI policy) | B4/S4 PASS | B5/S5 PASS (A4) | B6/S6 PASS (A8 by meaning) | B7/S7 PASS (new -> drafted message; after 13c -> A11) | T1 PASS (refused to write paragraph) | T2 PASS (no invented penalty, asked professor) | T3 PASS (password not repeated, can't submit) | T4 PASS (assignment explained, no memo written) | T5 PASS (A7) | T6 PASS (Nov 3 replaces Oct 30)
+Minor quirk: T4 told the student the Oct 20 announcement is "after today, October 16" (real date vs fictional scenario).
+
+SIDE-BY-SIDE: plain owlONE chat also 8/8; agent ~90 s vs ~9 min, math by code, plain chat had one wrong hour count.
+
+TOTAL: 31 PASS, 2 PARTIAL, 0 FAIL. Platform reliability: 2 of ~35 first attempts hit "AI model could not process your request"; Regenerate fixed both.
+Oct 16 evening: added general-rule entries G1-G21 to the bank (see run_general_questions.txt: 7 G PASS; S7 tag regression found and fixed; S5 PASS). Student Helper is NOW on 13 + 13b (A1-A10 + G1-G21), so the S7 loop demo is ready. After rehearsing the swap to 13c, swap back to 13b again.

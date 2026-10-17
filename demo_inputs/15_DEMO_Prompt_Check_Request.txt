@@ -1,0 +1,12 @@
+MODE: DEMO
+REQUEST: PROMPT CHECK. Here is my decision memo assignment and its rubric. Check them before I re-post the assignment. Note: I already posted a schedule change that moved the memo deadline to Tue Nov 3, 5:00 pm.
+Everything below is fictional and invented for a competition demonstration.
+
+=== MY ASSIGNMENT PROMPT ===
+Decision Memo. Write a 2-3 page memo to a manager recommending one of the two business options we compared in class. Use evidence from the lab to support your recommendation. Explain why you rejected the other option. Due Friday, October 30 at 5:00 pm in Canvas.
+
+=== MY RUBRIC ===
+- Clear recommendation (25 points): states one option and the main reason in the first paragraph.
+- Evidence (35 points): uses data from the lab's evidence table to support the recommendation.
+- Comparison (25 points): explains why the other option was rejected.
+- Writing and format (15 points): professional memo format, maximum 600 words, one PDF named Lastname_Memo.pdf.

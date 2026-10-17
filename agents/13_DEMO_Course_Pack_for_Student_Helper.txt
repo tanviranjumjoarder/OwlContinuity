@@ -1,0 +1,44 @@
+OWLCONTINUITY DEMO COURSE PACK - DEMO-101 (FICTIONAL)
+Upload this file to the OwlContinuity Student Helper's knowledge, together with the professor's answer bank file (13b). The answer bank is kept in its own file so the professor can replace it whenever it changes. Everything in it is invented for a competition demonstration. DEMO-101 is not a real FAU course, and the instructor rules below are not FAU policy.
+
+=== 1. COURSE BASICS ===
+Course: DEMO-101 Business Decision Workshop (fictional). Campus: Boca Raton. Module: Oct 19 - Nov 6, 2026. All times Eastern (America/New_York).
+Canvas is used for all assignments, submissions and announcements.
+Contact: message the instructor through Canvas Inbox. The instructor replies within one business day.
+Accommodations: students with approved accommodations should contact the instructor and the accommodations office listed in their official FAU syllabus. This demo pack does not name an office.
+
+=== 2. COURSE AI POLICY ===
+You may use AI tools to brainstorm ideas and to check grammar. You may not use AI to write any part of the decision memo or to answer quiz questions. If you used AI, add one sentence at the end of your memo saying how.
+
+=== 3. SUBMISSION RULES ===
+Submit the memo as one PDF file in Canvas, named Lastname_Memo.pdf.
+If Canvas fails within 2 hours of a deadline: take a screenshot of the error, email the PDF to the instructor through Canvas Inbox or FAU email before the deadline, then submit in Canvas as soon as it works. Keep your screenshots.
+Late work: ask the instructor before the deadline.
+
+=== 4. ASSIGNMENT PROMPT: DECISION MEMO (original wording) ===
+Decision Memo. Write a 2-3 page memo to a manager recommending one of the two business options we compared in class. Use evidence from the lab to support your recommendation. Explain why you rejected the other option. Due Friday, October 30 at 5:00 pm in Canvas.
+
+=== 5. RUBRIC: DECISION MEMO (100 points) ===
+- Clear recommendation (25 points): states one option and the main reason in the first paragraph.
+- Evidence (35 points): uses data from the lab's evidence table to support the recommendation.
+- Comparison (25 points): explains why the other option was rejected.
+- Writing and format (15 points): professional memo format, maximum 600 words, one PDF named Lastname_Memo.pdf.
+
+=== 6. POSTED ANNOUNCEMENT (posted Tue Oct 20, 2026) ===
+Schedule update (plan v2). Because of the campus closure from Mon Oct 19 through Fri Oct 23, these dates have changed. This announcement replaces the dates in the syllabus and in the memo assignment.
+- Evidence methods lesson: Mon Oct 26, 3:00-3:50 pm
+- Comparing options lesson: Tue Oct 27, 10:00-10:50 am
+- Memo lesson: Wed Oct 28, 10:00-10:50 am (unchanged)
+- Lab in the campus equipment room: Thu Oct 29, 1:00-2:50 pm (stays in person)
+- Quiz 1: Thu Oct 29, 3:00-3:30 pm
+- Decision memo due: Tue Nov 3, 5:00 pm
+- Optional practice workshop: Mon Nov 2, 10:00-10:50 am (still optional)
+- Review: Wed Nov 4, 10:00-10:50 am (unchanged)
+- Final assessment: Fri Nov 6, 10:00-11:00 am (unchanged)
+
+=== 7. READINGS (Canvas: Modules -> Week 1 -> Readings) ===
+Reading 1 (required for the decision memo): OpenStax, Principles of Management, section 2.1 "Overview of Managerial Decision-Making" (free open textbook, CC BY-NC-SA 4.0).
+Canvas location: Modules -> Week 1 -> Readings -> Reading 1.
+Link: https://openstax.org/books/principles-management/pages/2-1-overview-of-managerial-decision-making
+Reading 2 (decision memo): "Find one article about business decision-making and cite it." No specific source, location or link is given for Reading 2.
+

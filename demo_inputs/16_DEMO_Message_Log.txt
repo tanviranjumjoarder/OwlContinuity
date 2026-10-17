@@ -1,0 +1,45 @@
+MODE: DEMO
+REQUEST: LOAD SUMMARY. Below is my log of student messages from the closure week (names removed). I spend about 4 minutes per reply. My current answer bank and my posted announcement are below too, so you can tell which messages they already answer.
+Everything below is fictional and invented for a competition demonstration.
+
+=== MESSAGE LOG (ID | date | channel | message) ===
+M01 | Mon Oct 19 | Canvas Inbox | Is the final exam moving because of the storm?
+M02 | Mon Oct 19 | Email | Do we have to submit anything while campus is closed?
+M03 | Tue Oct 20 | Canvas Inbox | Is the final still on Nov 6?
+M04 | Tue Oct 20 | Canvas Inbox | Can we do the lab from home?
+M05 | Tue Oct 20 | Email | Is the memo 2-3 pages or 600 words?
+M06 | Tue Oct 20 | Canvas Inbox | When is the memo due now?
+M07 | Wed Oct 21 | Canvas Inbox | Is the memo still due Friday?
+M08 | Wed Oct 21 | Email | What counts as evidence for the memo?
+M09 | Wed Oct 21 | Canvas Inbox | Canvas says upload failed for my practice file.
+M10 | Wed Oct 21 | Canvas Inbox | is the final moving too?
+M11 | Thu Oct 22 | Email | How long should the memo be?
+M12 | Thu Oct 22 | Canvas Inbox | My family evacuated. Can I get extra time on the memo?
+M13 | Thu Oct 22 | Email | When is the lab now?
+M14 | Fri Oct 23 | Canvas Inbox | Can we use ChatGPT for the memo?
+M15 | Fri Oct 23 | Email | My upload keeps failing in Chrome.
+M16 | Fri Oct 23 | Canvas Inbox | I was sick this week. Can I make up the quiz?
+
+=== MY POSTED ANNOUNCEMENT ===
+Schedule update (plan v2). Because of the campus closure from Mon Oct 19 through Fri Oct 23, these dates have changed. This announcement replaces the dates in the syllabus and in the memo assignment.
+- Evidence methods lesson: Mon Oct 26, 3:00-3:50 pm
+- Comparing options lesson: Tue Oct 27, 10:00-10:50 am
+- Memo lesson: Wed Oct 28, 10:00-10:50 am (unchanged)
+- Lab in the campus equipment room: Thu Oct 29, 1:00-2:50 pm (stays in person)
+- Quiz 1: Thu Oct 29, 3:00-3:30 pm
+- Decision memo due: Tue Nov 3, 5:00 pm
+- Optional practice workshop: Mon Nov 2, 10:00-10:50 am (still optional)
+- Review: Wed Nov 4, 10:00-10:50 am (unchanged)
+- Final assessment: Fri Nov 6, 10:00-11:00 am (unchanged)
+
+=== MY ANSWER BANK ===
+A1 | Aug 2026 | Q: Can we do the lab online or from home? | A: No. The lab needs the equipment in our campus lab room, so it is always in person. If it has to move, I will post the new time in Canvas Announcements.
+A2 | Aug 2026 | Q: Where do I find the latest schedule? | A: Always check Announcements in our Canvas course. I post every schedule change there. Campus open or closed status comes from the university's official announcements, not from me.
+A3 | Oct 18, 2026 | Q: Do I have to submit anything while campus is closed? | A: No. Nothing is due while classes are suspended. Anything that falls inside the closure will move, and I will post the new dates.
+A4 | Oct 18, 2026 | Q: Is the final exam moving? | A: No. The final stays on Friday, November 6 at 10:00 am.
+A5 | Oct 20, 2026 | Q: When is the lab? | A: The lab is on Thursday, October 29, 1:00-2:50 pm, in the campus equipment room.
+A6 | Aug 2026 | Q: Is the Monday workshop required? | A: No, it is optional practice. It is a good way to prepare for the final.
+A7 | Oct 20, 2026 | Q: Is Quiz 1 open-book? | A: Quiz 1 stays closed-book, but you may bring one handwritten page of notes.
+A8 | Spring 2026, carried over Oct 21, 2026 | Q: Can we work in pairs on the memo? | A: No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.
+A9 | Spring 2026, carried over Oct 21, 2026 | Q: Is the textbook required? | A: No. All readings are posted in Canvas.
+A10 | Spring 2026, updated Oct 21, 2026 | Q: Can I use AI tools like ChatGPT or Grammarly? | A: You may use AI tools to brainstorm ideas and to check grammar. You may not use AI to write any part of the decision memo or to answer quiz questions. If you used AI, add one sentence at the end of your memo saying how.

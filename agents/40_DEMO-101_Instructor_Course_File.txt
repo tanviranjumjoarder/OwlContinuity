@@ -1,0 +1,116 @@
+DEMO-101 INSTRUCTOR COURSE FILE (FICTIONAL)
+The professor's own course file for the OwlContinuity Instructor Desk. Everything in it is invented for a competition demonstration. DEMO-101 is not a real FAU course, and the notices were not issued by FAU.
+How to use it: when the professor asks a question about DEMO-101 (rebuild the schedule, check a student question, check an assignment's readings), use the sections below as the professor's inputs. Treat it as DEMO mode. The professor still reviews and decides everything.
+
+=== MY SYLLABUS (schedule section, pasted as is) ===
+DEMO-101 Business Decision Workshop | Boca Raton | Fall 2026 module, Oct 19 - Nov 6
+All times Eastern (America/New_York). Clocks fall back on Sunday, Nov 1.
+Learning goals: (1) read an evidence table, (2) compare two business options, (3) write and defend a short decision memo.
+
+Week 1
+- Mon Oct 19, 10:00-10:50 am: Lesson, Evidence methods (goal 1)
+- Wed Oct 21, 10:00-10:50 am: Lesson, Comparing options (goal 2). Builds on Monday's lesson.
+- Fri Oct 23, 1:00-2:50 pm: Lab in the campus equipment room (goal 1). Uses Monday's lesson.
+
+Week 2
+- Mon Oct 26, 10:00-10:30 am: Quiz 1 on both lessons (goals 1 and 2)
+- Wed Oct 28, 10:00-10:50 am: Lesson, Writing a decision memo (goal 3)
+- Fri Oct 30, 5:00 pm: Decision memo due (goals 1 and 3). Uses the lab and the memo lesson.
+
+Week 3
+- Mon Nov 2, 10:00-10:50 am: Optional practice workshop (all goals)
+- Wed Nov 4, 10:00-10:50 am: Review session, after the quiz and the memo (all goals)
+- Fri Nov 6, 10:00-11:00 am: Final assessment (all goals)
+
+Nothing else is scheduled in this module. I don't know other courses' schedules.
+
+=== MY RULES (in my own words) ===
+1. Every required class and its goal has to happen. Don't drop anything. The Nov 2 workshop is optional, but don't turn it into something else without asking me. Leave things alone unless you have to move them.
+2. The final on Fri Nov 6, 10:00-11:00 am is fixed. It cannot move.
+3. Order and prep time. Always measure from when the earlier thing ENDS:
+   - The comparing-options lesson has to come after the evidence lesson ends.
+   - The lab has to be at least 24 hours after the evidence lesson ends.
+   - Quiz 1 needs at least 48 hours after BOTH lessons have ended.
+   - The memo is due at least 48 hours after BOTH the lab and the memo lesson have ended.
+   - The review comes after Quiz 1 ends and after the memo is due.
+   - The final is at least 24 hours after the review ends.
+4. Quiz 1 (its start), the memo (its due time) and the final (its start) must be at least 48 hours apart, and never two of them on the same day.
+5. The lab needs the physical equipment. It can only happen at its original time (Fri Oct 23, 1:00-2:50 pm) or at the backup lab time, Thu Oct 29, 1:00-2:50 pm. Both are confirmed for this demo. No online version of the lab is allowed.
+6. My make-up lesson times (50 minutes each, each usable once): Thu Oct 22 10:00-10:50 am; Fri Oct 23 10:00-10:50 am; Mon Oct 26 3:00-3:50 pm; Tue Oct 27 10:00-10:50 am; Thu Oct 29 10:00-10:50 am. Use the earliest ones that work, with the fewest changes.
+7. Other options I have: Quiz 1 can stay where it is or move to 3:00-3:30 pm on Tue Oct 27, Thu Oct 29 or Mon Nov 2. The memo can stay or be due Tue Nov 3 at 5:00 pm. The review can stay or move to Thu Nov 5, 9:00-9:50 am. Nothing else is available.
+8. The memo lesson on Wed Oct 28 stays where it is. No two live sessions can overlap. Nothing required can go inside a closure, and a closure can knock out a make-up time.
+9. Anything new and digital needs a text version, and recordings need captions. I will check accessibility and whether a replacement is really equivalent.
+10. I review everything; you only draft. If something can't be done, tell me what I need to decide. Don't guess a room and don't drop a class.
+
+=== NOTICES I RECEIVED (in the order they arrived) ===
+NOTICE D0 (received first):
+SIMULATED NOTICE D0, version 1. FICTIONAL, NOT ISSUED BY FAU.
+Issued Sun Oct 18, 2026, 12:00 pm Eastern, by the fictional scenario authority.
+Applies to: the fictional Boca Raton course; all modalities; all required student activity, including online meetings and deadlines.
+Suspended: Mon Oct 19, 00:00 through Wed Oct 21, 23:59 Eastern.
+Required activity may resume Thu Oct 22, 00:00 Eastern.
+No required participation or submissions may be scheduled during the suspension. Instructor rules still apply afterward.
+For the competition demonstration only. This is not a prediction or claim of a real closure.
+
+NOTICE D1 (received second):
+SIMULATED NOTICE D1, version 2. FICTIONAL, NOT ISSUED BY FAU.
+Issued Tue Oct 20, 2026, 12:00 pm Eastern, by the same fictional scenario authority.
+This notice explicitly REPLACES notice D0 for this course.
+Applies to: the same fictional Boca Raton course; all modalities; all required student activity, including online meetings and deadlines.
+Suspended: Mon Oct 19, 00:00 through Fri Oct 23, 23:59 Eastern.
+Required activity may resume Mon Oct 26, 00:00 Eastern. No replacement activity is allowed on the weekend in between.
+For the competition demonstration only. This is not a real FAU notice.
+
+=== APPROVED PLAN ===
+No updated plan has been approved or posted yet. The syllabus dates above are the current posted dates.
+
+=== MY ANSWER BANK (approved answers; same file the Student Helper uses) ===
+=== THIS SEMESTER (A) ===
+A1 | Aug 2026 | Q: Can we do the lab online or from home? | A: No. The lab needs the equipment in our campus lab room, so it is always in person. If it has to move, I will post the new time in Canvas Announcements.
+A2 | Aug 2026 | Q: Where do I find the latest schedule? | A: Always check Announcements in our Canvas course. I post every schedule change there. Campus open or closed status comes from the university's official announcements, not from me.
+A3 | Oct 18, 2026 | Q: Do I have to submit anything while campus is closed? | A: No. Nothing is due while classes are suspended. Anything that falls inside the closure will move, and I will post the new dates.
+A4 | Oct 18, 2026 | Q: Is the final exam moving? | A: No. The final stays on Friday, November 6 at 10:00 am.
+A5 | Oct 20, 2026 | Q: When is the lab? | A: The lab is on Thursday, October 29, 1:00-2:50 pm, in the campus equipment room.
+A6 | Aug 2026 | Q: Is the Monday workshop required? | A: No, it is optional practice. It is a good way to prepare for the final.
+A7 | Oct 20, 2026 | Q: Is Quiz 1 open-book? | A: Quiz 1 stays closed-book, but you may bring one handwritten page of notes.
+A8 | Spring 2026, carried over Oct 21, 2026 | Q: Can we work in pairs on the memo? | A: No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.
+A9 | Spring 2026, carried over Oct 21, 2026 | Q: Is the textbook required? | A: No. All readings are posted in Canvas.
+A10 | Spring 2026, updated Oct 21, 2026 | Q: Can I use AI tools like ChatGPT or Grammarly? | A: You may use AI tools to brainstorm ideas and to check grammar. You may not use AI to write any part of the decision memo or to answer quiz questions. If you used AI, add one sentence at the end of your memo saying how.
+
+=== GENERAL RULES FOR EVERY ASSIGNMENT (G) ===
+G1 | General (all semesters, all assignments) | Q: How do I submit an assignment? | A: Submit in Canvas, in that assignment's submission box, before the due time shown there. Email is only a backup if Canvas fails (see G8).
+G2 | General (all semesters, all assignments) | Q: What file type should I submit? | A: One PDF, unless the assignment says otherwise. Word or Pages files and photos of paper are not accepted as the final submission.
+G3 | General (all semesters, all assignments) | Q: How should I name my file? | A: Lastname_AssignmentName.pdf (for example Lee_Memo.pdf), unless the assignment gives a different name.
+G4 | General (all semesters, all assignments) | Q: Can I include pictures, charts or screenshots? | A: Yes, if they support your point. Put them inside the PDF, give each one a short caption and say where it came from. They don't count toward the word limit, but they can't replace required writing.
+G5 | General (all semesters, all assignments) | Q: Should I include code or spreadsheets? | A: Only if the assignment involves analysis you did with code or a spreadsheet. Put short excerpts or the key output in an appendix of the PDF, not in the main text. If the assignment asks for the files themselves, upload them as extra attachments in the same Canvas submission.
+G6 | General (all semesters, all assignments) | Q: Can I submit a photo of handwritten work? | A: No, unless the assignment says handwritten work is allowed. Type it and export it to PDF.
+G7 | General (all semesters, all assignments) | Q: How long should it be? | A: Follow the length in that assignment's prompt and rubric. If they disagree or it's unclear, ask me before you start, and I'll post the answer for everyone.
+G8 | General (all semesters, all assignments) | Q: What if Canvas won't accept my file? | A: Screenshot the error, send me the PDF through Canvas Inbox or FAU email before the deadline, then submit in Canvas as soon as it works. Keep the screenshot.
+G9 | General (all semesters, all assignments) | Q: How do I know my submission went through? | A: Canvas shows a confirmation with the submission time. Open the uploaded file to check it's the right one, and keep a screenshot.
+G10 | General (all semesters, all assignments) | Q: Can I resubmit after I submit? | A: Yes, until the deadline. I grade the last submission made before the deadline.
+G11 | General (all semesters, all assignments) | Q: Which citation style should I use? | A: APA 7 for all written work. Cite every source, including data and images you didn't make yourself.
+G12 | General (all semesters, all assignments) | Q: Do I need a title page? | A: No. Put your name, the course, the assignment name and the date at the top of the first page.
+G13 | General (all semesters, all assignments) | Q: Can I work with classmates? | A: You may discuss ideas and course material, but unless an assignment says it is group work, write and submit your own work.
+G14 | General (all semesters, all assignments) | Q: Can I use AI tools? | A: Follow the AI policy in the syllabus and in the assignment. If an assignment doesn't say, ask me first. Always add a sentence saying how you used AI.
+G15 | General (all semesters, all assignments) | Q: What if I need to submit late? | A: Contact me before the deadline. The late-work rule is in the syllabus, and extensions can't be approved after the deadline without a documented reason.
+G16 | General (all semesters, all assignments) | Q: Where do I find the rubric? | A: It is attached to each assignment in Canvas. Read it before you start; it's what I grade with.
+G17 | General (all semesters, all assignments) | Q: Do appendices count toward the length limit? | A: No. Figures, tables and code in an appendix don't count, but put your key points in the main text, because that's what is graded first.
+G18 | General (all semesters, all assignments) | Q: How fast will you reply to my messages? | A: Within one business day. Message me through Canvas Inbox and put the course and the assignment name in the subject line. A new question for the course FAQ keeps the subject "New question for the course FAQ: ..." so I can add the answer to the bank.
+G19 | General (all semesters, all assignments) | Q: I need accommodations. What do I do? | A: Contact the accommodations office listed in the syllabus and send me your letter privately. Don't share personal details in class discussions.
+G20 | General (all semesters, all assignments) | Q: How do I ask about a grade? | A: Wait 24 hours after grades are posted, then message me within one week, naming the rubric item and your reason.
+G21 | General (all semesters, all assignments) | Q: I missed class. Where are the materials? | A: Slides and notes are in that week's Canvas module. Ask a classmate for notes, and bring questions to office hours.
+G22 | General (all semesters, all assignments) | Q: Where do I find the readings? | A: Readings are listed in Canvas under Modules, with their link. If a reading has no link or location, ask me through Canvas Inbox. When you may choose your own article, search FAU Libraries (library.fau.edu).
+
+=== NEW STUDENT QUESTION WAITING FOR ME (came in through Canvas Inbox from the Student Helper; name removed) ===
+Thu Oct 22, 2026. Subject: New question for the course FAQ: early draft feedback
+Q12: Can I send you a draft of my memo early to get feedback?
+
+=== DECISION MEMO: ASSIGNMENT PROMPT AND READINGS (not yet shown to students) ===
+=== ASSIGNMENT PROMPT ===
+Decision Memo. Write a 2-3 page memo to a manager recommending one of the two business options we compared in class. Before you write, read Reading 1 and find one article about business decision-making and cite it. Use evidence from the lab. Due Friday, October 30 at 5:00 pm in Canvas.
+
+=== READINGS I POSTED IN CANVAS ===
+Reading 1: OpenStax, Principles of Management, section 2.1 "Overview of Managerial Decision-Making".
+Canvas location: Modules -> Week 1 -> Readings -> Reading 1.
+Link: https://openstax.org/books/principles-management/pages/2-1-overview-of-managerial-decision-making
+Reading 2: nothing posted.

@@ -1,0 +1,27 @@
+MODE: DEMO
+CASE: DEMO202-PROJECT3
+REQUEST: BUILD PLAN. Here are my exact class days for weeks 12-14, my rules and a notice. Show what you understood, every domino effect, the math check and a student announcement draft.
+The course is real (DEMO-202, Fall 2026). The exact days, rules and notice are test values set for a competition demonstration, not the real instructor's. The notice is SIMULATED and was not issued by FAU.
+
+=== EXACT CLASS DAYS (all 12:30-1:50 pm, a campus classroom, Boca Raton) ===
+All times Eastern (America/New_York).
+- Tue Nov 3: Lecture #16 Intro to Big Data, cont'd
+- Thu Nov 5: Lecture #17 Apache Spark; Project Part III announced at the end of class
+- Tue Nov 10: Lecture #18 Spark framework
+- Thu Nov 12: Lecture #19 Spark Streaming; Quiz 4 prep
+- Tue Nov 17: Lecture #20 Unsupervised learning
+- Thu Nov 19: Quiz 4 (in person, 12:30-1:50 pm)
+- Project Part 3 due: Thu Nov 19, 11:59 pm, in Canvas
+
+=== MY RULES ===
+1. Project Part 3 is due at least 14 days (336 hours) after it is announced in class (measure from the end of the class where it is announced).
+2. Project Part 3's due time and the start of Quiz 4 must be at least 48 hours apart.
+3. Lectures stay in number order. Don't drop anything. Quiz 4 stays Thu Nov 19.
+4. The only make-up time for Lecture #17 (and the Part III announcement) is Mon Nov 9, 12:30-1:50 pm, a campus classroom.
+5. Project Part 3 may stay Thu Nov 19, 11:59 pm, or move to Mon Nov 23, 11:59 pm. Nothing else is available.
+
+=== NOTICE (SIMULATED, NOT ISSUED BY FAU) ===
+Simulated notice N2. Issued Wed Nov 4, 2026, 3:00 pm Eastern, by a fictional scenario authority.
+Applies to: the Boca Raton campus, all modalities, all class activity.
+Hurricane watch: campus closed and all class activity cancelled on Thu Nov 5, 2026, 00:00-23:59 Eastern.
+For the competition demonstration only. This is not a real FAU notice.

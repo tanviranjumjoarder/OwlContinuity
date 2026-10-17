@@ -1,0 +1,30 @@
+DEMO-202 TEST D4 - project-deadline domino. Instructor Desk, new chat, owlONE gpt-6-luna, Sat Oct 17, 2026 ~11:50 am. Input: file 37. Values approved by Tanvir.
+RESULT: PASS, exactly as expected.
+Lecture #17 + Part III announcement: Thu Nov 5 -> Mon Nov 9 (direct hit; only make-up). Project Part 3: Thu Nov 19 -> Mon Nov 23, 11:59 pm (domino). Quiz 4 Thu Nov 19 fixed; lecture order kept; all 7 events accounted for. Status DRAFT - INSTRUCTOR REVIEW.
+Note: our expected list said "A2 flagged as out of date"; the answer bank was not part of this input, so there was nothing to flag. Not a fail.
+
+--- RESPONSE (key parts, word for word) ---
+DEMO | DEMO202-PROJECT3 | Plan v1 | DRAFT - INSTRUCTOR REVIEW
+What happened: Simulated notice N2 closes Boca Raton campus to all class activity on Thu Nov 5, 2026; Lecture #17 is directly affected.
+Domino effects: Move Lecture #17 and the Project Part III announcement to Mon Nov 9. The Nov 19 project-deadline option then fails both timing rules, so the proposed due date is Nov 23.
+
+Recovery table
+E01 Lecture #16 Tue Nov 3 / Unchanged / Unaffected
+E02 Lecture #17 Thu Nov 5 -> Mon Nov 9, 12:30–1:50 / Direct hit; only supplied make-up slot / N2; Rule 4
+E03 Lecture #18 Tue Nov 10 / Unchanged / follows E02 in lecture order
+E04 Lecture #19 Thu Nov 12 / Unchanged
+E05 Lecture #20 Tue Nov 17 / Unchanged
+E06 Quiz 4 Thu Nov 19, 12:30–1:50 / Unchanged / Fixed
+E07 Project Part 3 Thu Nov 19, 11:59 pm -> Mon Nov 23, 11:59 pm / Domino: moved announcement and quiz spacing rule / Rules 1, 2
+
+Domino chain: E02 moves to Mon Nov 9 -> the Part III announcement now occurs at the end of that class -> the Nov 19 deadline option is only 250h 9m later, short of 336h -> use the supplied Nov 23 option. Separately, Nov 19 at 11:59 pm is only 11h 29m after Quiz 4 starts -> that option also fails the 48-hour rule.
+
+Math check — calculated with code using America/New_York times converted to UTC
+Rule 1: Mon Nov 9, 1:50 pm -> Nov 19, 11:59 pm: 250h 9m (need 336h) FAIL
+Rule 1: Mon Nov 9, 1:50 pm -> Nov 23, 11:59 pm: 346h 9m (need 336h) PASS
+Rule 2: Thu Nov 19, 12:30 pm -> Nov 19, 11:59 pm: 11h 29m (need 48h) FAIL
+Rule 2: Thu Nov 19, 12:30 pm -> Nov 23, 11:59 pm: 107h 29m (need 48h) PASS
+Weekdays verified. All seven events accounted for once; none in the closure; quiz date and lecture order retained. Nothing is booked.
+
+DRAFT — DEMO announcement: "The simulated closure cancels the Thu Nov 5 class. Lecture #17 and the Project Part III announcement are proposed for Mon Nov 9, 12:30–1:50 pm, a campus classroom. Project Part 3 is proposed due Mon Nov 23 at 11:59 pm in Canvas. Quiz 4 remains Thu Nov 19, 12:30–1:50 pm, in person. These dates are based on demonstration test values and require instructor review."
+Draft for instructor review. No systems have been updated.

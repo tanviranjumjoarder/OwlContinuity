@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OwlContinuity Walkthrough</title>
+<meta name="description" content="An interactive walkthrough of OwlContinuity: from a cancelled class to a checked draft schedule, and from a new student question to an approved answer.">
+<style>
+:root{
+  --navy:#14305e; --blue:#2f66d0; --red:#b3261e; --green:#1e7b45; --gold:#a8711a;
+  --ink:#1b2333; --muted:#5b6475; --line:#e2e5ec; --bg:#f6f7fa; --card:#ffffff; --chip:#eef1f6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --navy:#9db8ec; --blue:#8fb1f5; --red:#ff8a80; --green:#7fd19f; --gold:#e3b766; --ink:#e7eaf1; --muted:#a3abbb; --line:#2b3345; --bg:#0f1420; --card:#171d2b; --chip:#1e2636; }
+}
+:root[data-theme="dark"]{ --navy:#9db8ec; --blue:#8fb1f5; --red:#ff8a80; --green:#7fd19f; --gold:#e3b766; --ink:#e7eaf1; --muted:#a3abbb; --line:#2b3345; --bg:#0f1420; --card:#171d2b; --chip:#1e2636; }
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 "Avenir Next",Avenir,"Segoe UI",system-ui,-apple-system,sans-serif}
+a{color:var(--blue)}
+.hero{background:#14305e;color:#fff;padding:28px 16px 22px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.hero .wrap{padding:0}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#ffcf7a;margin-bottom:8px}
+.hero h1{margin:0 0 6px;font-size:clamp(26px,4vw,38px)}
+.hero p{margin:0;color:#d7e1f5;max-width:760px}
+.hero nav{margin-top:14px;display:flex;gap:14px;flex-wrap:wrap;font-weight:600}
+.hero nav a{color:#ffcf7a}
+main{padding:22px 0 40px}
+.stage{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:0 8px 30px rgba(20,48,94,.08)}
+#svgbox svg{display:block;width:100%;height:auto;border-radius:12px}
+#svgbox{cursor:pointer;position:relative}
+.ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 6px 4px}
+.btn{border:0;border-radius:10px;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer;background:#14305e;color:#fff;min-width:44px}
+.btn.ghost{background:var(--chip);color:var(--ink)}
+.btn:focus-visible,.chip:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ffcf7a;outline-offset:2px}
+input[type=range]{flex:1;min-width:160px;accent-color:#14305e}
+select{font:inherit;font-size:14px;padding:7px 8px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.time{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px;min-width:84px;text-align:right}
+.chips{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:14px 0}
+@media (max-width:720px){.chips{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.chip{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 10px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;text-align:left}
+.chip small{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.chip[aria-current="step"]{border-color:var(--c);box-shadow:inset 0 0 0 1px var(--c)}
+.chip .n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--c);color:#fff;font-size:12px;margin-right:6px}
+.panel{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.panel{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;min-width:0}
+.card h2{margin:0 0 8px;font-size:22px;color:var(--navy)}
+.card h3{margin:0 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.big{font-size:19px;line-height:1.5;margin:0}
+.facts{margin:0;padding-left:18px}
+.facts li{margin:4px 0}
+.eli5 .big{font-size:22px}
+.emoji{font-size:44px;line-height:1;margin-bottom:8px}
+.switch{display:inline-flex;align-items:center;gap:8px;font-weight:700;cursor:pointer;user-select:none}
+.switch input{width:18px;height:18px;accent-color:#a8711a}
+.kbd{font:12px ui-monospace,Menlo,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 5px;background:var(--card)}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+.owl{display:block;background:var(--chip);border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px}
+.owl b{color:var(--navy)}
+footer{color:var(--muted);font-size:13px;padding:0 0 30px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">OwlContinuity · interactive walkthrough</span>
+    <h1>From a cancelled class to an approved answer</h1>
+    <p>Six steps, two owlONE agents. Press play, drag the timeline, or click a step. Switch on <b>Explain like I'm 5</b> for the simplest version.</p>
+    <nav><a href="index.html">Try the agents yourself →</a><a href="https://github.com/tanviranjumjoarder/OwlContinuity">Project on GitHub</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="stage">
+    <div id="svgbox" title="Click to play or pause" aria-label="Animated walkthrough"></div>
+    <div class="ctrl">
+      <button class="btn ghost" id="prev" aria-label="Previous step">◀</button>
+      <button class="btn" id="play" aria-label="Pause">❚❚ Pause</button>
+      <button class="btn ghost" id="next" aria-label="Next step">▶</button>
+      <input type="range" id="scrub" min="0" max="23999" value="0" aria-label="Timeline">
+      <span class="time" id="time">0.0 / 24 s</span>
+      <select id="speed" aria-label="Speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select>
+      <label class="switch"><input type="checkbox" id="eli5"> Explain like I'm 5</label>
+    </div>
+  </div>
+
+  <div class="chips" id="chips" role="list"></div>
+
+  <div class="panel">
+    <div class="card" id="explain" aria-live="polite"></div>
+    <div class="card">
+      <h3>Where this happens</h3>
+      <div id="where"></div>
+      <p class="note">Keys: <span class="kbd">Space</span> play/pause · <span class="kbd">←</span> <span class="kbd">→</span> step · <span class="kbd">E</span> explain like I'm 5</p>
+    </div>
+  </div>
+
+  <p class="note">The real agents run inside owlONE, FAU's AI platform, on the gpt-6-luna model. This page is an animation of what they did in our tests; it runs no AI. All course data (DEMO-101) is fictional and the closures are simulated.</p>
+</main>
+<footer class="wrap">Team OwlContinuity: Tanvir Anjum Joarder · FAU owlONE Promptathon, Oct 16–17, 2026 · Not an FAU product or FAU policy.</footer>
+
+<script>
+(function(){
+  const STEP_MS = 4000, LOOP_MS = 24000, BUILT = 3600;
+  const STEPS = [
+    { name:"Notice", sub:"the input", c:"#14305e", emoji:"📄",
+      title:"The professor hands over three things",
+      text:"A closure notice arrives (simulated: campus closed Mon Oct 19 – Fri Oct 23). The professor pastes it into Instructor Desk with the syllabus schedule and their rescheduling rules, written in plain words.",
+      facts:["Rules include: memo due at least 48 h after the lab ends; the final is fixed; five make-up lesson slots.","The agent never invents a room or a time: it uses only the slots the professor gives."],
+      eli5:"A storm closes school for a week. The teacher gives the helper robot three papers: the calendar, the rules, and the storm news.",
+      where:'<b>Instructor Desk</b> (professor) · owlONE personal agent · gpt-6-luna · Data &amp; File Tools on · internet search off · instructions <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/agents/01a_Instructor_Desk_Instructions_FULL.txt">01a</a>' },
+    { name:"Find the hits", sub:"what the closure cancels", c:"#14305e", emoji:"🔍",
+      title:"Find everything inside the closure",
+      text:"The Domino Effect Agent (Instructor Desk's RECOVER mode) checks every class and deadline against the closure. Three required items fall inside it: the evidence lesson, the comparing-options lesson and the Friday lab.",
+      facts:["Make-up slots inside the closure are knocked out too (Thu Oct 22, Fri Oct 23).","Items outside the closure stay unless a rule forces them to move."],
+      eli5:"The robot looks at the calendar and circles every class that lands on a closed day. Three classes are circled.",
+      where:'<b>Instructor Desk → RECOVER</b>. Input files: <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/demo_inputs/02_DEMO_Syllabus_Case.txt">02 syllabus case</a> and <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/demo_inputs/03_DEMO_Live_Update.txt">03 extended notice</a>.' },
+    { name:"Domino", sub:"one move breaks another", c:"#b3261e", emoji:"💥",
+      title:"The lab moves, and the memo breaks",
+      text:"The lab needs the campus equipment room, so it can only use the backup time: Thu Oct 29, 1:00–2:50 pm. But the memo is due Fri Oct 30 at 5 pm, only 26 h 10 m after the lab ends. The rule says 48 h. FAIL.",
+      facts:["This is the domino effect: a deadline that was never in the closure now has to move.","A plain calendar would show no conflict; only the rule check finds it."],
+      eli5:"Moving one class is like pushing the first domino. The lab moves to Thursday, and now the homework is due too soon after it. There isn't enough time!",
+      where:'<b>Instructor Desk</b> rechecks every linked rule after each move (rule 3 in the syllabus case: "memo due at least 48 hours after the lab and the memo lesson end").' },
+    { name:"Check + draft", sub:"code does the math", c:"#1e7b45", emoji:"🧮",
+      title:"Recheck every gap with code, then return a draft",
+      text:"The agent runs code: local times in America/New_York are converted to UTC before subtracting, so the Nov 1 clock change adds its hour. The memo moves to Tue Nov 3, 5 pm: 123 h 10 m after the lab. PASS. Quiz 1 moves to Thu Oct 29, 3 pm. The final stays Fri Nov 6.",
+      facts:["Every gap is shown in a table so the professor can check it.","The result is a DRAFT plus an announcement draft. If no plan fits, it says NEEDS DECISION and names the rule."],
+      eli5:"The robot counts the hours with a calculator instead of guessing. It moves the homework to Tuesday, keeps the big test where it is, and asks the teacher: \"Is this OK?\"",
+      where:'<b>Instructor Desk</b> · code tool (Data &amp; File Tools). Saved run: <a href="https://github.com/tanviranjumjoarder/OwlContinuity/tree/main/results">results/</a> · same rules in the <a href="index.html">browser demo</a>.' },
+    { name:"Student asks", sub:"never guess", c:"#2f66d0", emoji:"🙋",
+      title:"A new question is never guessed",
+      text:"A student asks Student Helper: \"Can I send my professor a draft of my memo early for feedback?\" Nothing in the approved answer bank covers it, so the helper says it's a new question and drafts a Canvas Inbox message with the subject \"New question for the course FAQ: …\".",
+      facts:["Student Helper answers only from the course pack and the answer bank, and cites the ID (A4, G5).","It follows the course AI policy and never writes graded work."],
+      eli5:"A student asks something the teacher never answered. The robot says \"I don't know yet\" instead of making something up, and writes a note to the teacher.",
+      where:'<b>Student Helper</b> (student) · owlONE personal agent · gpt-6-luna · Add Files only · knowledge: <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/agents/13_DEMO_Course_Pack_for_Student_Helper.txt">13 course pack</a> + <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/agents/13b_DEMO_Answer_Bank_for_Student_Helper.txt">13b answer bank</a>' },
+    { name:"Answer once", sub:"everyone benefits", c:"#a8711a", emoji:"📚",
+      title:"The professor answers once; everyone benefits",
+      text:"The professor pastes the question into Instructor Desk and answers it once. Instructor Desk adds it as A11 and prints the updated answer bank. The professor uploads that file to Student Helper, and the next student who asks gets \"Yes … (A11)\" in seconds.",
+      facts:["The upload is manual today: the professor approves every answer before students see it.","Automatic sync and Canvas integration are not built; they are pilot next steps."],
+      eli5:"The teacher answers once. The answer goes into the big book of answers, so the next student who asks gets it right away.",
+      where:'<b>Instructor Desk → STUDENT QUESTIONS</b> adds A11 · bank after the update: <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/agents/13c_DEMO_Answer_Bank_UPDATED_after_A11.txt">13c</a>' },
+  ];
+
+  const $ = (s)=>document.querySelector(s);
+  const box = $("#svgbox"), chips = $("#chips");
+  let anims = [], playing = true, step = -1, eli5 = false;
+
+  STEPS.forEach((s,i)=>{
+    const b=document.createElement("button"); b.className="chip"; b.type="button"; b.style.setProperty("--c", s.c);
+    b.innerHTML=`<span class="n">${i+1}</span>${s.name}<small>${s.sub}</small>`;
+    b.onclick=()=>goStep(i, true); chips.appendChild(b);
+  });
+
+  function now(){ const a=anims[0]; return a ? ((a.currentTime||0) % LOOP_MS + LOOP_MS) % LOOP_MS : 0; }
+  function seek(ms){ anims.forEach((a)=>{ a.currentTime = ms; }); if (anims.length) paint(); }
+  function setPlaying(p){
+    playing = p; anims.forEach((a)=> p ? a.play() : a.pause());
+    $("#play").textContent = p ? "❚❚ Pause" : "▶ Play"; $("#play").setAttribute("aria-label", p ? "Pause" : "Play");
+  }
+  function goStep(i, hold){
+    i = (i + 6) % 6;
+    seek(i*STEP_MS + (hold ? BUILT : 0));
+    if (hold) setPlaying(false);
+    render(i);
+  }
+  function render(i){
+    if (i === step) return; step = i;
+    const s = STEPS[i];
+    [...chips.children].forEach((c,k)=>{ if(k===i) c.setAttribute("aria-current","step"); else c.removeAttribute("aria-current"); });
+    const ex = $("#explain"); ex.classList.toggle("eli5", eli5);
+    ex.innerHTML = eli5
+      ? `<div class="emoji" aria-hidden="true">${s.emoji}</div><h3>Step ${i+1} of 6 · explain like I'm 5</h3><p class="big">${s.eli5}</p>`
+      : `<h3>Step ${i+1} of 6</h3><h2>${s.title}</h2><p>${s.text}</p><ul class="facts">${s.facts.map((f)=>`<li>${f}</li>`).join("")}</ul>`;
+    $("#where").innerHTML = `<div class="owl">${s.where}</div>`;
+  }
+  function paint(){
+    const t = now();
+    $("#scrub").value = Math.floor(t);
+    $("#time").textContent = `${(t/1000).toFixed(1)} / 24 s`;
+    render(Math.min(5, Math.floor(t / STEP_MS)));
+  }
+  function tick(){ paint(); requestAnimationFrame(tick); }
+
+  $("#play").onclick = ()=> setPlaying(!playing);
+  box.onclick = ()=> setPlaying(!playing);
+  $("#prev").onclick = ()=> goStep(step - 1, true);
+  $("#next").onclick = ()=> goStep(step + 1, true);
+  $("#scrub").addEventListener("input", (e)=>{ setPlaying(false); seek(+e.target.value); });
+  $("#speed").onchange = (e)=> anims.forEach((a)=> a.playbackRate = +e.target.value);
+  $("#eli5").onchange = (e)=>{ eli5 = e.target.checked; const k=step; step=-1; render(k); try{ localStorage.setItem("oc-eli5", eli5 ? "1":"0"); }catch(_){} };
+  document.addEventListener("keydown", (e)=>{
+    if (e.target.matches("input[type=range], select")) return;
+    if (e.key === " ") { e.preventDefault(); setPlaying(!playing); }
+    else if (e.key === "ArrowRight") goStep(step + 1, true);
+    else if (e.key === "ArrowLeft") goStep(step - 1, true);
+    else if (e.key.toLowerCase() === "e") { $("#eli5").checked = !$("#eli5").checked; $("#eli5").onchange({target: $("#eli5")}); }
+  });
+
+  fetch("images/owlcontinuity_process.svg").then((r)=>r.text()).then((svg)=>{
+    box.innerHTML = svg;
+    anims = box.querySelector("svg").getAnimations({subtree:true});
+    try{ if(localStorage.getItem("oc-eli5")==="1"){ $("#eli5").checked = true; eli5 = true; } }catch(_){}
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) goStep(0, true);
+    render(0); requestAnimationFrame(tick);
+  }).catch(()=>{ box.innerHTML = '<img src="images/owlcontinuity_process.svg" alt="OwlContinuity process animation" style="width:100%">'; render(0); });
+})();
+</script>
+</body>
+</html>

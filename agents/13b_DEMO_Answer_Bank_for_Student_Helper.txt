@@ -1,0 +1,42 @@
+ANSWER BANK - DEMO-101 (FICTIONAL)
+The professor's approved questions and answers. Upload this file to the OwlContinuity Student Helper's knowledge next to the course pack, and replace it whenever the Instructor Desk prints an UPDATED ANSWER BANK.
+Format: ID | semester or date approved | question | approved answer.
+- A entries are about this course and this semester (dates, this assignment). Entries marked "Spring 2026" were reviewed and carried over from last semester with the Instructor Desk's CARRY OVER mode.
+- G entries are GENERAL course rules the professor reuses every semester for every assignment (how to submit, files, pictures, code, citations, collaboration, late work and so on). They are not answers to any specific assignment question. If an assignment's own instructions, rubric or a posted announcement say something different, the assignment wins.
+Everything in this file is invented for a competition demonstration.
+
+=== THIS SEMESTER (A) ===
+A1 | Aug 2026 | Q: Can we do the lab online or from home? | A: No. The lab needs the equipment in our campus lab room, so it is always in person. If it has to move, I will post the new time in Canvas Announcements.
+A2 | Aug 2026 | Q: Where do I find the latest schedule? | A: Always check Announcements in our Canvas course. I post every schedule change there. Campus open or closed status comes from the university's official announcements, not from me.
+A3 | Oct 18, 2026 | Q: Do I have to submit anything while campus is closed? | A: No. Nothing is due while classes are suspended. Anything that falls inside the closure will move, and I will post the new dates.
+A4 | Oct 18, 2026 | Q: Is the final exam moving? | A: No. The final stays on Friday, November 6 at 10:00 am.
+A5 | Oct 20, 2026 | Q: When is the lab? | A: The lab is on Thursday, October 29, 1:00-2:50 pm, in the campus equipment room.
+A6 | Aug 2026 | Q: Is the Monday workshop required? | A: No, it is optional practice. It is a good way to prepare for the final.
+A7 | Oct 20, 2026 | Q: Is Quiz 1 open-book? | A: Quiz 1 stays closed-book, but you may bring one handwritten page of notes.
+A8 | Spring 2026, carried over Oct 21, 2026 | Q: Can we work in pairs on the memo? | A: No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.
+A9 | Spring 2026, carried over Oct 21, 2026 | Q: Is the textbook required? | A: No. All readings are posted in Canvas.
+A10 | Spring 2026, updated Oct 21, 2026 | Q: Can I use AI tools like ChatGPT or Grammarly? | A: You may use AI tools to brainstorm ideas and to check grammar. You may not use AI to write any part of the decision memo or to answer quiz questions. If you used AI, add one sentence at the end of your memo saying how.
+
+=== GENERAL RULES FOR EVERY ASSIGNMENT (G) ===
+G1 | General (all semesters, all assignments) | Q: How do I submit an assignment? | A: Submit in Canvas, in that assignment's submission box, before the due time shown there. Email is only a backup if Canvas fails (see G8).
+G2 | General (all semesters, all assignments) | Q: What file type should I submit? | A: One PDF, unless the assignment says otherwise. Word or Pages files and photos of paper are not accepted as the final submission.
+G3 | General (all semesters, all assignments) | Q: How should I name my file? | A: Lastname_AssignmentName.pdf (for example Lee_Memo.pdf), unless the assignment gives a different name.
+G4 | General (all semesters, all assignments) | Q: Can I include pictures, charts or screenshots? | A: Yes, if they support your point. Put them inside the PDF, give each one a short caption and say where it came from. They don't count toward the word limit, but they can't replace required writing.
+G5 | General (all semesters, all assignments) | Q: Should I include code or spreadsheets? | A: Only if the assignment involves analysis you did with code or a spreadsheet. Put short excerpts or the key output in an appendix of the PDF, not in the main text. If the assignment asks for the files themselves, upload them as extra attachments in the same Canvas submission.
+G6 | General (all semesters, all assignments) | Q: Can I submit a photo of handwritten work? | A: No, unless the assignment says handwritten work is allowed. Type it and export it to PDF.
+G7 | General (all semesters, all assignments) | Q: How long should it be? | A: Follow the length in that assignment's prompt and rubric. If they disagree or it's unclear, ask me before you start, and I'll post the answer for everyone.
+G8 | General (all semesters, all assignments) | Q: What if Canvas won't accept my file? | A: Screenshot the error, send me the PDF through Canvas Inbox or FAU email before the deadline, then submit in Canvas as soon as it works. Keep the screenshot.
+G9 | General (all semesters, all assignments) | Q: How do I know my submission went through? | A: Canvas shows a confirmation with the submission time. Open the uploaded file to check it's the right one, and keep a screenshot.
+G10 | General (all semesters, all assignments) | Q: Can I resubmit after I submit? | A: Yes, until the deadline. I grade the last submission made before the deadline.
+G11 | General (all semesters, all assignments) | Q: Which citation style should I use? | A: APA 7 for all written work. Cite every source, including data and images you didn't make yourself.
+G12 | General (all semesters, all assignments) | Q: Do I need a title page? | A: No. Put your name, the course, the assignment name and the date at the top of the first page.
+G13 | General (all semesters, all assignments) | Q: Can I work with classmates? | A: You may discuss ideas and course material, but unless an assignment says it is group work, write and submit your own work.
+G14 | General (all semesters, all assignments) | Q: Can I use AI tools? | A: Follow the AI policy in the syllabus and in the assignment. If an assignment doesn't say, ask me first. Always add a sentence saying how you used AI.
+G15 | General (all semesters, all assignments) | Q: What if I need to submit late? | A: Contact me before the deadline. The late-work rule is in the syllabus, and extensions can't be approved after the deadline without a documented reason.
+G16 | General (all semesters, all assignments) | Q: Where do I find the rubric? | A: It is attached to each assignment in Canvas. Read it before you start; it's what I grade with.
+G17 | General (all semesters, all assignments) | Q: Do appendices count toward the length limit? | A: No. Figures, tables and code in an appendix don't count, but put your key points in the main text, because that's what is graded first.
+G18 | General (all semesters, all assignments) | Q: How fast will you reply to my messages? | A: Within one business day. Message me through Canvas Inbox and put the course and the assignment name in the subject line. A new question for the course FAQ keeps the subject "New question for the course FAQ: ..." so I can add the answer to the bank.
+G19 | General (all semesters, all assignments) | Q: I need accommodations. What do I do? | A: Contact the accommodations office listed in the syllabus and send me your letter privately. Don't share personal details in class discussions.
+G20 | General (all semesters, all assignments) | Q: How do I ask about a grade? | A: Wait 24 hours after grades are posted, then message me within one week, naming the rubric item and your reason.
+G21 | General (all semesters, all assignments) | Q: I missed class. Where are the materials? | A: Slides and notes are in that week's Canvas module. Ask a classmate for notes, and bring questions to office hours.
+G22 | General (all semesters, all assignments) | Q: Where do I find the readings? | A: Readings are listed in Canvas under Modules, with their link. If a reading has no link or location, ask me through Canvas Inbox. When you may choose your own article, search FAU Libraries (library.fau.edu).

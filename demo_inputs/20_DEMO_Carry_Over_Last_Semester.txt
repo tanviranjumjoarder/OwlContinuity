@@ -1,0 +1,50 @@
+MODE: DEMO
+REQUEST: CARRY OVER. I taught DEMO-101 last spring too. Below are the questions and answers I gave students then, this semester's course materials, and my current answer bank. Tell me which spring answers I can reuse for this semester's similar questions, and propose the updated answer bank. Today is Wed Oct 21, 2026.
+Everything below is fictional and invented for a competition demonstration.
+
+=== SPRING 2026 QUESTIONS AND ANSWERS (names removed) ===
+SP1 | Q: Can we do the lab online? | A: No, the lab is in person in the equipment room.
+SP2 | Q: Can we work in pairs on the memo? | A: No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.
+SP3 | Q: When is the final? | A: Friday, May 1 at 10:00 am.
+SP4 | Q: Can I use Grammarly or ChatGPT? | A: You may use Grammarly to check grammar. No ChatGPT.
+SP5 | Q: How long is the memo? | A: About 1,000 words.
+SP6 | Q: My laptop broke and I lost my draft. Can I have two more days? | A: Yes, take until Monday.
+SP7 | Q: Is the textbook required? | A: No. All readings are posted in Canvas.
+
+=== THIS SEMESTER: COURSE AI POLICY ===
+You may use AI tools to brainstorm ideas and to check grammar. You may not use AI to write any part of the decision memo or to answer quiz questions. If you used AI, add one sentence at the end of your memo saying how.
+
+=== THIS SEMESTER: SUBMISSION RULES ===
+Submit the memo as one PDF file in Canvas, named Lastname_Memo.pdf.
+If Canvas fails within 2 hours of a deadline: take a screenshot of the error, email the PDF to the instructor through Canvas Inbox or FAU email before the deadline, then submit in Canvas as soon as it works. Keep your screenshots.
+Late work: ask the instructor before the deadline.
+
+=== THIS SEMESTER: MEMO ASSIGNMENT PROMPT ===
+Decision Memo. Write a 2-3 page memo to a manager recommending one of the two business options we compared in class. Use evidence from the lab to support your recommendation. Explain why you rejected the other option. Due Friday, October 30 at 5:00 pm in Canvas.
+
+=== THIS SEMESTER: MEMO RUBRIC ===
+- Clear recommendation (25 points): states one option and the main reason in the first paragraph.
+- Evidence (35 points): uses data from the lab's evidence table to support the recommendation.
+- Comparison (25 points): explains why the other option was rejected.
+- Writing and format (15 points): professional memo format, maximum 600 words, one PDF named Lastname_Memo.pdf.
+
+=== THIS SEMESTER: POSTED ANNOUNCEMENT ===
+Schedule update (plan v2). Because of the campus closure from Mon Oct 19 through Fri Oct 23, these dates have changed. This announcement replaces the dates in the syllabus and in the memo assignment.
+- Evidence methods lesson: Mon Oct 26, 3:00-3:50 pm
+- Comparing options lesson: Tue Oct 27, 10:00-10:50 am
+- Memo lesson: Wed Oct 28, 10:00-10:50 am (unchanged)
+- Lab in the campus equipment room: Thu Oct 29, 1:00-2:50 pm (stays in person)
+- Quiz 1: Thu Oct 29, 3:00-3:30 pm
+- Decision memo due: Tue Nov 3, 5:00 pm
+- Optional practice workshop: Mon Nov 2, 10:00-10:50 am (still optional)
+- Review: Wed Nov 4, 10:00-10:50 am (unchanged)
+- Final assessment: Fri Nov 6, 10:00-11:00 am (unchanged)
+
+=== MY CURRENT ANSWER BANK ===
+A1 | Aug 2026 | Q: Can we do the lab online or from home? | A: No. The lab needs the equipment in our campus lab room, so it is always in person. If it has to move, I will post the new time in Canvas Announcements.
+A2 | Aug 2026 | Q: Where do I find the latest schedule? | A: Always check Announcements in our Canvas course. I post every schedule change there. Campus open or closed status comes from the university's official announcements, not from me.
+A3 | Oct 18, 2026 | Q: Do I have to submit anything while campus is closed? | A: No. Nothing is due while classes are suspended. Anything that falls inside the closure will move, and I will post the new dates.
+A4 | Oct 18, 2026 | Q: Is the final exam moving? | A: No. The final stays on Friday, November 6 at 10:00 am.
+A5 | Oct 20, 2026 | Q: When is the lab? | A: The lab is on Thursday, October 29, 1:00-2:50 pm, in the campus equipment room.
+A6 | Aug 2026 | Q: Is the Monday workshop required? | A: No, it is optional practice. It is a good way to prepare for the final.
+A7 | Oct 20, 2026 | Q: Is Quiz 1 open-book? | A: Quiz 1 stays closed-book, but you may bring one handwritten page of notes.

@@ -1,0 +1,65 @@
+DEMO-202 TEST D1 STEP 1 - Instructor Desk, owlONE gpt-6-luna, Sat Oct 17, 2026 ~11:05 am. Input: file 31 (new chat).
+RESULT: PASS. Status NEEDS DECISION; no slot or date invented; Quiz 3 exact date flagged as missing; flagged "no exceptions" vs single make-up quiz wording; holding announcement without dates; weekdays checked with code.
+Not flagged: the missing week #11 label (no criterion for it).
+
+--- RESPONSE (copied word for word from owlONE) ---
+DEMO | DEMO202-REAL-SYLLABUS | v1 | NEEDS DECISION
+
+No feasible recovery schedule can be assigned: no replacement slot, room, or authorized alternative was supplied. The notice is simulated, so this is a demonstration—not a statement about FAU's actual operating status.
+
+What I understood
+
+Event table — Tue/Thu dates are derived from the syllabus's week ranges and meeting pattern. Topic placement within the overloaded weeks is not fully specified. Prerequisites and learning objectives are not stated.
+
+ID What Date/time Type
+E01 Lecture 11: Behavior analytics Tue Oct 13, 12:30–1:50 pm Lesson
+E02 Lecture 12: Link prediction Thu Oct 15, 12:30–1:50 pm Lesson
+E03 Project part 2 due Oct 11–17; exact date/time not stated Deadline
+E04 Lecture 13: Recommendation systems Tue Oct 20, 12:30–1:50 pm Lesson
+E05 Lecture 14: Quiz 3 prep Thu Oct 22, 12:30–1:50 pm Lesson; direct hit
+E06 Quiz 3 announcement Oct 18–24; exact date/time not stated Announcement
+E07–E08 Regular class meetings; week lists Quiz 3, Lecture 15, and Lecture 16 start, but does not assign them to meetings Tue Oct 27 and Thu Oct 29, 12:30–1:50 pm Meetings
+E09 Quiz 3, in person Oct 25–31; exact date/time not stated Assessment
+E10 Lecture 16 continued: MapReduce example Tue Nov 3, 12:30–1:50 pm Lesson
+E11 Lecture 17: Apache Spark Thu Nov 5, 12:30–1:50 pm Lesson
+E12 Project Part III announcement Nov 1–7; exact date/time not stated Announcement
+E13 Lecture 18: Spark framework Tue Nov 10, 12:30–1:50 pm Lesson
+E14 Lecture 19: Spark Streaming; Quiz 4 prep Thu Nov 12, 12:30–1:50 pm Lesson/review
+E15–E16 Project part 4 and Quiz 4 announcements Nov 8–14; exact dates/times not stated Announcements
+
+Rules table
+R1 Meetings are Tue/Thu, 12:30–1:50 pm, in person at a campus classroom. STATED, PHYSICAL
+R2 Quizzes are in person and must be taken on dates specified in class. STATED, PHYSICAL, FIXED
+R3 "No exceptions" conflicts or is unclear alongside "A single missed quiz can be made up in the last class." STATED; instructor clarification needed
+R4 Schedule is tentative and subject to change; this does not specify a replacement option. STATED
+R5 Mapping weekly topics to individual meeting dates is an assumption where the schedule lists more than two items. INFERRED
+
+Options: none supplied. No course-level access limits were stated.
+
+Notice check: N1 is labeled simulated; it names a fictional scenario authority, issued Wed Oct 21, 2026 at 4:00 pm Eastern. It applies to all classes in Classroom Building A and cancels activity in that building Thu Oct 22, 00:00–23:59 Eastern. No replacement of an earlier notice is stated; none was supplied here. It does not expressly prohibit online activity, but the syllabus does not authorize converting this physical class to online.
+
+Recovery table
+E01–E04 As listed / Unchanged / Unaffected / Syllabus
+E05 Thu Oct 22 class / Canceled; replacement unassigned / Direct hit / Simulated N1
+E06 Quiz 3 announcement week / Unchanged; exact date unknown / No direct hit established / Syllabus
+E07–E08 Oct 27/29 meetings / Unchanged; topic allocation unclear / Unaffected by N1 / Syllabus
+E09 Quiz 3 in week of Oct 25 / No change proposed; exact date unknown / Fixed-date rule; confirm date / Syllabus
+E10–E16 As listed / Unchanged / Outside closure / Syllabus
+
+Math check
+N1 closure overlap: Thu Oct 22, 00:00 EDT -> class 12:30–1:50 pm EDT: class is wholly within the closure; 80 minutes. Weekdays and overlap calculated with code.
+Elapsed-time spacing rules: no spacing rule was stated for these events, so no elapsed-time pass/fail calculation applies.
+
+Summary and decisions
+What happened: Under simulated N1, the Thu Oct 22 class in the named building is canceled.
+Domino effects: The canceled meeting appears to include Quiz 3 prep, but the topic mapping is inferred. No stated preparation interval requires moving Quiz 3; its exact date is also absent from this excerpt.
+Instructor decisions: Provide an authorized replacement slot/room or alternative; confirm the Quiz 3 date and the missed-quiz wording. No room or slot has been booked.
+
+Learning check: Lecture 14/Quiz 3 preparation may be affected. The excerpt gives no learning objectives or authorized replacement activity, so coverage cannot yet be assessed. Other listed events remain unchanged in this draft.
+
+DRAFT — DEMO ONLY; NOT FOR DISTRIBUTION
+A simulated scenario notice states that class activity in Classroom Building A is canceled on Thursday, October 22. I'm reviewing the course items affected, including Quiz 3 preparation. I'll share confirmed course-specific changes through [course communication channel] after the replacement plan is settled.
+
+Sources used: Instructor-pasted DEMO-202 schedule excerpt (Fall 2026; described by the instructor as from the public Simple Syllabus page); simulated notice N1 (Oct 21, 2026). The supplied team reference notes were not needed for this draft.
+
+Draft for instructor review. No systems have been updated.

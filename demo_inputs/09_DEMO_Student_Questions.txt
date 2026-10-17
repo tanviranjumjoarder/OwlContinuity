@@ -1,0 +1,34 @@
+MODE: DEMO
+CASE: DEMO-101-SYLLABUS
+REQUEST: ANSWER QUESTIONS. I approved plan version 2 and posted it to my class. Below are that plan, my answer bank (answers I already approved), and the student questions that came in tonight, with names removed. Draft replies for what you can, and ask me about anything new.
+Everything below is fictional and invented for a competition demonstration.
+
+=== APPROVED PLAN v2 (approved and posted by me on Tue Oct 20) ===
+Campus closure (simulated notice D1): Mon Oct 19 through Fri Oct 23. Classes resume Mon Oct 26.
+- Evidence methods lesson: Mon Oct 26, 3:00-3:50 pm
+- Comparing options lesson: Tue Oct 27, 10:00-10:50 am
+- Memo lesson: Wed Oct 28, 10:00-10:50 am (unchanged)
+- Lab in the campus equipment room: Thu Oct 29, 1:00-2:50 pm (moved from Fri Oct 23; it stays in person)
+- Quiz 1: Thu Oct 29, 3:00-3:30 pm (moved so you get two full days after both lessons)
+- Decision memo due: Tue Nov 3, 5:00 pm (moved from Fri Oct 30 so you get two full days after the lab)
+- Optional practice workshop: Mon Nov 2, 10:00-10:50 am (unchanged, still optional)
+- Review: Wed Nov 4, 10:00-10:50 am (unchanged)
+- Final assessment: Fri Nov 6, 10:00-11:00 am (unchanged)
+
+=== MY ANSWER BANK (answers I approved earlier) ===
+A1 | approved Aug 2026 | Q: Can we do the lab online or from home? | A: No. The lab needs the equipment in our campus lab room, so it is always in person. If it has to move, I will post the new time in Canvas Announcements.
+A2 | approved Aug 2026 | Q: Where do I find the latest schedule? | A: Always check Announcements in our Canvas course. I post every schedule change there. Campus open or closed status comes from the university's official announcements, not from me.
+A3 | approved Oct 18, 2026 | Q: Do I have to submit anything while campus is closed? | A: No. Nothing is due while classes are suspended. Anything that falls inside the closure will move, and I will post the new dates.
+A4 | approved Oct 18, 2026 | Q: Is the final exam moving? | A: No. The final stays on Friday, November 6 at 10:00 am.
+A5 | approved Oct 18, 2026 | Q: When is the lab? | A: The lab is still on Friday, October 23, 1:00-2:50 pm, in the campus equipment room.
+A6 | approved Aug 2026 | Q: Is the Monday workshop required? | A: No, it is optional practice. It is a good way to prepare for the final.
+
+=== STUDENT QUESTIONS (Canvas inbox, Tue Oct 20 evening; names removed) ===
+Q1: Can we do the lab from home this time since campus is closed?
+Q2: Is the final still on November 6?
+Q3: when is the lab now??
+Q4: Is the decision memo still due Friday the 30th?
+Q5: Will Quiz 1 be open-book now that we lost a week?
+Q6: My family had to evacuate to Orlando and I might not be back until Nov 2. Can I get extra time on the memo?
+Q7: Do we have to turn anything in while campus is closed?
+Q8: is the final exam moving too?

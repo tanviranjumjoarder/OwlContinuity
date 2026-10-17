@@ -1,0 +1,106 @@
+RUN RECORD - Domino demo, round 2: live update (run sheet steps 3.4-3.7)
+Date/time: Fri Oct 16, 2026, about 4:50 pm EDT
+Agent: OwlContinuity - Instructor Desk (instructions 01a v1.2; knowledge FAU_Reference_Notes.txt; Data & File Tools ON; Search the Internet OFF)
+Model label shown: OpenAI (gpt-6-luna)
+Input: 03_DEMO_Live_Update.txt, pasted in full (807 characters) into the SAME chat as round 1
+Attempts: 1 (completed in about 90 seconds, no error)
+
+------------------------------------------------------------
+RESPONSE (copied from the page)
+
+I'll treat D1 as replacing D0, recheck every affected event against the unchanged rules, and trace dependencies through the review and final. Then I'll calculate the elapsed-time checks in America/New_York by converting each timestamp to UTC.
+
+DEMO | DEMO-101-SYLLABUS | Plan v2 | DRAFT - INSTRUCTOR REVIEW
+
+What happened: D1 explicitly replaces D0 and extends the simulated suspension through Fri Oct 23 at 11:59 p.m.; required activity may resume Mon Oct 26.
+Domino effects: The first two make-up lessons from v1 now fall in the suspension; the lab, quiz, and memo deadline also need changes under D1 and the course timing rules.
+Instructor decision: Confirm a location for the two make-up lessons; no location was supplied.
+
+What I understood
+D1 applies to this fictional course, all modalities, and all required activity. It forbids weekend replacement activity. The revised schedule below uses the supplied options only.
+
+ID | Event | Revised date/time (Eastern) | Type; needs; objective
+E01 | Evidence methods | Mon Oct 26, 3:00–3:50 p.m. | Lesson; —; Goal 1
+E02 | Comparing options | Tue Oct 27, 10:00–10:50 a.m. | Lesson; E01; Goal 2
+E03 | Equipment-room lab | Thu Oct 29, 1:00–2:50 p.m. | Physical lab; E01; Goal 1
+E04 | Quiz 1 | Thu Oct 29, 3:00–3:30 p.m. | Assessment; E01, E02; Goals 1, 2
+E05 | Writing a decision memo | Wed Oct 28, 10:00–10:50 a.m. | Lesson; —; Goal 3
+E06 | Decision memo due | Tue Nov 3, 5:00 p.m. | Deadline; E03, E05; Goals 1, 3
+E07 | Optional practice workshop | Mon Nov 2, 10:00–10:50 a.m. | Optional; all goals
+E08 | Review | Wed Nov 4, 10:00–10:50 a.m. | Review; E04, E06; all goals
+E09 | Final assessment | Fri Nov 6, 10:00–11:00 a.m. | Assessment; E08; all goals
+
+Rule | Checkable interpretation | Tag
+Preserve required events/goals; don't repurpose optional workshop; minimize changes | Keep all events and E07 optional; change only as needed | STATED
+Fixed items | E05 and E09 stay at original times | FIXED
+Order/prep | E02 after E01; lab ≥24h after E01; quiz ≥48h after both lessons; memo due ≥48h after lab and E05; review after quiz and memo; final ≥24h after review | STATED
+Assessment spacing | Quiz start, memo due, and final start are at least 48h apart and on different dates | STATED
+Physical lab | Use only the original or supplied backup time; no online version | PHYSICAL, STATED
+Other constraints | Use listed alternatives only; no weekend replacement, closure activity, or live-session overlap; digital additions need text and recordings captions | STATED
+
+Domino effects and recovery table
+ID | Was in v1 | Now | Why | Rule/source
+E01 | Thu Oct 22, 10:00–10:50 a.m. | Mon Oct 26, 3:00–3:50 p.m. | V1 make-up slot is now in D1 suspension; earliest usable lesson slot | D1; supplied slots
+E02 | Fri Oct 23, 10:00–10:50 a.m. | Tue Oct 27, 10:00–10:50 a.m. | V1 slot is in suspension; next usable slot after E01 | D1; order rule
+E03 | Fri Oct 23, 1:00–2:50 p.m. | Thu Oct 29, 1:00–2:50 p.m. | Original lab time is in suspension; use supplied physical backup | D1; physical lab rule
+E04 | Mon Oct 26, 10:00–10:30 a.m. | Thu Oct 29, 3:00–3:30 p.m. | Original quiz precedes both moved lessons; Tue Oct 27 3 p.m. is only 4h10 after E02 ends, short of 48h; Thu option passes | Quiz-spacing rule
+E05 | Wed Oct 28, 10:00–10:50 a.m. | Unchanged | Fixed | Instructor rule
+E06 | Fri Oct 30, 5:00 p.m. | Tue Nov 3, 5:00 p.m. | Thu lab backup would leave only 26h10 to original deadline, short of 48h | Memo-prep rule
+E07 | Mon Nov 2, 10:00–10:50 a.m. | Unchanged | Optional; no need to move or repurpose | Instructor rule
+E08 | Wed Nov 4, 10:00–10:50 a.m. | Unchanged | Still follows quiz and memo | Dependency rules
+E09 | Fri Nov 6, 10:00–11:00 a.m. | Unchanged | Fixed; review interval still passes | Instructor rule
+
+Dependency chain: D1 invalidates the v1 lesson slots and the original lab slot. The lessons move to the earliest usable ordered slots; the quiz then moves because it must follow both lessons by 48 hours. The lab moves to its only remaining supplied slot; that makes the original memo deadline too early, so the memo moves. Review and final stay put because their dependency intervals still pass.
+
+Math check
+Elapsed intervals were calculated with code using America/New_York times converted to UTC. The Nov 1 fall-back hour is included where applicable.
+Rule | From → To | Elapsed | Needed | Result
+E01 before E02 | Mon Oct 26, 3:50 p.m. → Tue Oct 27, 10:00 a.m. | 18h10m | E02 later | PASS
+E01 → lab | Mon Oct 26, 3:50 p.m. → Thu Oct 29, 1:00 p.m. | 69h10m | 24h | PASS
+E01 → quiz | Mon Oct 26, 3:50 p.m. → Thu Oct 29, 3:00 p.m. | 71h10m | 48h | PASS
+E02 → quiz | Tue Oct 27, 10:50 a.m. → Thu Oct 29, 3:00 p.m. | 52h10m | 48h | PASS
+Lab → memo due | Thu Oct 29, 2:50 p.m. → Tue Nov 3, 5:00 p.m. | 123h10m | 48h | PASS
+E05 → memo due | Wed Oct 28, 10:50 a.m. → Tue Nov 3, 5:00 p.m. | 151h10m | 48h | PASS
+Quiz ends → review | Thu Oct 29, 3:30 p.m. → Wed Nov 4, 10:00 a.m. | 139h30m | After quiz | PASS
+Memo due → review | Tue Nov 3, 5:00 p.m. → Wed Nov 4, 10:00 a.m. | 17h | After memo | PASS
+Quiz start → memo due | Thu Oct 29, 3:00 p.m. → Tue Nov 3, 5:00 p.m. | 123h | 48h; different dates | PASS
+Quiz start → final | Thu Oct 29, 3:00 p.m. → Fri Nov 6, 10:00 a.m. | 188h | 48h; different dates | PASS
+Memo due → final | Tue Nov 3, 5:00 p.m. → Fri Nov 6, 10:00 a.m. | 65h | 48h; different dates | PASS
+Review ends → final | Wed Nov 4, 10:50 a.m. → Fri Nov 6, 10:00 a.m. | 47h10m | 24h | PASS
+
+Second-pass checks: No required event is in D1's suspension; no weekend replacement is scheduled. The lab remains physical, all events appear once, fixed items are unchanged, and live sessions do not overlap. The lab ends ten minutes before the quiz starts.
+
+Learning check and instructor actions
+Goals 1–3 remain represented in the scheduled lessons, lab, quiz, memo, review, and final. No new digital activity is proposed. Make-up lesson locations remain unknown: confirm them before posting. The listed slots came from the instructor's input; nothing has been booked.
+
+Student announcement draft
+DRAFT — DEMO ONLY: Because the simulated closure runs through Friday, Oct 23, Evidence Methods is rescheduled to Monday, Oct 26, 3:00–3:50 p.m., and Comparing Options to Tuesday, Oct 27, 10:00–10:50 a.m. The equipment-room lab moves to Thursday, Oct 29, 1:00–2:50 p.m. Quiz 1 will be Thursday, Oct 29, 3:00–3:30 p.m.; the decision memo is due Tuesday, Nov 3, at 5:00 p.m. The memo lesson, optional workshop, review, and final remain unchanged. [Make-up lesson location to be confirmed before posting.] This is a fictional competition demonstration, not a real FAU notice.
+
+Change log: D1, issued Oct 20, explicitly replaces D0 and extends suspension through Oct 23; no weekend replacements allowed. E01–E04 and E06 changed as shown; E05, E07, E08, and E09 stayed unchanged from v1.
+
+Sources used: DEMO-101 syllabus and instructor rules (pasted); simulated Notice D0 v1 (superseded); simulated Notice D1 v2, issued Oct 20, 2026.
+
+Draft for instructor review. No systems have been updated.
+
+------------------------------------------------------------
+CHECK AGAINST 06_Answer_Check PART B (expected plan is the only valid plan)
+[PASS] E01 -> Mon Oct 26 3:00-3:50 pm (direct hit)
+[PASS] E02 -> Tue Oct 27 10:00-10:50 am (direct hit)
+[PASS] E03 lab -> Thu Oct 29 1:00-2:50 pm, stays physical (direct hit)
+[PASS] E04 quiz -> Thu Oct 29 3:00-3:30 pm (domino), with the correct reason: Tue Oct 27 3 pm is only 4h10m after E02
+[PASS] E06 memo -> Tue Nov 3 5:00 pm (domino), with the key reason: 26h10m after the moved lab, rule needs 48h
+[PASS] E05, E07, E08, E09 unchanged; final fixed
+[PASS] Every elapsed time matches the verified answer check: 18h10m, 69h10m, 71h10m, 52h10m, 123h10m (+1h across Nov 1), 151h10m, 123h, 188h, 65h, 47h10m; extra rows 139h30m and 17h also correct
+[PASS] "calculated with code ... converted to UTC" - the daylight-saving trap handled correctly
+[PASS] D1 recognized as replacing D0; no weekend activity; no overlaps (lab ends 10 min before quiz)
+[PASS] Change log present; announcement labeled DRAFT, matches plan v2, room left [to be confirmed]
+[PASS] Last line present
+
+RED FLAGS (Part D): none seen (0 of 10).
+
+SIDE-BY-SIDE SCORECARD, OwlContinuity column (Part E): 8 of 8
+ 1 memo moved because of the lab: yes | 2 quiz moved to Oct 29 3 pm: yes | 3 final fixed: yes | 4 lab physical: yes
+ 5 nothing in closure/weekend: yes | 6 every event accounted for: yes | 7 shows checkable math: yes | 8 announcement matches: yes
+(The plain-chat column has NOT been run yet.)
+
+Result: PASS

@@ -1,0 +1,20 @@
+GENERAL ASSIGNMENT-RULE QUESTIONS (G entries) - Student Helper, owlONE gpt-6-luna, Oct 16, 2026 evening.
+Agent state: instructions 12a v1.0 + G precedence + FAQ-tag rule (10,925 chars); knowledge 13 course pack + 13b (A1-A10 + G1-G21). 13c (A11) is NOT loaded, so the S7 loop demo is ready.
+Each question in a NEW chat. Expected answers: answer check Part M.
+
+G-a "Can I put screenshots and a chart in my memo?" -> PASS. Yes; inside the PDF, caption, source; don't count toward word limit; can't replace required writing; APA 7. Cited G4 and G11.
+G-b "I wrote my analysis in Python. Do I paste the code into the memo?" -> PASS. Not in main text; short excerpt or key output in an appendix; prompt doesn't ask for the code file. Cited G5. Wrote no code.
+G-c "Can I hand in a photo of my handwritten notes as the memo?" -> PASS. No (G6); this memo doesn't allow it; one typed PDF named Lastname_Memo.pdf in Canvas.
+G-d "What citation style do you want us to use?" -> PASS. APA 7, cite data and images too. Cited G11.
+G-f "How long should the memo be?" -> PASS (precedence). Cited G7, then showed the conflict: prompt "2-3 pages" vs rubric "maximum 600 words"; did not pick; drafted a message to the instructor.
+G-g "What do I name my memo file?" -> PASS. Lastname_Memo.pdf (Lee_Memo.pdf); cited G3 and the rubric.
+G-h "Can I resubmit if I find a typo after submitting?" -> PASS. Yes until the deadline; last one before the deadline is graded. Cited G10. (Did not add the Nov 3 deadline; not required.)
+G-e (cover page) -> not run.
+
+REGRESSION
+S7 early-draft feedback (13b, no A11) run 1 and 2 BEFORE the fix -> PARTIAL: correctly NEW, but the subject was "DEMO-101 - Decision Memo draft feedback" instead of "New question for the course FAQ: ...". Cause: the new G18 entry says to put course + assignment in the subject line, which overrode the tag.
+Fix: G18 now says FAQ questions keep the tag; 12a/12b NEW rule says to always use exactly that subject. Re-uploaded 13b and instructions.
+S7 runs 3 and 4 AFTER the fix -> PASS both: "Subject: New question for the course FAQ: ..." and explains the answer will be added to the bank.
+S5 "Is the final exam moving?" -> first attempt hit the platform error "The AI model could not process your request"; Regenerate -> PASS: No, A4, Fri Nov 6 10:00 am, confirmed by the Oct 20 announcement.
+
+TOTAL this round: 7 G PASS, S7 PASS after fix, S5 PASS. Platform errors: 1 (Regenerate fixed).

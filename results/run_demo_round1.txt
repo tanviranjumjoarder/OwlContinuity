@@ -1,0 +1,99 @@
+RUN RECORD - Domino demo, round 1 (run sheet steps 3.1-3.3)
+Date/time: Fri Oct 16, 2026, about 4:40 pm EDT
+Agent: OwlContinuity - Instructor Desk (instructions 01a v1.2; knowledge FAU_Reference_Notes.txt; Data & File Tools ON; Search the Internet OFF)
+Model label shown: OpenAI (gpt-6-luna)
+Input: 02_DEMO_Syllabus_Case.txt, pasted in full (4,328 characters) into a new chat
+Attempts: 2. The first attempt stopped after one sentence with the owlONE error "The AI model could not process your request. Please try again." The second attempt ("Regenerate answer", shown as 2 / 2) completed in about 2 minutes.
+
+------------------------------------------------------------
+RESPONSE (attempt 2, copied from the page)
+
+I'll map the closure hits and syllabus constraints, test the earliest available lesson make-up slots against the downstream timing rules, then use Python with America/New_York time-zone conversion to verify the elapsed intervals.
+
+DEMO | DEMO-101-SYLLABUS | Plan v1 | DRAFT - INSTRUCTOR REVIEW
+
+What happened: Simulated Notice D0 suspends all required activity, in every modality, through Wed Oct 21 at 11:59 p.m.
+Domino effects: The two lessons move to Thu Oct 22 and Fri Oct 23; the listed downstream dates still satisfy the stated rules.
+Instructor decision: Review the proposed changes and confirm a location for the make-up lessons; none was supplied.
+
+What I understood
+
+Notice: Fictional scenario authority; issued Sun Oct 18, 2026 at noon Eastern; applies to the fictional Boca Raton course and all required activity. Activity may resume Thu Oct 22 at midnight. No replacement statement or earlier notice was supplied.
+
+Event table
+ID | What | Date and time (Eastern) | Type | Needs | Objective
+E01 | Evidence methods | Mon Oct 19, 10:00–10:50 a.m. | Lesson | — | Goal 1
+E02 | Comparing options | Wed Oct 21, 10:00–10:50 a.m. | Lesson | E01 | Goal 2
+E03 | Equipment-room lab | Fri Oct 23, 1:00–2:50 p.m. | Lab | E01 | Goal 1
+E04 | Quiz 1 | Mon Oct 26, 10:00–10:30 a.m. | Assessment | E01, E02 | Goals 1, 2
+E05 | Writing a decision memo | Wed Oct 28, 10:00–10:50 a.m. | Lesson | — | Goal 3
+E06 | Decision memo due | Fri Oct 30, 5:00 p.m. | Deadline | E03, E05 | Goals 1, 3
+E07 | Optional practice workshop | Mon Nov 2, 10:00–10:50 a.m. | Optional | — | All goals
+E08 | Review session | Wed Nov 4, 10:00–10:50 a.m. | Review | E04, E06 | All goals
+E09 | Final assessment | Fri Nov 6, 10:00–11:00 a.m. | Assessment | E08 | All goals
+
+Rules table
+Preserve required classes and goals; don't repurpose E07; minimize changes | Keep every event; leave E07 optional and unchanged | STATED
+Final fixed; memo lesson stays | E09 and E05 remain at their original times | FIXED
+Order and prep intervals | E02 after E01; E03 ≥24h after E01; E04 ≥48h after E01 and E02; E06 ≥48h after E03 and E05; E08 after E04 and E06; E09 ≥24h after E08 | STATED
+Assessment spacing | E04 start, E06 due time and E09 start ≥48h apart, and on different dates | STATED
+Lab and make-up constraints | E03 is physical; use only its two supplied times; no online version | PHYSICAL, STATED
+Other supplied options | Make-up lessons, quiz, memo deadline and review may use only the listed alternatives; each lesson slot once | STATED
+Closure, overlap, accessibility, instructor review | No required activity in closure; no live overlap; digital additions need text and recordings captions; instructor reviews | STATED
+
+Options supplied: Lesson make-ups: Thu Oct 22 10:00–10:50 a.m.; Fri Oct 23 10:00–10:50 a.m.; Mon Oct 26 3:00–3:50 p.m.; Tue Oct 27 10:00–10:50 a.m.; Thu Oct 29 10:00–10:50 a.m. Lab: Fri Oct 23 or Thu Oct 29, 1:00–2:50 p.m. Quiz: keep Mon Oct 26 10:00 a.m. or use one of the listed Tue Oct 27, Thu Oct 29, or Mon Nov 2 3:00 p.m. slots. Memo: keep Fri Oct 30 5:00 p.m. or move to Tue Nov 3 5:00 p.m. Review: keep Wed Nov 4 or move to Thu Nov 5 9:00–9:50 a.m. No inferred rules.
+
+Feasible recovery plan
+ID | Was | Now | Why | Rule/source
+E01 | Mon Oct 19, 10:00–10:50 a.m. | Thu Oct 22, 10:00–10:50 a.m. | Direct hit | Closure; earliest usable lesson slot
+E02 | Wed Oct 21, 10:00–10:50 a.m. | Fri Oct 23, 10:00–10:50 a.m. | Direct hit; follows E01 | Closure; order rule
+E03 | Fri Oct 23, 1:00–2:50 p.m. | Unchanged | Unaffected | Supplied physical slot
+E04 | Mon Oct 26, 10:00–10:30 a.m. | Unchanged | Unaffected | Timing rules pass
+E05 | Wed Oct 28, 10:00–10:50 a.m. | Unchanged | Unaffected | Fixed
+E06 | Fri Oct 30, 5:00 p.m. | Unchanged | Unaffected | Timing rules pass
+E07 | Mon Nov 2, 10:00–10:50 a.m. | Unchanged | Unaffected | Optional; not repurposed
+E08 | Wed Nov 4, 10:00–10:50 a.m. | Unchanged | Unaffected | Timing rules pass
+E09 | Fri Nov 6, 10:00–11:00 a.m. | Unchanged | Unaffected | Fixed
+
+Math check
+Elapsed times were calculated with code by converting America/New_York times to UTC. Intervals spanning the Nov 1 clock change include the extra hour. Weekdays were checked.
+Rule | From → To | Elapsed | Needed | Result
+E01 before E02 | Thu Oct 22 10:50 a.m. → Fri Oct 23 10:00 a.m. | 23h 10m | E02 later | PASS
+E01 → E03 | Thu Oct 22 10:50 a.m. → Fri Oct 23 1:00 p.m. | 26h 10m | 24h | PASS
+E01 → E04 | Thu Oct 22 10:50 a.m. → Mon Oct 26 10:00 a.m. | 95h 10m | 48h | PASS
+E02 → E04 | Fri Oct 23 10:50 a.m. → Mon Oct 26 10:00 a.m. | 71h 10m | 48h | PASS
+E03 → E06 | Fri Oct 23 2:50 p.m. → Fri Oct 30 5:00 p.m. | 170h 10m | 48h | PASS
+E05 → E06 | Wed Oct 28 10:50 a.m. → Fri Oct 30 5:00 p.m. | 54h 10m | 48h | PASS
+E04 end → E08 | Mon Oct 26 10:30 a.m. → Wed Nov 4 10:00 a.m. | 216h 30m | After quiz | PASS
+E06 → E08 | Fri Oct 30 5:00 p.m. → Wed Nov 4 10:00 a.m. | 114h | After memo due | PASS
+E04 start → E06 | Mon Oct 26 10:00 a.m. → Fri Oct 30 5:00 p.m. | 103h | 48h; different dates | PASS
+E06 → E09 start | Fri Oct 30 5:00 p.m. → Fri Nov 6 10:00 a.m. | 162h | 48h; different dates | PASS
+E04 start → E09 start | Mon Oct 26 10:00 a.m. → Fri Nov 6 10:00 a.m. | 265h | 48h; different dates | PASS
+E08 end → E09 start | Wed Nov 4 10:50 a.m. → Fri Nov 6 10:00 a.m. | 47h 10m | 24h | PASS
+
+Checks: All events are accounted for once; no required activity is in the suspension; no live sessions overlap; fixed items and the physical lab remain unchanged. The two lesson make-ups use the earliest available slots that satisfy order and leave the lab's original time intact.
+
+Learning check: Goals 1 and 2 remain covered by the moved lessons and unchanged lab/quiz; Goal 3 remains covered by E05 and the memo. No new digital replacement is proposed. The lesson make-up locations were not supplied and are not assumed or booked.
+
+Instructor to-do: Review the proposed plan and confirm the make-up lesson location before announcing it. Supplied times/slots are treated as available for this demo only; nothing has been booked.
+
+Student announcement draft (DRAFT)
+Because of the simulated closure, the Evidence Methods lesson is rescheduled to Thursday, Oct 22, 10:00–10:50 a.m., and Comparing Options to Friday, Oct 23, 10:00–10:50 a.m. The other course dates remain unchanged, including the lab, Quiz 1, memo deadline, review, and final assessment. [Make-up lesson location to be confirmed.] This is a fictional demonstration announcement, not a real FAU notice.
+
+Sources used: Pasted DEMO-101 syllabus schedule and instructor rules; simulated Notice D0, version 1, issued Oct 18, 2026.
+
+Draft for instructor review. No systems have been updated.
+
+------------------------------------------------------------
+CHECK AGAINST 06_Answer_Check PART A
+[PASS] First line: DEMO | case | Plan v1 | DRAFT - INSTRUCTOR REVIEW
+[PASS] "What I understood": event table E01-E09 and rules table, all rules tagged STATED/FIXED/PHYSICAL, no inferred rules
+[PASS] E01 -> Thu Oct 22 10:00-10:50; E02 -> Fri Oct 23 10:00-10:50; E03-E09 unchanged
+[PASS] Every elapsed time matches the verified answer check (23h10m, 26h10m, 95h10m, 71h10m, 170h10m, 54h10m, 103h, 162h, 47h10m), including +1h across Nov 1
+[PASS] Says the times were "calculated with code" (UTC conversion) - the Data & File Tools instruction works
+[PASS] Overlap check (E02 10:00-10:50 and lab 1:00-2:50 on Fri Oct 23 do not overlap)
+[PASS] Announcement labeled DRAFT, matches the plan, leaves the room as [to be confirmed], calls the notice simulated
+[PASS] Last line present
+Minor wording: the 3-line summary lists the two lesson moves under "Domino effects"; they are direct hits (no dominoes in round 1). Not a rule failure.
+Reliability note: 1 of 2 attempts failed with a platform error before answering.
+Result: PASS

@@ -1,0 +1,16 @@
+REVISE PLAN for DEMO202-REAL-SYLLABUS. Same chat, same notice N1. Here are the exact class days and my rules. These are test values for a competition demonstration, not the real instructor's rules. Show every domino effect, the math check and the announcement draft.
+
+=== EXACT CLASS DAYS (all 12:30-1:50 pm, a campus classroom) ===
+- Tue Oct 20: Lecture #13 Recommendation systems
+- Thu Oct 22: Lecture #14 Quiz 3 prep
+- Tue Oct 27: Quiz 3 (in person, Lectures #10-#13), then Lecture #15 Influence
+- Thu Oct 29: Lecture #16 Intro to Big Data (start)
+- Tue Nov 3: Lecture #16 cont'd
+- Thu Nov 5: Lecture #17 Apache Spark
+
+=== MY RULES ===
+1. Quiz 3 starts at least 48 hours after Lecture #14 ends.
+2. Quizzes are in person, in a regular Tue/Thu class time.
+3. Lectures stay in number order. Don't drop anything.
+4. The only make-up time for Lecture #14 is Mon Oct 26, 12:30-1:50 pm, a campus classroom.
+5. Quiz 3 may stay on Tue Oct 27 or move to Thu Oct 29. Nothing else is available.

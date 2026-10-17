@@ -1,0 +1,19 @@
+OWLCONTINUITY DEMO - GENERAL ASSIGNMENT-RULE QUESTIONS (FICTIONAL)
+Paste each one into a NEW chat with the OwlContinuity Student Helper. They are worded differently from the bank on purpose: the agent must match them by meaning. Expected answers: Part M of the answer check (never upload that file).
+
+--- G-a (pictures) ---
+Can I put screenshots and a chart in my memo?
+--- G-b (code) ---
+I wrote my analysis in Python. Do I paste the code into the memo?
+--- G-c (handwritten) ---
+Can I hand in a photo of my handwritten notes as the memo?
+--- G-d (citations) ---
+What citation style do you want us to use?
+--- G-e (title page) ---
+Do I need a cover page?
+--- G-f (length, assignment wins) ---
+How long should the memo be?
+--- G-g (file name) ---
+What do I name my memo file?
+--- G-h (resubmit) ---
+Can I resubmit if I find a typo after submitting?

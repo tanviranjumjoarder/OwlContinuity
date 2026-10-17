@@ -1,0 +1,24 @@
+MODE: DEMO
+CASE: DEMO202-REAL-SYLLABUS
+REQUEST: ANSWER QUESTIONS. This message came in through Canvas Inbox from a student who used the OwlContinuity Student Helper (name removed). Here are my posted announcement and my current answer bank. The course is real (DEMO-202, Fall 2026); the announcement and answer bank are test values set for a competition demonstration.
+
+=== STUDENT MESSAGE (Sat Oct 24, 2026) ===
+Subject: New question for the course FAQ: Project Part 4 due date
+Q1: What is the exact date and time that Project Part 4 is due?
+
+=== MY POSTED ANNOUNCEMENT (Fri Oct 23, 2026) ===
+Quiz 3 moved. Because of the power outage in Classroom Building A on Thu Oct 22 (simulated scenario), Quiz 3 moves to Thursday, October 29, 2026, 12:30 pm, in person in a campus classroom. This replaces the earlier Quiz 3 date (Tue Oct 27).
+
+=== MY SYLLABUS SAYS ===
+Project part 4 due during the final week (week #16, Nov 29 - Dec 5). Schedule is tentative.
+
+=== MY ANSWER BANK ===
+=== THIS SEMESTER (A) ===
+A1 | Oct 15, 2026 | Q: When is Quiz 3? | A: Quiz 3 is on Tuesday, October 27, 12:30 pm, in person in a campus classroom. It covers Lectures #10-#13.
+A2 | Oct 15, 2026 | Q: When is Project Part 3 due? | A: Thursday, November 19, 11:59 pm, in Canvas.
+A3 | Aug 2026 | Q: How do I submit project parts? | A: Submit one Jupyter notebook (.ipynb) and one PDF report in Canvas, named Lastname_ProjectPartN (for example Lee_ProjectPart3.ipynb and Lee_ProjectPart3.pdf).
+A4 | Aug 2026 | Q: Is the project individual or group work? | A: Individual. You may discuss ideas with classmates, but write your own code and your own report.
+A5 | Aug 2026 | Q: When is the make-up quiz? | A: Thursday, December 3, in the last class. You may make up one missed quiz only.
+
+=== GENERAL RULES (G) ===
+(None yet.)

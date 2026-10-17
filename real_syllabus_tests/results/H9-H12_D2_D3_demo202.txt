@@ -1,0 +1,26 @@
+DEMO-202 EXTRA TESTS - owlONE gpt-6-luna, Sat Oct 17, 2026, ~11:30-11:44 am.
+Values approved by Tanvir: answer bank A1-A5 (30b_v2) and the Oct 23 announcement moving Quiz 3 to Thu Oct 29 (course pack 30_v2, section 11). Test values, not the real instructor's.
+DEMO-202 Student Helper knowledge after update: 30_v2 + 30b_v2; after D2: 30_v2 + 30b_v3 (adds A6).
+
+H9 "Is Quiz 3 still on Tuesday?" -> PASS
+"No. The Oct. 23 announcement moved Quiz 3 to Thursday, October 29, 2026, at 12:30 p.m., in person in a campus classroom. It replaces the earlier Tuesday date in the answer bank (A1) and schedule."
+
+H10 "Can I use Grammarly to fix the grammar in my project report?" -> PASS (run 2; run 1 was lost when the page was left while thinking)
+"No—not unless your instructor explicitly permits it for this assignment. The course AI policy prohibits using AI to assist with any course work (Course Pack, section 7). Since Grammarly's features may use AI, the safest choice is not to use it on your project report unless you get explicit permission."
+
+H11 "I have 89.5% right now. Do I get an A-?" -> PASS on facts; differs from expected
+Read the scale correctly: A- starts at 90%, 89.5% is in the B+ range; invented no rounding rule; drafted a private message to confirm. It did not use the "New question for the course FAQ" tag (grades count as personal in the helper's rules, so a private message is reasonable).
+
+H12 "Can my roommate and I do Project Part 3 together?" -> PASS
+"From your instructor's answers (A4): Project work is individual. You may discuss ideas with classmates, but you must write your own code and report."
+
+D2 Instructor Desk, full loop on the real course -> PASS
+Step a (file 34, tagged student question "New question for the course FAQ: Project Part 4 due date"): "1 question: 0 drafts ready, 1 needs your answer"; type NEW; no reply drafted; asks the instructor for the date.
+  Observation: it did not volunteer that bank A1 is out of date after the Quiz 3 announcement (no question asked about it).
+Step b (file 35, professor answer "Fri Dec 4, 2026, 11:59 pm"): "NEW -> answered ... new bank entry A6"; printed the full UPDATED ANSWER BANK A1-A6; said it cannot save files and the professor uploads the file to the Student Helper.
+Step c: bank v3 (A1-A6) uploaded to the DEMO-202 Student Helper; new chat "When exactly is Project Part 4 due?" -> "Project Part 4 is due Friday, December 4, 2026, at 11:59 p.m. in Canvas. From your instructor's answers (A6)." (Same question was NEW in H6.)
+
+D3 Instructor Desk PROMPT CHECK on a test Project Part 2 prompt (file 36) -> PASS
+Scorecard (objective 3/5, deliverables 2/5, format 1/5, AI policy 2/5, rubric 1/5, examples 1/5, submission 2/5). Flagged: "a social network dataset of your choice" with no source; chapters not identified; comparison method unspecified; no date/time or files; rubric not posted. Suggested rewrite with [placeholders] and the AI policy stated. FAQ seeds with [your decision]. Readings check: textbook link https://dmml.asu.edu/smm/ listed to click once ("I cannot open or verify the link here"); dataset none posted; rubric none. No link invented.
+
+D4 (project-deadline domino): approved and run later; see D4_project_deadline_domino.txt (PASS).
