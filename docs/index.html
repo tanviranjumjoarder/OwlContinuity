@@ -242,7 +242,7 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
   const iso = (ms)=>new Date(ms - 12*3600e3).toISOString().slice(0,10);
   function syncDates(){ const n=O.NOTICES[sel.value]; if(n){ $("#from").value=iso(n.from+12*3600e3); $("#to").value=iso(n.to); } }
   sel.addEventListener("change",()=>{ syncDates(); run(); });
-  ["#from","#to"].forEach((s)=>$(s).addEventListener("change",()=>{ sel.value="custom"; }));
+  ["#from","#to"].forEach((s)=>$(s).addEventListener("change",()=>{ sel.value="custom"; if ($("#from").value && $("#to").value) run(); }));
   $("#run").addEventListener("click", run);
 
   const pillFor = (s)=> s==="Fixed"?"fixed": s==="Domino"||s==="Blocked"?"domino": s.startsWith("Moved")?"moved": s.startsWith("Optional")?"gold":"same";
@@ -254,11 +254,13 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
     const c = sel.value==="custom" ? closureFromInputs() : O.NOTICES[sel.value];
     if (!(c.to > c.from)) { $("#out").innerHTML = '<p class="muted">The last day must be on or after the first day.</p>'; return; }
     const r = O.plan(c);
-    const moved = r.rows.filter((x)=>x.after!=="Unchanged");
+    const moved = r.rows.filter((x)=>x.after!=="Unchanged" && x.status!=="Blocked");
+    const blocked = r.rows.filter((x)=>x.status==="Blocked").length;
     const hits = moved.filter((x)=>x.status.startsWith("Moved")).length, dom = moved.filter((x)=>x.status==="Domino").length;
+    const finalOk = r.rows.find((x)=>x.key==="final").status==="Fixed";
     const maxGap = Math.max(...r.checks.map((k)=>k.to-k.from), 1);
     let h = `<div class="status"><span class="pill ${r.status==="DRAFT"?"draft":"decide"}" style="font-size:14px;padding:5px 12px">${r.status}</span>
-      <span class="muted">${moved.length? `${hits} moved by the closure · ${dom} domino change${dom===1?"":"s"} · final stays fixed`: "Nothing needs to move."}</span></div>`;
+      <span class="muted">${moved.length? `${hits} moved by the closure · ${dom} domino change${dom===1?"":"s"}${blocked? ` · ${blocked} blocked`: ""}${finalOk? " · final stays fixed": ""}`: (r.status==="DRAFT"? "Nothing needs to move.": `No schedule meets every rule · ${blocked} blocked`)}</span></div>`;
     if (r.problems.length) {
       h += `<div class="problems"><b>The professor needs to decide.</b> No schedule meets every rule. The closest draft breaks:<ul>${r.problems.map((p)=>`<li>Rule ${p.rule}: ${esc(p.text)}</li>`).join("")}</ul></div>`;
     }

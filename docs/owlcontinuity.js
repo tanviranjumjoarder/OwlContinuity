@@ -91,6 +91,7 @@
   }
 
   // Try every allowed combination; keep the valid plan with the fewest changes, then the earliest times.
+  // If none is valid, prefer the draft that gets everything out of the closure, so the real blocking rule shows.
   function plan(closure) {
     const choices = EVENTS.map((e) => [e.orig, ...e.options]);
     let best = null;
@@ -102,7 +103,8 @@
         const v = check(P, closure);
         const changes = EVENTS.filter((e) => P[e.key] !== e.orig).length;
         const times = EVENTS.map((e) => P[e.key].start);
-        const score = [v.length, changes, ...times];
+        const inClosure = v.filter((x) => /inside the closure/.test(x.text)).length;
+        const score = [inClosure, v.length - inClosure, changes, ...times];
         if (!best || lexLess(score, best.score)) best = { P, v, changes, score };
         return;
       }
@@ -114,7 +116,9 @@
       const hit = inside(e.orig, closure);
       let status = "Unchanged";
       if (!e.optional && inside(P[e.key], closure)) {
-        return { key: e.key, name: e.name, before: when(e.orig), after: "No allowed time", status: "Blocked", why: "Every allowed time is inside the closure or breaks a rule. The professor decides." };
+        const why = e.fixed ? "The professor's rules say this can't move, but it falls inside the closure. The professor decides."
+          : "Every allowed time is inside the closure. The professor decides.";
+        return { key: e.key, name: e.name, before: when(e.orig), after: "No allowed time", status: "Blocked", why };
       }
       if (e.fixed) status = "Fixed";
       else if (moved) status = hit ? "Moved: direct hit" : "Domino";
@@ -171,8 +175,8 @@
     ["A4", "Is the final exam moving?", "No. The final stays on Friday, November 6 at 10:00 am.", /\bfinal\b/, /(mov|chang|postpon|resched|still|date|when|day|time)/],
     ["A5", "When is the lab?", "The lab is on Thursday, October 29, 1:00-2:50 pm, in the campus equipment room.", /\blab\b/, /(when|time|date|day|moved|where)/],
     ["A6", "Is the Monday workshop required?", "No, it is optional practice. It is a good way to prepare for the final.", /workshop/, /./],
-    ["A7", "Is Quiz 1 open-book?", "Quiz 1 stays closed-book, but you may bring one handwritten page of notes.", /quiz/, /(open.?book|notes|closed.?book|bring|cheat sheet)/],
-    ["A8", "Can we work in pairs on the memo?", "No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.", /(pair|partner|together|roommate|group|team|friend|classmate)/, /(memo|write|work)/],
+    ["A7", "Is Quiz 1 open-book?", "Quiz 1 stays closed-book, but you may bring one handwritten page of notes.", /quiz/, /(open.?book|notes|closed.?book|cheat sheet)/],
+    ["A8", "Can we work in pairs on the memo?", "No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.", /(pair|partner|together|roommate|group|team|friend|classmate)/, /(memo|paper)/],
     ["A9", "Is the textbook required?", "No. All readings are posted in Canvas.", /(textbook|text book|\bbook\b)/, /./],
     ["A10", "Can I use AI tools like ChatGPT or Grammarly?", "You may use AI tools to brainstorm ideas and to check grammar. You may not use AI to write any part of the decision memo or to answer quiz questions. If you used AI, add one sentence at the end of your memo saying how.", /(chatgpt|grammarly|\bai\b|artificial intelligence|copilot|gemini)/, /./],
     ["G17", "Do appendices count toward the length limit?", "No. Figures, tables and code in an appendix don't count, but put your key points in the main text, because that's what is graded first.", /appendi/, /(count|length|limit|word|page)/],
@@ -184,7 +188,7 @@
     ["G9", "How do I know my submission went through?", "Canvas shows a confirmation with the submission time. Open the uploaded file to check it's the right one, and keep a screenshot.", /(went through|confirmation|did it (submit|go through)|was it submitted|submission work)/, /./],
     ["G3", "How should I name my file?", "Lastname_AssignmentName.pdf (for example Lee_Memo.pdf), unless the assignment gives a different name.", /(name|call|title)/, /(file|pdf)/],
     ["G2", "What file type should I submit?", "One PDF, unless the assignment says otherwise. Word or Pages files and photos of paper are not accepted as the final submission.", /(file type|format|pdf|\bword\b|docx|pages file|google doc)/, /./],
-    ["G1", "How do I submit an assignment?", "Submit in Canvas, in that assignment's submission box, before the due time shown there. Email is only a backup if Canvas fails (see G8).", /(submit|turn in|hand in|upload)/, /(how|where)/],
+    ["G1", "How do I submit an assignment?", "Submit in Canvas, in that assignment's submission box, before the due time shown there. Email is only a backup if Canvas fails (see G8).", /(submit|turn in|hand in|upload|email (you )?(my|the) (assignment|memo|paper|work))/, /(how|where|can i|may i|could i)/],
     ["G11", "Which citation style should I use?", "APA 7 for all written work. Cite every source, including data and images you didn't make yourself.", /(citation|cite|apa|mla|reference|sources)/, /./],
     ["G12", "Do I need a title page?", "No. Put your name, the course, the assignment name and the date at the top of the first page.", /(title page|cover page|cover sheet)/, /./],
     ["G13", "Can I work with classmates?", "You may discuss ideas and course material, but unless an assignment says it is group work, write and submit your own work.", /(classmate|together|group|partner|collaborat)/, /./],
