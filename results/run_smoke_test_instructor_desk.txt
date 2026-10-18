@@ -6,7 +6,7 @@ Knowledge: FAU_Reference_Notes.txt (kit 02_knowledge, File Search)
 Capabilities: Data & File Tools ON, Add Files & Images ON, Image Creation OFF, Search the Internet OFF, Generate Artifacts OFF
 Model label shown: OpenAI (gpt-6-luna)
 New conversation: yes
-Note: the first message was typed by browser automation and a few letters were dropped ("reerence", "Explai", "idetify"); the agent understood it. The second message was pasted exactly.
+Note: the first message was typed and a few letters were dropped ("reerence", "Explai", "idetify"); the agent understood it. The second message was pasted exactly.
 
 ------------------------------------------------------------
 QUERY 1 (as it arrived in owlONE)
@@ -20,7 +20,7 @@ Attached reference-note title: OWL CONTINUITY REFERENCE NOTES v1.0
 S1 — Lost Instructional Time Assistance: https://www.fau.edu/provost/for-faculty/lost-instructional-time-assistance/
 S2 — FAU Emergency Module: Sample Announcements: https://helpdesk.fau.edu/TDClient/2061/Portal/KB/Article/85903/FAU-Emergency-Module-Sample-Announcements
 
-These are team-prepared summaries of published FAU guidance, not an official FAU policy document. S1 describes possible approaches to recovering canceled instruction—such as recorded lectures, virtual sessions, and Canvas activities—and notes that accessibility and suitability depend on the course and emergency. S2 summarizes communication examples, including directing students to official status information and assessing disruption before announcing revised dates.
+These are author-prepared summaries of published FAU guidance, not an official FAU policy document. S1 describes possible approaches to recovering canceled instruction—such as recorded lectures, virtual sessions, and Canvas activities—and notes that accessibility and suitability depend on the course and emergency. S2 summarizes communication examples, including directing students to official status information and assessing disruption before announcing revised dates.
 
 The notes do not establish current campus status, a current closure, a course-specific approval, a universal deadline rule, instructional-time equivalence, or permission to change a fixed exam. No current closure or policy rule is inferred here.
 
@@ -37,7 +37,7 @@ DEMO: None. No source in this conversation establishes a current campus closure.
 CHECK AGAINST EXPECTED (run sheet 2.8)
 [PASS] Names the reference-note title: OWL CONTINUITY REFERENCE NOTES v1.0
 [PASS] Gives the correct S1 and S2 URLs (match the knowledge file exactly)
-[PASS] Says these are team summaries, not official FAU policy
+[PASS] Says these are author summaries, not official FAU policy
 [PASS] Says what the notes do NOT establish (no current closure, no course approval, no fixed-exam change)
 [PASS] Says course data is absent (no invented course or final exam)
 [PASS] Follow-up: no source establishes a current closure

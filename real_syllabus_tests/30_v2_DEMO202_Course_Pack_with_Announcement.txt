@@ -58,5 +58,5 @@ Students are expected to maintain the highest ethical standards. Academic dishon
 #16 (Nov 29-Dec 5) | Lecture #22: Spark application (paper reviews) and course wrap-up | Project part 4 due during the final week
 (The syllabus lists no week #11; it goes from #10 (Oct 25-31) to #12 (Nov 1-7). The syllabus gives weeks, not exact days, for quizzes and due dates.)
 
-=== 11. POSTED ANNOUNCEMENT (posted Fri Oct 23, 2026) - TEST VALUE SET BY THE TEAM FOR A COMPETITION DEMONSTRATION ===
+=== 11. POSTED ANNOUNCEMENT (posted Fri Oct 23, 2026) - TEST VALUE SET BY THE AUTHOR FOR A COMPETITION DEMONSTRATION ===
 Quiz 3 moved. Because of the power outage in Classroom Building A on Thu Oct 22 (simulated scenario), Quiz 3 moves to Thursday, October 29, 2026, 12:30 pm, in person in a campus classroom. This announcement replaces the earlier Quiz 3 date (Tue Oct 27) in the schedule and in the answer bank.

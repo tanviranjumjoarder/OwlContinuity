@@ -1,7 +1,7 @@
 DEMO-202 INSTRUCTOR COURSE FILE (real FAU course, test values)
 Course: DEMO-202 Graduate Data Analytics, FAU Boca Raton, Fall 2026 (from the public FAU syllabus).
 Real syllabus rules: Tue/Thu 12:30-1:50 pm in person; no final exam, a 4-part project (60%) and 4 in-person quizzes (40%); late work -10% within 24 h, -20% within 48 h, not accepted after; AI banned for all assigned work.
-The exact class days, the rules below and the notice are test values set by the instructor's team for a demonstration. The notice is SIMULATED and was not issued by FAU.
+The exact class days, the rules below and the notice are test values set for testing for a demonstration. The notice is SIMULATED and was not issued by FAU.
 When the professor asks to rebuild the DEMO-202 schedule, use this file as the professor's inputs. Treat it as DEMO mode. The professor reviews and decides everything.
 
 === EXACT CLASS DAYS (all 12:30-1:50 pm, a campus classroom, Boca Raton) ===

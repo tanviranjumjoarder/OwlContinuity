@@ -4,7 +4,7 @@
 
 ### When a class moves, which deadlines must move too?
 
-Two AI agents we built inside **owlONE**, FAU's generative AI platform, on the **gpt-6-luna** model. One rebuilds a disrupted course schedule and checks every linked deadline with code. The other answers students only from what the professor has approved.
+AI agents I built inside **owlONE**, FAU's generative AI platform, on the **gpt-6-luna** model. One rebuilds a disrupted course schedule and checks every linked deadline with code. One answers students only from what the professor has approved. A third runs the same workflow on a real FAU syllabus.
 
 ![FAU owlONE Promptathon](https://img.shields.io/badge/FAU%20owlONE-Promptathon%202026-003366)
 ![Track 4](https://img.shields.io/badge/Track%204-AI%20to%20improve%20FAU-1E7B45)
@@ -16,14 +16,14 @@ Two AI agents we built inside **owlONE**, FAU's generative AI platform, on the *
 
 ### [▶ Try the live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) · [▶ Watch the video](https://tanviranjumjoarder.github.io/OwlContinuity/#video) · [▶ Interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html)
 
-[**Slides (22)**](deck/OwlContinuity_Presentation.pdf) · [**Detailed deck (49)**](deck/OwlContinuity_Detailed_Deck.pdf) · [**How it works**](#how-it-works) · [**Results**](#test-results) · [**Try it yourself**](#try-it-yourself) · [**Limits**](#limits-and-what-we-do-not-claim)
+[**Slides (22)**](deck/OwlContinuity_Presentation.pdf) · [**Detailed deck (49)**](deck/OwlContinuity_Detailed_Deck.pdf) · [**How it works**](#how-it-works) · [**Results**](#test-results) · [**Try it yourself**](#try-it-yourself) · [**Limits**](#limits-and-what-i-do-not-claim)
 
 <img src="docs/images/01_title.png" alt="OwlContinuity title slide" width="820">
 
 </div>
 
 > [!NOTE]
-> All course data in the demo (DEMO-101) is fictional, and the closure notices are simulated; FAU did not issue them. One test set uses a real, public FAU graduate syllabus. We call that course **DEMO-202** here and do not name the real course. For that course, the exact class days, rules and approved answers are values our team set for testing, not the instructor's decisions. Nothing here is FAU policy or an FAU-approved product.
+> All course data in the demo (DEMO-101) is fictional, and the closure notices are simulated; FAU did not issue them. One test set uses a real, public FAU graduate syllabus. I call that course **DEMO-202** here and do not name the real course. For that course, the exact class days, rules and approved answers are values I set for testing, not the instructor's decisions. Nothing here is FAU policy or an FAU-approved product.
 
 ---
 
@@ -50,23 +50,23 @@ Two AI agents we built inside **owlONE**, FAU's generative AI platform, on the *
 
 ## Two ways to see OwlContinuity
 
-| | **In owlONE** (what we built and presented) | **On GitHub** (for anyone) |
+| | **In owlONE** (what I built and presented) | **On GitHub** (for anyone) |
 |---|---|---|
-| What it is | Two personal owlONE agents, Instructor Desk and Student Helper | A [live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) and an [interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html) |
+| What it is | Three personal owlONE agents working as one system: Instructor Desk, Student Helper, and a real-syllabus agent | A [live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) and an [interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html) |
 | AI | **Yes:** gpt-6-luna reads syllabi, notices and questions in everyday words | **No AI model:** the same rules replayed in JavaScript |
 | Time math | The agent runs code (Data & File Tools) | The page runs the same calculation in the browser |
 | Who can use it | Only the owner's FAU account today (personal agents) | Anyone with a browser |
 | Evidence | Live runs on Oct 16–17, 2026, saved word for word in [`results/`](results) | Reproduces the DEMO-101 plan from those runs |
-| Rebuild it | [How we built the agents in owlONE](#how-we-built-the-agents-in-owlone) | [`docs/`](docs) (MIT license) |
+| Rebuild it | [How I built the agents in owlONE](#how-i-built-the-agents-in-owlone) | [`docs/`](docs) (MIT license) |
 
 ## At a glance
 
 | | |
 |---|---|
 | **Problem** | A cancelled class moves more than one date. A lab feeds an assignment, and the assignment must leave time before an exam. The professor rechecks every link by hand while students ask the same questions again and again. |
-| **What we built** | **Instructor Desk** for the professor, which contains the **Domino Effect Agent**. **Student Helper** for students. Both are personal owlONE agents. |
+| **What I built** | **Instructor Desk** for the professor, which contains the **Domino Effect Agent**. **Student Helper** for students. A third agent runs the same workflow on a real FAU syllabus. All three are personal owlONE agents working as one system. |
 | **What makes it different** | Every time gap is calculated with code in `America/New_York` and converted to UTC, so the Nov 1 clock change counts. The agent returns a **draft**, or stops and asks when a fact is missing. |
-| **Evidence** | 31 pass, 2 partial, 0 fail on 33 checks · 7/7 assignment-rule questions · 3/3 reading tests · 17/17 on a real FAU syllabus. All are team-written tests, saved word for word in [`results/`](results). |
+| **Evidence** | 31 pass, 2 partial, 0 fail on 33 checks · 7/7 assignment-rule questions · 3/3 reading tests · 17/17 on a real FAU syllabus. All are tests I wrote, saved word for word in [`results/`](results). |
 | **Next step** | A supervised pilot with 2–3 volunteer professors. |
 
 ## Try it in your browser
@@ -157,14 +157,14 @@ flowchart TB
 | Model | gpt-6-luna (owlONE) | gpt-6-luna (owlONE) |
 | Tools | Data & File Tools (code for time math), Add Files | Add Files only |
 | Internet search | Off | Off |
-| Knowledge | Course file(s), team reference notes | Course pack, answer bank |
+| Knowledge | Course file(s), FAU reference notes | Course pack, answer bank |
 | Instructions | [`01a_Instructor_Desk_Instructions_FULL.txt`](agents/01a_Instructor_Desk_Instructions_FULL.txt) | [`12a_Student_Helper_Instructions_FULL.txt`](agents/12a_Student_Helper_Instructions_FULL.txt) |
 
 <img src="docs/images/04_how_it_works.png" alt="How the Domino Effect Agent checks the schedule" width="820">
 
-## How we built the agents in owlONE
+## How I built the agents in owlONE
 
-Both agents are **personal agents** in owlONE (FAU's generative AI platform), built during the Promptathon by writing instructions, choosing the tools, and uploading knowledge files. We wrote no app code for them: everything they do comes from the instructions and files below.
+Both agents are **personal agents** in owlONE (FAU's generative AI platform), built during the Promptathon by writing instructions, choosing the tools, and uploading knowledge files. Everything they do comes from the instructions and files below.
 
 | Setting in owlONE | Instructor Desk (professor) | Student Helper (student) |
 |---|---|---|
@@ -308,7 +308,7 @@ The handoff is manual on purpose: the professor approves every answer before stu
 
 ## Test results
 
-Team-written tests were run live in owlONE on October 16–17, 2026. The word-for-word outputs are in [`results/`](results) and [`real_syllabus_tests/results/`](real_syllabus_tests/results).
+My tests were run live in owlONE on October 16–17, 2026. The word-for-word outputs are in [`results/`](results) and [`real_syllabus_tests/results/`](real_syllabus_tests/results).
 
 | Test set | Result |
 |---|---|
@@ -332,7 +332,7 @@ In one of two domino reruns, the agent also moved the review when it didn't need
 
 ### Tested on a real FAU syllabus (DEMO-202)
 
-We gave the agents the public syllabus of a real FAU graduate course (Fall 2026). Here it is called **DEMO-202 Graduate Data Analytics**; the real course name, number, section and room are withheld, and the instructor's contact details were removed. The syllabus lists weeks, not days, so the exact class days, the simulated closures and the approved answers are test values.
+I gave the agents the public syllabus of a real FAU graduate course (Fall 2026). Here it is called **DEMO-202 Graduate Data Analytics**; the real course name, number, section and room are withheld, and the instructor's contact details were removed. The syllabus lists weeks, not days, so the exact class days, the simulated closures and the approved answers are test values.
 
 ```mermaid
 flowchart LR
@@ -352,9 +352,9 @@ On the real course, the Student Helper:
 <img src="docs/images/16_real_fau_syllabus.png" alt="Tested on a real FAU syllabus" width="820">
 
 <details>
-<summary><b>The DEMO-202 rules we tested</b></summary>
+<summary><b>The DEMO-202 rules I tested</b></summary>
 <br>
-<img src="docs/images/17_real_course_rules.png" alt="The rules we tested on DEMO-202" width="820">
+<img src="docs/images/17_real_course_rules.png" alt="The rules I tested on DEMO-202" width="820">
 </details>
 
 ## Try it yourself
@@ -383,9 +383,9 @@ schedule and the math check.
 
 <img src="docs/images/22_four_live_tests.png" alt="Four live tests" width="820">
 
-## Limits and what we do not claim
+## Limits and what I do not claim
 
-- This is a prototype tested with small, team-written test sets. It is not an independent evaluation.
+- This is a prototype tested with small test sets I wrote myself. It is not an independent evaluation.
 - No FAU approval, no committed pilot and no measured time savings.
 - No automatic sync and no Canvas integration. The answer-bank handoff is manual.
 - The agent cannot open links, so the professor clicks each reading link once.
@@ -409,11 +409,11 @@ The pilot would run one semester with 2–3 volunteer professors, subject to the
 | Start here | |
 |---|---|
 | [Live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) | Both agents' workflows in the browser (source in [`docs/`](docs)) |
-| [`deck/OwlContinuity_Presentation.pdf`](deck/OwlContinuity_Presentation.pdf) · [`.pptx`](deck/OwlContinuity_Presentation.pptx) | The 22-slide deck we presented |
+| [`deck/OwlContinuity_Presentation.pdf`](deck/OwlContinuity_Presentation.pdf) · [`.pptx`](deck/OwlContinuity_Presentation.pptx) | The 22-slide deck I presented |
 | [`deck/OwlContinuity_Detailed_Deck.pdf`](deck/OwlContinuity_Detailed_Deck.pdf) · [`.pptx`](deck/OwlContinuity_Detailed_Deck.pptx) | 49 slides: the presentation plus a linked appendix (schedule and rule tables, agent design, G1–G22, test details, judge Q&A, recorded runs, DEMO-202 results) |
 | [`agents/`](agents) | Instructions, profiles, course files and answer banks for both agents |
 | [`results/`](results) | Every live owlONE test run, word for word |
-| [`docs/project/OwlContinuity_Pitch_Book.html`](docs/project/OwlContinuity_Pitch_Book.html) | Full project detail and judge Q&A (download and open in a browser) |
+| [`docs/project/OwlContinuity_Demo_Guide.docx`](docs/project/OwlContinuity_Demo_Guide.docx) | Step-by-step demo guide with every text to paste and the expected answers |
 
 <details>
 <summary><b>Full folder map</b></summary>
@@ -425,13 +425,13 @@ deck/                              final presentation (22 slides) and detailed d
 docs/                              live demo (index.html), walkthrough (how-it-works.html), owlcontinuity.js
 docs/images/                       slide images, the process animation, and real owlONE screenshots (owlone/)
 docs/media/                        the 27-second video (MP4), its cover and captions
-docs/project/                      pitch book, judge Q&A, demo guide
+docs/project/                      demo guide (steps, texts to paste, expected answers)
 agents/
   01a/01b/01c_*                    Instructor Desk instructions (full, compact) and profile
   12a/12b/12c_*                    Student Helper instructions (full, compact) and profile
   13_* / 13b_* / 13c_*             DEMO-101 course pack, answer bank, bank after A11
   40_*, 41_*                       course files: DEMO-101, and DEMO-202 (test values)
-  FAU_Reference_Notes.txt          team summaries of public FAU continuity guidance
+  FAU_Reference_Notes.txt          summaries of public FAU continuity guidance
 demo_inputs/                       02–22: syllabus case, notices, student questions, prompt checks ...
   06_Answer_Check_DO_NOT_UPLOAD.txt  expected answers (never give this to an agent)
 results/                           word-for-word owlONE test runs (Oct 16–17)
@@ -443,11 +443,11 @@ real_syllabus_tests/               real-syllabus (DEMO-202) inputs 30–37 and t
 ## License
 
 - **Code** (the web demo and the walkthrough): [MIT](LICENSE).
-- **Everything else** (slides, agent instructions, course files, test results, documents): [CC BY 4.0](LICENSE-DOCS.md). Credit: "OwlContinuity by Team OwlContinuity, FAU owlONE Promptathon 2026".
+- **Everything else** (slides, agent instructions, course files, test results, documents): [CC BY 4.0](LICENSE-DOCS.md). Credit: "OwlContinuity by Tanvir Anjum Joarder, FAU owlONE Promptathon 2026".
 
 FAU, Florida Atlantic University and owlONE are named only to describe where the project was built. This is not an FAU product, and FAU has not endorsed it.
 
-## Team
+## Author
 
-**Team OwlContinuity:** Tanvir Anjum Joarder, Florida Atlantic University.
+**Tanvir Anjum Joarder**, Florida Atlantic University.
 Built for the **FAU owlONE Promptathon**, October 16–17, 2026, Track 4: AI to Improve FAU.

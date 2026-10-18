@@ -1,6 +1,6 @@
 # License for documents, slides and agent files
 
-Copyright (c) 2026 Tanvir Anjum Joarder (Team OwlContinuity).
+Copyright (c) 2026 Tanvir Anjum Joarder.
 
 Everything in this repository that is not software is licensed under the
 **Creative Commons Attribution 4.0 International License (CC BY 4.0)**:
@@ -11,7 +11,7 @@ files and answer banks, the demo inputs, the test results, the screenshots and
 the project documents.
 
 You may share and adapt this material for any purpose, including commercially,
-as long as you give appropriate credit ("OwlContinuity by Team OwlContinuity,
+as long as you give appropriate credit ("OwlContinuity by Tanvir Anjum Joarder,
 FAU owlONE Promptathon 2026"), link to the license, and indicate if you made changes.
 
 The software is under the MIT License in `LICENSE`: the web demo (`docs/index.html`,

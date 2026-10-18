@@ -1,7 +1,7 @@
 ANSWER BANK - DEMO-202 (FALL 2026)
 The instructor's approved questions and answers. Upload this file to the "OwlContinuity Student Helper - DEMO-202" agent next to the course pack (30_v2), and replace it whenever the Instructor Desk prints an UPDATED ANSWER BANK.
 Format: ID | semester or date approved | question | approved answer.
-These entries are TEST VALUES set by the team for a competition demonstration. They are not the real instructor's answers.
+These entries are TEST VALUES set by the author for a competition demonstration. They are not the real instructor's answers.
 
 === THIS SEMESTER (A) ===
 A1 | Oct 15, 2026 | Q: When is Quiz 3? | A: Quiz 3 is on Tuesday, October 27, 12:30 pm, in person in a campus classroom. It covers Lectures #10-#13.

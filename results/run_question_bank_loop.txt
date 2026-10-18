@@ -63,7 +63,7 @@ Comparison with the prepared file 13c: A1-A10 identical; A11 answer identical; A
 ============================================================
 STEP 3B.9 - PROFESSOR UPLOADS THE UPDATED BANK, STUDENT ASKS AGAIN
 Bank swap in the Student Helper (Edit agent -> Knowledge Sources -> Edit Files): removed 13b_DEMO_Answer_Bank_for_Student_Helper.txt, added 13c_DEMO_Answer_Bank_UPDATED_after_A11.txt, clicked Update in the dialog, then the agent's main Update button (owlONE showed "Changes have not been applied to the Agent. Click Update to apply changes" until then). Reopened: knowledge = 13_DEMO_Course_Pack_for_Student_Helper.txt + 13c_DEMO_Answer_Bank_UPDATED_after_A11.txt.
-Time for the swap by browser automation: about 2 minutes (a person practising it should be faster; or a teammate does it while the presenter talks).
+Time for the swap: about 2 minutes (faster with practice).
 
 New Student Helper chat:
 Q (S7 again): Can I send my professor a draft of my memo early to get feedback?

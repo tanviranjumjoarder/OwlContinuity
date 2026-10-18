@@ -1,24 +1,24 @@
 OWL CONTINUITY REFERENCE NOTES v1.0
-TEAM-PREPARED SUMMARIES; NOT AN OFFICIAL FAU POLICY DOCUMENT
+AUTHOR-PREPARED SUMMARIES; NOT AN OFFICIAL FAU POLICY DOCUMENT
 Reviewed: 2026-10-15. Links must be checked before a real deployment.
 
 S1 | Lost Instructional Time Assistance
-Source type: published FAU guidance summarized by the team.
+Source type: published FAU guidance summarized by the author.
 URL: https://www.fau.edu/provost/for-faculty/lost-instructional-time-assistance/
 Status: Current published guidance, checked 2026-10-15; page effective date not established.
 Section SUMMARY: FAU identifies recovery of canceled instruction as an instructor responsibility. It describes recorded lectures, virtual sessions and Canvas activities as possible approaches. Accessibility remains part of delivery. A particular activity is not automatically suitable for every course or emergency; the instructor must evaluate it.
 
 S2 | FAU Emergency Module: Sample Announcements
-Source type: published FAU guidance summarized by the team.
+Source type: published FAU guidance summarized by the author.
 URL: https://helpdesk.fau.edu/TDClient/2061/Portal/KB/Article/85903/FAU-Emergency-Module-Sample-Announcements
 Status: Published communication examples, checked 2026-10-15; templates rather than a universal deadline policy.
 Section SUMMARY: FAU provides examples for communicating before and after an emergency. They direct students toward official status information and describe assessing disruption before communicating revised coursework dates. These are adaptable examples, not proof that a specific notice is currently active.
 
 S3 | Recommendations for Ensuring Instructional Continuity - Plan Ahead
-Source type: published FAU guidance summarized by the team.
+Source type: published FAU guidance summarized by the author.
 URL: https://helpdesk.fau.edu/TDClient/2061/Portal/KB/PrintArticle?ID=99976
 Status: Page shows modified 2025-09-09; checked 2026-10-15.
 Section SUMMARY: The guidance recommends planning around course outcomes, feasible delivery methods and equitable alternatives. It encourages instructors to explain how unexpected changes will be communicated. A delivery method still needs to fit the course and the applicable event notice.
 
 APPLICATION BOUNDARY
-These notes provide background only. They do not establish current campus operating status, course-specific approval, contact-minute equivalence, or a right to change a fixed examination. Obtain the applicable dated event notice, course documents and instructor constraints. When citing these notes, identify them as a team summary and include the underlying URL. Do not claim to have inspected the complete original page unless it was actually supplied or retrieved. The team has not obtained institutional endorsement.
+These notes provide background only. They do not establish current campus operating status, course-specific approval, contact-minute equivalence, or a right to change a fixed examination. Obtain the applicable dated event notice, course documents and instructor constraints. When citing these notes, identify them as an author's summary and include the underlying URL. Do not claim to have inspected the complete original page unless it was actually supplied or retrieved. The author has not obtained institutional endorsement.

@@ -1,5 +1,5 @@
 OWLCONTINUITY - ANSWER CHECK FOR THE SYLLABUS DEMO
-DO NOT UPLOAD THIS FILE TO owlONE. It is for the team member who checks the agent's output.
+DO NOT UPLOAD THIS FILE TO owlONE. It is for the person who checks the agent's output.
 Same fictional course and values as the v1.0 manual (Appendix B and C), so these answers match the manual's worked example.
 Every elapsed time below was computed with real America/New_York time-zone math (UTC-based), including the Nov 1, 2026 clock change.
 Cross-checked against the kit: it agrees with 03_demo/Worked_Example_DO_NOT_UPLOAD.txt, 04_tests/Evaluator_Answer_Key (D01, D02) and 05_evidence/Fixture_Verification_NOT_Model_Results.txt (for example 123h 10m = 123.166667 h).
