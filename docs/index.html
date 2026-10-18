@@ -199,9 +199,10 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
   <section class="panel" id="about">
     <div class="grid">
       <div class="card">
-        <h2>The two agents</h2>
-        <p class="muted"><b>Instructor Desk</b> (professor) holds the Domino Effect Agent. In owlONE it runs on gpt-6-luna with code tools on for the time math and internet search off.</p>
-        <p class="muted"><b>Student Helper</b> (student) uses only the course pack and the answer bank, with no code and no internet search.</p>
+        <h2>The three agents</h2>
+        <p class="muted"><b>Instructor Desk</b> (professor) runs the Domino Effect Agent: move one class, and it follows every deadline that depends on it and hands back a draft. Before an assignment goes out, it also flags unclear steps, instructions that contradict each other, and readings with no link. In owlONE it runs on gpt-6-luna with code tools on for the time math and internet search off.</p>
+        <p class="muted"><b>Student Helper</b> (student) answers the questions professors and TAs get before every deadline: how to submit, which file type, whether to attach code or add pictures, citation style, what to do when Canvas won't take a file. It uses only the course pack and the approved answer bank, and never guesses.</p>
+        <p class="muted"><b>The real-syllabus agent</b> runs the same workflow on a real FAU graduate syllabus, to check that it holds up outside a made-up course.</p>
         <p class="muted">Instructions: <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/agents/01a_Instructor_Desk_Instructions_FULL.txt">01a</a> · <a href="https://github.com/tanviranjumjoarder/OwlContinuity/blob/main/agents/12a_Student_Helper_Instructions_FULL.txt">12a</a></p>
       </div>
       <div class="card">

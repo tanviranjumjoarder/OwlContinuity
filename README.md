@@ -48,6 +48,33 @@ AI agents I built inside **owlONE**, FAU's generative AI platform, on the **gpt-
 
 </details>
 
+## What each agent does
+
+**Instructor Desk (for professors)**
+
+- **The Domino Effect Agent.** Move one class, and the deadlines that depend on it start to fall too. Give it the closure notice, the syllabus and your own rules. It moves what's affected, follows the dominoes, rechecks every linked deadline with code and hands back a draft. Nothing changes without the professor.
+- **Assignment check before it goes out.** It flags unclear steps, instructions that contradict each other (for example "2–3 pages" in the prompt but "maximum 600 words" in the rubric), and readings with no title, location or link.
+- **Also:** drafts replies to repeated student questions from the approved answers, reviews last semester's answers before reuse, and summarizes how many student messages came in.
+
+**Student Helper (for students)**
+
+It handles the emails professors and TAs get before every deadline. It answers only from the professor's approved answers and shows which one it used:
+
+| Students ask | Approved answer |
+|---|---|
+| How do I submit? · Which file type? · What do I name my file? | G1 · G2 · G3 |
+| Can I add pictures or charts? · Can I attach my code? | G4 · G5 |
+| Can I hand in handwritten work? · Can I resubmit? | G6 · G10 |
+| What if Canvas won't take my file? · Can I submit late? | G8 · G15 |
+| Which citation style? · Do appendices count toward the length? | G11 · G17 |
+| Is the final moving? · Can we work in pairs on the memo? | A4 · A8 |
+
+A question nobody has answered yet is never guessed. It drafts a message to the professor, and once the professor answers, that answer becomes the next entry (A11) for every student after. It follows the course AI policy and never writes graded work. The full bank is [`13b`](agents/13b_DEMO_Answer_Bank_for_Student_Helper.txt).
+
+**The real-syllabus agent**
+
+It runs the same workflow on a real FAU graduate syllabus (called DEMO-202 here), to check that it holds up outside a made-up course. It passed 17 of 17 tests.
+
 ## Two ways to see OwlContinuity
 
 | | **In owlONE** (what I built and presented) | **On GitHub** (for anyone) |
