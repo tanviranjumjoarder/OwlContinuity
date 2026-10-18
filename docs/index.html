@@ -110,6 +110,7 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
       <button role="tab" aria-selected="true" data-tab="domino">Domino Effect Agent</button>
       <button role="tab" aria-selected="false" data-tab="helper">Student Helper</button>
       <button role="tab" aria-selected="false" data-tab="about">How it works</button>
+      <button role="tab" aria-selected="false" data-tab="video">▶ Watch the video</button>
     </nav>
   </div>
 </header>
@@ -170,6 +171,25 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
   </section>
 
   <!-- ======================= ABOUT ======================= -->
+  <!-- ======================= VIDEO ======================= -->
+  <section class="panel" id="video">
+    <div class="grid">
+      <div class="card">
+        <h2>The whole process in 27 seconds</h2>
+        <p class="muted">From the closure notice to the approved answer, in six steps: the lab moves, the memo deadline breaks (26 h 10 m), code moves it to Tuesday (123 h 10 m), and a new student question becomes answer A11.</p>
+        <p class="muted">Captions are built into the video; there is no sound. The QR code at the end opens this demo.</p>
+        <p class="muted"><a href="media/owlcontinuity_video.mp4" download>Download the MP4</a> · <a href="how-it-works.html">Interactive walkthrough</a></p>
+      </div>
+      <div class="card" style="display:flex;justify-content:center">
+        <video controls playsinline muted preload="metadata" poster="media/owlcontinuity_video_cover.jpg" style="width:100%;max-width:540px;border-radius:12px;background:#14305e" aria-label="OwlContinuity process video">
+          <source src="media/owlcontinuity_video.mp4" type="video/mp4">
+          <track kind="captions" src="media/owlcontinuity_video.vtt" srclang="en" label="English">
+          Your browser can't play this video. <a href="media/owlcontinuity_video.mp4">Download the MP4</a>.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <section class="panel" id="about">
     <div class="grid">
       <div class="card">
@@ -212,6 +232,7 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
     try{ localStorage.setItem("oc-tab", b.dataset.tab); }catch(e){}
   }));
   try{ const t=localStorage.getItem("oc-tab"); if(t) document.querySelector(`.tabs [data-tab="${t}"]`)?.click(); }catch(e){}
+  const hashTab = location.hash.slice(1); if (hashTab) document.querySelector(`.tabs [data-tab="${hashTab}"]`)?.click();
 
   // ---------- domino ----------
   const sel = $("#notice");

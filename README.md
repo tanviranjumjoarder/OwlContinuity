@@ -14,7 +14,7 @@ Two AI agents we built inside **owlONE**, FAU's generative AI platform, on the *
 ![Status](https://img.shields.io/badge/status-prototype-B07A1E)
 ![License](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-555)
 
-### [▶ Try the live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) · [▶ Interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html)
+### [▶ Try the live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) · [▶ Watch the video](https://tanviranjumjoarder.github.io/OwlContinuity/#video) · [▶ Interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html)
 
 [**Slides (22)**](deck/OwlContinuity_Presentation.pdf) · [**Detailed deck (49)**](deck/OwlContinuity_Detailed_Deck.pdf) · [**How it works**](#how-it-works) · [**Results**](#test-results) · [**Try it yourself**](#try-it-yourself) · [**Limits**](#limits-and-what-we-do-not-claim)
 
@@ -87,6 +87,30 @@ The [**live demo**](https://tanviranjumjoarder.github.io/OwlContinuity/) runs bo
 <tr>
 <td align="center"><sub>Domino Effect Agent: closure extended to Fri Oct 23</sub></td>
 <td align="center"><sub>Student Helper: a new question becomes A11</sub></td>
+</tr>
+</table>
+
+### Watch the 27-second video
+
+<table>
+<tr>
+<td width="42%"><a href="https://tanviranjumjoarder.github.io/OwlContinuity/#video"><img src="docs/media/owlcontinuity_video_cover.jpg" alt="Video cover: the lab moves to Thursday and the memo is due only 26 h 10 m later. Click to play."></a></td>
+<td>
+
+**[▶ Play the video](https://tanviranjumjoarder.github.io/OwlContinuity/#video)** (opens the demo page)
+
+The whole process in six steps, with captions and no sound:
+
+1. The closure notice reaches Instructor Desk.
+2. It finds the cancelled classes.
+3. The lab moves, and the memo deadline breaks: **26 h 10 m**.
+4. Code moves the memo to Tuesday: **123 h 10 m, PASS**.
+5. A student asks something new, and Student Helper won't guess.
+6. The professor answers once, and it becomes **A11**.
+
+The QR code at the end opens the live demo. [Download the MP4](docs/media/owlcontinuity_video.mp4) (1.5 MB, 1080×1350).
+
+</td>
 </tr>
 </table>
 
@@ -400,6 +424,7 @@ LICENSE, LICENSE-DOCS.md           MIT for code, CC BY 4.0 for everything else
 deck/                              final presentation (22 slides) and detailed deck (49 slides), .pptx and .pdf
 docs/                              live demo (index.html), walkthrough (how-it-works.html), owlcontinuity.js
 docs/images/                       slide images, the process animation, and real owlONE screenshots (owlone/)
+docs/media/                        the 27-second video (MP4), its cover and captions
 docs/project/                      pitch book, judge Q&A, demo guide
 agents/
   01a/01b/01c_*                    Instructor Desk instructions (full, compact) and profile
