@@ -52,7 +52,8 @@ AI agents I built inside **owlONE**, FAU's generative AI platform, on the **gpt-
 
 **Instructor Desk (for professors)**
 
-- **The Domino Effect Agent.** Move one class, and the deadlines that depend on it start to fall too. Give it the closure notice, the syllabus and your own rules. It moves what's affected, follows the dominoes, rechecks every linked deadline with code and hands back a draft. Nothing changes without the professor.
+- **The Domino Effect Agent.** Move one class, and the deadlines that depend on it start to fall too. Give it the closure notice, the syllabus and your own rules. It moves what's affected, follows the dominoes, rechecks every linked deadline with code and hands back a draft schedule.
+- **The Canvas announcement, written for you.** With the new schedule it also writes the student announcement (up to 150 words) listing every new date, ready to paste into Canvas. If the dates aren't settled yet, it writes a short holding message with no invented dates instead. The professor reviews and posts it; the agent never publishes anything itself, and nothing changes without the professor.
 - **Assignment check before it goes out.** It flags unclear steps, instructions that contradict each other (for example "2–3 pages" in the prompt but "maximum 600 words" in the rubric), and readings with no title, location or link.
 - **Also:** drafts replies to repeated student questions from the approved answers, reviews last semester's answers before reuse, and summarizes how many student messages came in.
 
