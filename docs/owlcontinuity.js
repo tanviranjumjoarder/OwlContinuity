@@ -176,7 +176,7 @@
     ["A5", "When is the lab?", "The lab is on Thursday, October 29, 1:00-2:50 pm, in the campus equipment room.", /\blab\b/, /(when|time|date|day|moved|where)/],
     ["A6", "Is the Monday workshop required?", "No, it is optional practice. It is a good way to prepare for the final.", /workshop/, /./],
     ["A7", "Is Quiz 1 open-book?", "Quiz 1 stays closed-book, but you may bring one handwritten page of notes.", /quiz/, /(open.?book|notes|closed.?book|cheat sheet)/],
-    ["A8", "Can we work in pairs on the memo?", "No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.", /(pair|partner|together|roommate|group|team|friend|classmate)/, /(memo|paper)/],
+    ["A8", "Can we work in pairs on the memo?", "No. The memo is individual work. You may discuss the lab data with classmates, but write your own memo.", /(pair|partner|together|roommate|group|team|friend|classmate|individual|alone|by myself)/, /(memo|paper)/],
     ["A9", "Is the textbook required?", "No. All readings are posted in Canvas.", /(textbook|text book|\bbook\b)/, /./],
     ["A10", "Can I use AI tools like ChatGPT or Grammarly?", "You may use AI tools to brainstorm ideas and to check grammar. You may not use AI to write any part of the decision memo or to answer quiz questions. If you used AI, add one sentence at the end of your memo saying how.", /(chatgpt|grammarly|\bai\b|artificial intelligence|copilot|gemini)/, /./],
     ["G17", "Do appendices count toward the length limit?", "No. Figures, tables and code in an appendix don't count, but put your key points in the main text, because that's what is graded first.", /appendi/, /(count|length|limit|word|page)/],
@@ -185,15 +185,15 @@
     ["G4", "Can I include pictures, charts or screenshots?", "Yes, if they support your point. Put them inside the PDF, give each one a short caption and say where it came from. They don't count toward the word limit, but they can't replace required writing.", /(picture|chart|screenshot|image|graph|figure|diagram|photo)/, /./],
     ["G8", "What if Canvas won't accept my file?", "Screenshot the error, send me the PDF through Canvas Inbox or FAU email before the deadline, then submit in Canvas as soon as it works. Keep the screenshot.", /canvas/, /(won.?t|fail|error|not working|down|crash|accept|broken|upload)/],
     ["G10", "Can I resubmit after I submit?", "Yes, until the deadline. I grade the last submission made before the deadline.", /(resubmit|re-submit|submit again|another version|typo)/, /./],
-    ["G9", "How do I know my submission went through?", "Canvas shows a confirmation with the submission time. Open the uploaded file to check it's the right one, and keep a screenshot.", /(went through|confirmation|did it (submit|go through)|was it submitted|submission work)/, /./],
+    ["G9", "How do I know my submission went through?", "Canvas shows a confirmation with the submission time. Open the uploaded file to check it's the right one, and keep a screenshot.", /(went through|go(ne)? through|confirmation|did it (submit|go through)|was it submitted|submission work)/, /./],
     ["G3", "How should I name my file?", "Lastname_AssignmentName.pdf (for example Lee_Memo.pdf), unless the assignment gives a different name.", /(name|call|title)/, /(file|pdf)/],
     ["G2", "What file type should I submit?", "One PDF, unless the assignment says otherwise. Word or Pages files and photos of paper are not accepted as the final submission.", /(file type|format|pdf|\bword\b|docx|pages file|google doc)/, /./],
-    ["G1", "How do I submit an assignment?", "Submit in Canvas, in that assignment's submission box, before the due time shown there. Email is only a backup if Canvas fails (see G8).", /(submit|turn in|hand in|upload|email (you )?(my|the) (assignment|memo|paper|work))/, /(how|where|can i|may i|could i)/],
+    ["G1", "How do I submit an assignment?", "Submit in Canvas, in that assignment's submission box, before the due time shown there. Email is only a backup if Canvas fails (see G8).", /^(?!.*\b(late|resubmit|again|anything)\b).*(submit|turn in|hand in|upload|email (you )?(my|the) (assignment|memo|paper|work))/, /(how|where|can i|may i|could i)/],
     ["G11", "Which citation style should I use?", "APA 7 for all written work. Cite every source, including data and images you didn't make yourself.", /(citation|cite|apa|mla|reference|sources)/, /./],
     ["G12", "Do I need a title page?", "No. Put your name, the course, the assignment name and the date at the top of the first page.", /(title page|cover page|cover sheet)/, /./],
     ["G13", "Can I work with classmates?", "You may discuss ideas and course material, but unless an assignment says it is group work, write and submit your own work.", /(classmate|together|group|partner|collaborat)/, /./],
     ["G15", "What if I need to submit late?", "Contact me before the deadline. The late-work rule is in the syllabus, and extensions can't be approved after the deadline without a documented reason.", /(\blate\b|extension|miss(ed)? the deadline|after the deadline)/, /./],
-    ["G16", "Where do I find the rubric?", "It is attached to each assignment in Canvas. Read it before you start; it's what I grade with.", /rubric/, /./],
+    ["G16", "Where do I find the rubric?", "It is attached to each assignment in Canvas. Read it before you start; it's what I grade with.", /(rubric|how (is|will) .*\bgraded\b|grading criteria|graded on)/, /./],
     ["G18", "How fast will you reply to my messages?", "Within one business day. Message me through Canvas Inbox and put the course and the assignment name in the subject line. A new question for the course FAQ keeps the subject \"New question for the course FAQ: ...\" so I can add the answer to the bank.", /(reply|respond|answer|get back)/, /(how (fast|soon|long|quickly)|when will)/],
     ["G19", "I need accommodations. What do I do?", "Contact the accommodations office listed in the syllabus and send me your letter privately. Don't share personal details in class discussions.", /(accommodat|disabilit|sas\b)/, /./],
     ["G20", "How do I ask about a grade?", "Wait 24 hours after grades are posted, then message me within one week, naming the rubric item and your reason.", /(grade|grading|regrade|points)/, /(ask|question|wrong|dispute|disagree|how)/],
@@ -243,6 +243,9 @@
         return { kind: "answer", title: "Course pack: readings", text: "Reading 1 is OpenStax, Principles of Management, section 2.1 \"Overview of Managerial Decision-Making\". Canvas: Modules → Week 1 → Readings → Reading 1. Link, exactly as the instructor posted it: https://openstax.org/books/principles-management/pages/2-1-overview-of-managerial-decision-making\n\nReading 2 says \"find one article about business decision-making\" but gives no source, location or link. Search FAU Libraries (library.fau.edu) and cite it in APA 7 (G22, G11). If you're unsure what counts, ask the professor.", cites: ["G22", "G11"] };
       }
       for (const e of bank) if (e.m1 && !e.added && hit(e)) return answer(e);
+      return newQuestion(raw);
+    }
+    function newQuestion(raw) {                     // never guess: draft a tagged message for the professor
       const subject = "New question for the course FAQ: " + raw.trim().replace(/\?*$/, "?");
       return { kind: "new", title: "That's a new question", text: "Your instructor hasn't answered this yet, so I can't confirm it. Once they reply, the answer can be added to the answer bank, and the next student will get it right away. Until then, wait for their reply or a Canvas announcement.", question: raw.trim(), draft: { subject, body: `Hello Professor,\n\n${raw.trim()}\n\nThank you,\n[Your name]\n[Course + section]` } };
     }
@@ -257,7 +260,7 @@
     function approve(question, answerText) {        // Instructor Desk: professor answers once -> next ID
       return addEntry(question, answerText);
     }
-    return { ask, approve, bank: () => bank.slice().sort((x, y) => order(x.id) - order(y.id)) };
+    return { ask, approve, asNew: newQuestion, bank: () => bank.slice().sort((x, y) => order(x.id) - order(y.id)) };
   }
   const order = (id) => (id[0] === "A" ? 0 : 1000) + parseInt(id.slice(1), 10);
 

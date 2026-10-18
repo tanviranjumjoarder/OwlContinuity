@@ -84,6 +84,10 @@ pre{white-space:pre-wrap;background:var(--code);color:#e8eefb;border-radius:10px
 .chip:hover{border-color:var(--navy)}
 .ask{display:flex;gap:8px;margin-top:12px}
 .ask input{flex:1}
+.match{margin-top:8px;font-size:13px;color:var(--muted)}
+.linkbtn{border:0;background:none;padding:0;font:inherit;color:var(--blue);text-decoration:underline;cursor:pointer}
+.linkbtn:disabled{color:var(--muted);text-decoration:none;cursor:default}
+.demo-note{margin:8px 0 4px;font-size:13px;line-height:1.45;background:var(--gold-bg);color:var(--ink);border-radius:9px;padding:8px 10px}
 .prof{margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
 .bank{max-height:420px;overflow-y:auto;font-size:13px}
 .bank div{padding:6px 0;border-bottom:1px solid var(--line)}
@@ -159,7 +163,9 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
       </div>
       <div class="card">
         <h2>Student Helper</h2>
-        <div class="muted">Answers only from the approved files, names the source, and never guesses. Try one:</div>
+        <div class="muted">Answers only from the approved files, names the source, and never guesses.</div>
+        <div class="demo-note"><b>Demo note:</b> this page matches your wording to the approved answers with simple rules, not AI, and shows which answer it used. If it picks the wrong one, click <i>Not what I asked</i>. The owlONE agent itself understands any wording.</div>
+        <div class="muted">Try one:</div>
         <div class="chips" id="chips"></div>
         <div class="chat" id="chat"></div>
         <form class="ask" id="askForm">
@@ -218,7 +224,7 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
 <footer class="wrap">OwlContinuity by Tanvir Anjum Joarder · FAU owlONE Promptathon, Oct 16–17, 2026 · Not an FAU product or FAU policy.</footer>
 <div class="toast" id="toast"></div>
 
-<script src="owlcontinuity.js?v=2"></script>
+<script src="owlcontinuity.js?v=4"></script>
 <script>
 (function(){
   const O = window.OwlContinuity, $ = (s)=>document.querySelector(s);
@@ -292,11 +298,20 @@ footer{color:var(--muted);font-size:13px;padding:0 0 32px}
   function add(html, who){ const d=document.createElement("div"); d.className="msg "+who; d.innerHTML=html; $("#chat").appendChild(d); $("#chat").scrollTop=$("#chat").scrollHeight; return d; }
   function ask(q){
     add(esc(q),"me");
-    const r = H.ask(q);
+    show(q, H.ask(q));
+  }
+  function show(q, r){
     const pill = {answer:'<span class="pill pass">approved answer</span>', new:'<span class="pill gold">new question</span>', refuse:'<span class="pill fail">declined</span>', safety:'<span class="pill fail">safety</span>', private:'<span class="pill gold">private</span>', conflict:'<span class="pill gold">needs the professor</span>'}[r.kind]||"";
     let h = `<div class="t">${esc(r.title)} ${pill}</div><p>${esc(r.text).replace(/(https:\/\/\S+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>')}</p>`;
     if (r.draft) h += `<div class="draftmsg"><b>Message to send through Canvas Inbox</b><br><b>Subject:</b> ${esc(r.draft.subject)}<pre style="margin-top:6px">${esc(r.draft.body)}</pre></div>`;
     const el = add(h,"bot");
+    if (r.kind==="answer") {                       // show what it matched, and let the reader overrule it
+      const m = document.createElement("div"); m.className="match";
+      m.innerHTML = (r.entry ? `Matched to <b>${esc(r.entry.id)}</b>: "${esc(r.entry.q)}"` : `Source: <b>${esc(r.title.replace(/^Course pack: /,"course pack, "))}</b>`)
+        + ` · <button type="button" class="linkbtn">Not what I asked</button>`;
+      el.appendChild(m);
+      m.querySelector("button").onclick=(ev)=>{ ev.target.disabled=true; ev.target.textContent="Sent as a new question below"; show(q, H.asNew(q)); };
+    }
     if (r.kind==="new") {
       const box = document.createElement("div"); box.className="prof";
       const sample = /draft/i.test(q) ? "Yes. Send your draft through Canvas Inbox at least 3 days before the deadline, and I'll reply with short comments." : "";
