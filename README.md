@@ -27,6 +27,35 @@ AI agents I built inside **owlONE**, FAU's generative AI platform, on the **gpt-
 
 ---
 
+## Why OwlContinuity
+
+**A hurricane cancels three days of classes. The professor reschedules the lab. Problem solved?**
+
+Not quite.
+
+The lab moves to next Thursday, but the assignment that depends on it is still due Friday. Students now have barely a day for work that needs at least 48 hours.
+
+One schedule change creates another problem. Fix that problem, and another deadline might be affected.
+
+**That's the domino effect of a cancelled class.**
+
+And while the professor is sorting everything out, students send the same questions again and again.
+
+In South Florida, where hurricane disruptions keep coming back, I started with one question: **what if AI could catch these problems before professors and students have to deal with them?**
+
+```mermaid
+flowchart LR
+    C["Closure, absence<br/>or outage"] --> L["Lesson cancelled"]
+    L --> LAB["Lab must move"]
+    LAB --> MEMO["Memo deadline<br/>now too soon"]
+    MEMO --> Q["Students ask<br/>'when is it due?'"]
+    Q --> P["Professor answers<br/>the same question again and again"]
+    style C fill:#003366,color:#fff
+    style MEMO fill:#FCECEA,stroke:#B3261E,color:#B3261E
+```
+
+🦉 **OwlContinuity is a system of three AI agents I built at the AI Promptathon during FAU Hackathon Weekend 2026.** They run inside FAU's owlONE platform on gpt-6-luna and help professors and students handle unexpected academic disruptions.
+
 ## The whole process in 24 seconds
 
 <a href="https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html"><img src="docs/images/owlcontinuity_process.svg" alt="Animation: a closure notice reaches Instructor Desk, the lab moves, the memo deadline fails the 48-hour rule, code moves it to Tue Nov 3 as a draft, a student asks a new question, the professor answers once, and the next student gets answer A11." width="100%"></a>
@@ -48,64 +77,77 @@ AI agents I built inside **owlONE**, FAU's generative AI platform, on the **gpt-
 
 </details>
 
-## What each agent does
+## The three agents
 
-**Instructor Desk (for professors)**
+### 👨‍🏫 1. Instructor Desk: the Domino Effect Agent
 
-- **The Domino Effect Agent.** Move one class, and the deadlines that depend on it start to fall too. Give it the closure notice, the syllabus and your own rules. It moves what's affected, follows the dominoes, rechecks every linked deadline with code and hands back a draft schedule.
-- **The Canvas announcement, written for you.** With the new schedule it also writes the student announcement (up to 150 words) listing every new date, ready to paste into Canvas. If the dates aren't settled yet, it writes a short holding message with no invented dates instead. The professor reviews and posts it; the agent never publishes anything itself, and nothing changes without the professor.
-- **Assignment check before it goes out.** It flags unclear steps, instructions that contradict each other (for example "2–3 pages" in the prompt but "maximum 600 words" in the rubric), and readings with no title, location or link.
-- **Also:** drafts replies to repeated student questions from the approved answers, reviews last semester's answers before reuse, and summarizes how many student messages came in.
+Imagine a professor receives a campus closure notice. Instead of checking every lecture, lab, assignment, quiz and deadline by hand, Instructor Desk:
 
-**Student Helper (for students)**
+→ Reads the closure notice, the syllabus and the professor's scheduling rules.
 
-It handles the emails professors and TAs get before every deadline. It answers only from the professor's approved answers and shows which one it used:
+→ Finds which classes and activities are affected.
+
+→ Reschedules them using the professor's available make-up slots.
+
+→ Traces the domino effect and finds the deadlines that must also change.
+
+→ Uses code to calculate every time gap and check that the revised schedule follows the professor's rules (times are read in `America/New_York` and converted to UTC, so a clock change counts).
+
+→ Drafts a Canvas announcement that explains the changes and the new deadlines to students.
+
+**One closure notice → revised schedule → verified deadlines → ready-to-review Canvas announcement.**
+
+The professor reviews and approves everything before anything is published. Nothing is changed or posted automatically. If no schedule can satisfy every rule, it says **NEEDS DECISION** and names the rule that blocks it, instead of guessing.
+
+**And there's another feature.** Before an assignment is published, Instructor Desk can review its instructions and flag unclear requirements, conflicting page and word limits (for example "2–3 pages" in the prompt but "maximum 600 words" in the rubric), or missing reading materials. It can also draft replies to repeated student questions, review last semester's answers before they're reused, and summarize the week's student messages.
+
+**The goal isn't to replace the professor's decisions. It's to reduce the repetitive work around them.**
+
+### 🎓 2. Student Helper: answer once, help everyone
+
+Anyone who has taught a course knows how familiar these questions become, especially the night before a deadline:
 
 | Students ask | Approved answer |
 |---|---|
 | How do I submit? · Which file type? · What do I name my file? | G1 · G2 · G3 |
-| Can I add pictures or charts? · Can I attach my code? | G4 · G5 |
-| Can I hand in handwritten work? · Can I resubmit? | G6 · G10 |
-| What if Canvas won't take my file? · Can I submit late? | G8 · G15 |
-| Which citation style? · Do appendices count toward the length? | G11 · G17 |
+| Can I attach my code separately? · Are pictures and charts allowed? | G5 · G4 |
+| Which citation style should I use? · Do appendices count toward the length? | G11 · G17 |
+| Can I resubmit? · Can I submit late? | G10 · G15 |
+| What if Canvas won't accept my file? · Can I hand in handwritten work? | G8 · G6 |
 | Is the final moving? · Can we work in pairs on the memo? | A4 · A8 |
 
-A question nobody has answered yet is never guessed. It drafts a message to the professor, and once the professor answers, that answer becomes the next entry (A11) for every student after. It follows the course AI policy and never writes graded work. The full bank is [`13b`](agents/13b_DEMO_Answer_Bank_for_Student_Helper.txt).
+Student Helper answers these from professor-approved course materials and an answer bank, and shows the source behind each answer.
 
-**The real-syllabus agent**
+**But what happens when a student asks something it has never seen?**
 
-It runs the same workflow on a real FAU graduate syllabus (called DEMO-202 here), to check that it holds up outside a made-up course. It passed 17 of 17 tests.
+It doesn't guess. It helps the student draft a message to the professor, tagged "New question for the course FAQ". The professor answers once, Instructor Desk adds that answer to the approved bank as the next entry (A11), and the next student who asks gets it right away. One approved answer can save the professor from answering the same email again and again. (Today the professor uploads the updated bank file by hand.)
 
-## Two ways to see OwlContinuity
+It also respects the course's AI policy and doesn't complete graded work for students. The full bank is [`13b`](agents/13b_DEMO_Answer_Bank_for_Student_Helper.txt).
 
-| | **In owlONE** (what I built and presented) | **On GitHub** (for anyone) |
-|---|---|---|
-| What it is | Three personal owlONE agents working as one system: Instructor Desk, Student Helper, and a real-syllabus agent | A [live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) and an [interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html) |
-| AI | **Yes:** gpt-6-luna reads syllabi, notices and questions in everyday words | **No AI model:** the same rules replayed in JavaScript |
-| Time math | The agent runs code (Data & File Tools) | The page runs the same calculation in the browser |
-| Who can use it | Only the owner's FAU account today (personal agents) | Anyone with a browser |
-| Evidence | Live runs on Oct 16–17, 2026, saved word for word in [`results/`](results) | Reproduces the DEMO-101 plan from those runs |
-| Rebuild it | [How I built the agents in owlONE](#how-i-built-the-agents-in-owlone) | [`docs/`](docs) (MIT license) |
+### 🧪 3. Real-syllabus agent: testing beyond a perfect demo
 
-## At a glance
+A system built around a fictional course might look impressive. But what happens when it meets an actual university syllabus?
 
-| | |
-|---|---|
-| **Problem** | A cancelled class moves more than one date. A lab feeds an assignment, and the assignment must leave time before an exam. The professor rechecks every link by hand while students ask the same questions again and again. |
-| **What I built** | **Instructor Desk** for the professor, which contains the **Domino Effect Agent**. **Student Helper** for students. A third agent runs the same workflow on a real FAU syllabus. All three are personal owlONE agents working as one system. |
-| **What makes it different** | Every time gap is calculated with code in `America/New_York` and converted to UTC, so the Nov 1 clock change counts. The agent returns a **draft**, or stops and asks when a fact is missing. |
-| **Evidence** | 31 pass, 2 partial, 0 fail on 33 checks · 7/7 assignment-rule questions · 3/3 reading tests · 17/17 on a real FAU syllabus. All are tests I wrote, saved word for word in [`results/`](results). |
-| **Next step** | A supervised pilot with 2–3 volunteer professors. |
+I ran the same workflow on a real, publicly available FAU graduate syllabus (called DEMO-202 here), with simulated disruptions and scheduling rules I set for the test. It passed **17 of 17** checks, two of them with a noted difference.
 
-## Try it in your browser
+## My recorded prototype tests
 
-The [**live demo**](https://tanviranjumjoarder.github.io/OwlContinuity/) runs both agents' workflows on the fictional DEMO-101 course:
+- ✅ **31 passed** · ⚠️ **2 partially passed** · ❌ **0 failed** on the main test report (33 checks)
+- ✅ **17 / 17** on the real-syllabus test (two with noted differences)
 
-- **Domino Effect Agent:** pick a closure notice, or set your own dates. The page rebuilds the schedule from the professor's make-up slots, rechecks every gap in `America/New_York` time with the Nov 1 clock change, and returns a **DRAFT**. When no plan fits every rule, it says **NEEDS DECISION** and names the blocking rule.
-- **Student Helper:** ask a question. It answers from the approved bank with the source ID (A4, G5), shows both instructions when they conflict, declines to write graded work, and turns an unanswered question into a tagged message. You can then play the professor, approve an answer, and watch it become **A11** for the next student.
+These are my own tests, not an independent evaluation. I documented unexpected behavior and limits rather than presenting the prototype as a finished product. Details are in [Test results](#test-results), and every run is saved word for word in [`results/`](results).
+
+## Try to break it
+
+I made a public interactive demo so anyone can experiment with OwlContinuity:
+
+- **Experiment 1:** close campus for an entire week. Watch the Domino Effect Agent find the affected activities and follow the deadlines that depend on them.
+- **Experiment 2:** ask Student Helper a question it hasn't been taught. Then switch to the professor's role, approve an answer, and see it become available to the next student.
+
+🔗 **[Live interactive demo](https://tanviranjumjoarder.github.io/OwlContinuity/)** · 📖 **[Interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html)** · 🎬 **[27-second video](https://tanviranjumjoarder.github.io/OwlContinuity/#video)**
 
 > [!IMPORTANT]
-> The demo runs **no AI model**. The real agents run inside owlONE, which only FAU accounts can reach. The page replays the same rules in plain JavaScript ([`docs/owlcontinuity.js`](docs/owlcontinuity.js)), so it answers the same way every time. Its DEMO-101 plan matches the live owlONE run: the lab moves to Thu Oct 29, the memo moves from 26 h 10 m (FAIL) to 123 h 10 m (PASS) on Tue Nov 3, and the final stays fixed.
+> The actual AI agents run inside owlONE, which only FAU accounts can reach. The public browser demo reproduces the tested workflows in plain JavaScript ([`docs/owlcontinuity.js`](docs/owlcontinuity.js)), with no AI model, so anyone can try it without an FAU account. It shows which approved answer it used, and a *Not what I asked* button turns a wrong match into a new question. Its DEMO-101 plan matches the live owlONE run: the lab moves to Thu Oct 29, the memo moves from 26 h 10 m (FAIL) to 123 h 10 m (PASS) on Tue Nov 3, and the final stays fixed.
 
 <table>
 <tr>
@@ -142,22 +184,19 @@ The QR code at the end opens the live demo. [Download the MP4](docs/media/owlcon
 </tr>
 </table>
 
-## The problem
+## Two ways to see OwlContinuity
 
-A cancelled class looks like one change on a calendar, but other events depend on it.
+| | **In owlONE** (what I built and presented) | **On GitHub** (for anyone) |
+|---|---|---|
+| What it is | Three personal owlONE agents working as one system: Instructor Desk, Student Helper, and a real-syllabus agent | A [live demo](https://tanviranjumjoarder.github.io/OwlContinuity/) and an [interactive walkthrough](https://tanviranjumjoarder.github.io/OwlContinuity/how-it-works.html) |
+| AI | **Yes:** gpt-6-luna reads syllabi, notices and questions in everyday words | **No AI model:** the same rules replayed in JavaScript |
+| Time math | The agent runs code (Data & File Tools) | The page runs the same calculation in the browser |
+| Who can use it | Only the owner's FAU account today (personal agents) | Anyone with a browser |
+| Evidence | Live runs on Oct 16–17, 2026, saved word for word in [`results/`](results) | Reproduces the DEMO-101 plan from those runs |
+| Rebuild it | [How I built the agents in owlONE](#how-i-built-the-agents-in-owlone) | [`docs/`](docs) (MIT license) |
 
-```mermaid
-flowchart LR
-    C["Closure, absence<br/>or outage"] --> L["Lesson cancelled"]
-    L --> LAB["Lab must move"]
-    LAB --> MEMO["Memo deadline<br/>now too soon"]
-    MEMO --> Q["Students ask<br/>'when is it due?'"]
-    Q --> P["Professor answers<br/>the same question again and again"]
-    style C fill:#003366,color:#fff
-    style MEMO fill:#FCECEA,stroke:#B3261E,color:#B3261E
-```
+**Next:** OwlContinuity is still a prototype. My next goal is to see how it performs with volunteer professors in real courses ([pilot plan](#next-step-a-supervised-pilot)).
 
-<img src="docs/images/03_problem.png" alt="A cancelled class changes more than one date" width="820">
 
 ## How it works
 
